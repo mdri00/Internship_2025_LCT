@@ -1,0 +1,12 @@
+shape,scale,shift,species,stage
+    0.0345,   29.1199,    0.0000,Ips avulsus,Whole cycle
+    0.0019,  527.8696,    0.0000,Plutella xylostella,whole dev
+    0.0115,   88.7465,    0.0000,Cnaphalocrocis medinalis,Total immature
+    0.0666,   14.9084,    0.0000,Amblyseius womersleyi,Total immature
+    0.0065,  153.1014,    0.0000,Lipaphis erysimi,Complete dev time Alatae
+    0.0075,  131.1041,    0.0000,Lipaphis erysimi,Complete dev time Apterae
+    0.0141,   70.1421,    0.0000,Feltiella acarisuga,Total dev
+    0.0274,   34.0708,    0.0000,Neoseiulus californicus,Total immature
+    0.0223,   42.2788,    0.0000,Laodelphax striatellus ,Total PD
+    0.0135,   67.5716,    0.0000,"Aphis 
+Gossypii",Total
