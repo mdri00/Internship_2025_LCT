@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.2.13)  23 JUN 2025 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.2.13)  23 JUN 2025 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Report.tex
-(./Report.tex
+**Report_new_introduction.tex
+(./Report_new_introduction.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -749,7 +749,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count344
 \l__pdf_internal_box=\box61
 )
-(./Report.aux
+(./Report_new_introduction.aux
 
 LaTeX Warning: Label `fig:a' multiply defined.
 
@@ -781,7 +781,7 @@ LaTeX Warning: Label `fig:b' multiply defined.
 LaTeX Warning: Label `sub@fig:b' multiply defined.
 
 )
-\openout1 = `Report.aux'.
+\openout1 = `Report_new_introduction.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
@@ -870,7 +870,8 @@ Package layouts Warning: Layout scale set to 0.5 on input line 63.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Report.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./Report_new_introduction.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -882,16 +883,10 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
-\openout4 = `Report.toc'.
+\openout4 = `Report_new_introduction.toc'.
 
- [1] [2]
-Overfull \hbox (2.81589pt too wide) in paragraph at lines 115--116
-| \T1/ptm/m/n/12 Since many agri-cul-tural pests are in-sects with dis-con-tin-
-u-ous de-vel-op-ment, stage-structured
- []
-
-[1]
-Overfull \hbox (10.65347pt too wide) in paragraph at lines 126--127
+ [1] [2] [1]
+Overfull \hbox (10.65347pt too wide) in paragraph at lines 117--118
 | \T1/ptm/m/n/12 How-ever, Wear-ing et al. 2004 show that mod-els' pre-dic-tion
 s based on the fixed-development
  []
@@ -908,7 +903,7 @@ hape/figs/n_survey_not_clipped.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sh
 ape/figs/n_survey_not_clipped.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/survey_gamma_shape/figs/n_survey_not_clipped.pdf  used on input line 153.
+_LCT/survey_gamma_shape/figs/n_survey_not_clipped.pdf  used on input line 141.
 (pdftex.def)             Requested size: 218.51521pt x 168.5057pt.
 
 
@@ -922,7 +917,7 @@ hape/figs/n_survey_clipped.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sh
 ape/figs/n_survey_clipped.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/survey_gamma_shape/figs/n_survey_clipped.pdf  used on input line 161.
+_LCT/survey_gamma_shape/figs/n_survey_clipped.pdf  used on input line 149.
 (pdftex.def)             Requested size: 218.51521pt x 168.5057pt.
 
 
@@ -937,7 +932,7 @@ hape/figs/n_survey_example_species.pdf Graphic file (type pdf)
 ape/figs/n_survey_example_species.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/survey_gamma_shape/figs/n_survey_example_species.pdf  used on input line 1
-70.
+58.
 (pdftex.def)             Requested size: 227.62206pt x 139.96161pt.
 [4] [5 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma
 _shape/figs/n_survey_not_clipped.pdf> </home/mathisdr/Desktop/2024-2025/Stage/I
@@ -955,7 +950,7 @@ librium.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_equil
 ibrium.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_equilibrium.pdf  used on input line 194.
+igures/Murdoch_equilibrium.pdf  used on input line 182.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -969,7 +964,7 @@ ility_diagram.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_stabi
 lity_diagram.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_stability_diagram.pdf  used on input line 201.
+igures/Murdoch_stability_diagram.pdf  used on input line 189.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -983,7 +978,7 @@ rcation_diagram_Wearing-par.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_bifur
 cation_diagram_Wearing-par.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_bifurcation_diagram_Wearing-par.pdf  used on input line 210.
+igures/Murdoch_bifurcation_diagram_Wearing-par.pdf  used on input line 198.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -997,7 +992,7 @@ ndity.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_fecun
 dity.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_fecundity.pdf  used on input line 217.
+igures/Murdoch_fecundity.pdf  used on input line 205.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -1011,7 +1006,7 @@ ct-of-n1n3.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effec
 t-of-n1n3.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Godfray_effect-of-n1n3.pdf  used on input line 233.
+igures/Godfray_effect-of-n1n3.pdf  used on input line 221.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -1025,10 +1020,10 @@ ct-of-n2m.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effec
 t-of-n2m.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Godfray_effect-of-n2m.pdf  used on input line 240.
+igures/Godfray_effect-of-n2m.pdf  used on input line 228.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
@@ -1040,39 +1035,39 @@ Figures/Murdoch_bifurcation_diagram_Wearing-par.pdf> </home/mathisdr/Desktop/20
 Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect-of-n1n3.pdf> </hom
 e/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect-of-n2m.
 pdf>] [9] [10]
-Overfull \hbox (6.04381pt too wide) in paragraph at lines 318--318
+Overfull \hbox (6.04381pt too wide) in paragraph at lines 306--306
 |[]\T1/ptm/b/n/12 System con-struc-tion : ap-pli-ca-tion of the Lin-ear Chain T
 rick with a non-autonomous
  []
 
 [11]
-Overfull \hbox (22.12675pt too wide) detected at line 367
+Overfull \hbox (22.12675pt too wide) detected at line 355
 []
  []
 
 [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
-[15] [16] [17] (./Report.aux)
+[15] [16] [17] (./Report_new_introduction.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  26248 strings out of 483183
- 642812 string characters out of 5966292
- 1005765 words of memory out of 5000000
+ 643033 string characters out of 5966292
+ 1005782 words of memory out of 5000000
  40812 multiletter control sequences out of 15000+600000
  568272 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 73i,18n,127p,1716b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,18n,127p,1737b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1087,7 +1082,7 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on Report.pdf (20 pages, 277679 bytes).
+Output written on Report_new_introduction.pdf (20 pages, 277803 bytes).
 PDF statistics:
  269 PDF objects out of 1000 (max. 8388607)
  192 compressed objects within 2 object streams
