@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.2.13)  23 JUN 2025 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.2.13)  24 JUN 2025 09:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -885,8 +885,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `Report_new_introduction.toc'.
 
- [1] [2] [1]
-Overfull \hbox (10.65347pt too wide) in paragraph at lines 117--118
+ [1] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+[1]
+Overfull \hbox (10.65347pt too wide) in paragraph at lines 121--122
 | \T1/ptm/m/n/12 How-ever, Wear-ing et al. 2004 show that mod-els' pre-dic-tion
 s based on the fixed-development
  []
@@ -903,7 +913,7 @@ hape/figs/n_survey_not_clipped.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sh
 ape/figs/n_survey_not_clipped.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/survey_gamma_shape/figs/n_survey_not_clipped.pdf  used on input line 141.
+_LCT/survey_gamma_shape/figs/n_survey_not_clipped.pdf  used on input line 145.
 (pdftex.def)             Requested size: 218.51521pt x 168.5057pt.
 
 
@@ -917,7 +927,7 @@ hape/figs/n_survey_clipped.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sh
 ape/figs/n_survey_clipped.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/survey_gamma_shape/figs/n_survey_clipped.pdf  used on input line 149.
+_LCT/survey_gamma_shape/figs/n_survey_clipped.pdf  used on input line 153.
 (pdftex.def)             Requested size: 218.51521pt x 168.5057pt.
 
 
@@ -932,7 +942,7 @@ hape/figs/n_survey_example_species.pdf Graphic file (type pdf)
 ape/figs/n_survey_example_species.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/survey_gamma_shape/figs/n_survey_example_species.pdf  used on input line 1
-58.
+62.
 (pdftex.def)             Requested size: 227.62206pt x 139.96161pt.
 [4] [5 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma
 _shape/figs/n_survey_not_clipped.pdf> </home/mathisdr/Desktop/2024-2025/Stage/I
@@ -944,13 +954,13 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Murdoch_equilibrium.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_equilibri
-um.pdf, id=88, 462.52798pt x 346.89601pt>
+um.pdf, id=87, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_equi
 librium.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_equil
 ibrium.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_equilibrium.pdf  used on input line 182.
+igures/Murdoch_equilibrium.pdf  used on input line 186.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -958,13 +968,13 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Murdoch_stability_diagram.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_stability
-_diagram.pdf, id=89, 462.52798pt x 346.89601pt>
+_diagram.pdf, id=88, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_stab
 ility_diagram.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_stabi
 lity_diagram.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_stability_diagram.pdf  used on input line 189.
+igures/Murdoch_stability_diagram.pdf  used on input line 193.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -972,13 +982,13 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Murdoch_bifurcation_diagram_Wearing-par.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_bifurcati
-on_diagram_Wearing-par.pdf, id=90, 462.52798pt x 346.89601pt>
+on_diagram_Wearing-par.pdf, id=89, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_bifu
 rcation_diagram_Wearing-par.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_bifur
 cation_diagram_Wearing-par.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_bifurcation_diagram_Wearing-par.pdf  used on input line 198.
+igures/Murdoch_bifurcation_diagram_Wearing-par.pdf  used on input line 202.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -986,13 +996,13 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Murdoch_fecundity.pdf): PDF inclusion: found PDF version 
 <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_fecundity
-.pdf, id=91, 462.52798pt x 346.89601pt>
+.pdf, id=90, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_fecu
 ndity.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_fecun
 dity.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_fecundity.pdf  used on input line 205.
+igures/Murdoch_fecundity.pdf  used on input line 209.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -1000,13 +1010,13 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Godfray_effect-of-n1n3.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect-of
--n1n3.pdf, id=92, 462.52798pt x 346.89601pt>
+-n1n3.pdf, id=91, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effe
 ct-of-n1n3.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effec
 t-of-n1n3.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Godfray_effect-of-n1n3.pdf  used on input line 221.
+igures/Godfray_effect-of-n1n3.pdf  used on input line 225.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -1014,44 +1024,43 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Godfray_effect-of-n2m.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect-of
--n2m.pdf, id=93, 462.52798pt x 346.89601pt>
+-n2m.pdf, id=92, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effe
 ct-of-n2m.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effec
 t-of-n2m.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Godfray_effect-of-n2m.pdf  used on input line 228.
+igures/Godfray_effect-of-n2m.pdf  used on input line 232.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+[6] [7 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_eq
+uilibrium.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Mu
+rdoch_stability_diagram.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_st
+age/Figures/Murdoch_bifurcation_diagram_Wearing-par.pdf> </home/mathisdr/Deskto
+p/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_fecundity.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
-[7 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_equili
-brium.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoc
-h_stability_diagram.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/
-Figures/Murdoch_bifurcation_diagram_Wearing-par.pdf> </home/mathisdr/Desktop/20
-24-2025/Stage/Jupyter_stage/Figures/Murdoch_fecundity.pdf>] [8 </home/mathisdr/
-Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect-of-n1n3.pdf> </hom
-e/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect-of-n2m.
-pdf>] [9] [10]
-Overfull \hbox (6.04381pt too wide) in paragraph at lines 306--306
+[8 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect
+-of-n1n3.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/God
+fray_effect-of-n2m.pdf>] [9] [10]
+Overfull \hbox (6.04381pt too wide) in paragraph at lines 310--310
 |[]\T1/ptm/b/n/12 System con-struc-tion : ap-pli-ca-tion of the Lin-ear Chain T
 rick with a non-autonomous
  []
 
 [11]
-Overfull \hbox (22.12675pt too wide) detected at line 355
+Overfull \hbox (22.12675pt too wide) detected at line 359
 []
  []
 
 [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
@@ -1082,7 +1091,7 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on Report_new_introduction.pdf (20 pages, 277803 bytes).
+Output written on Report_new_introduction.pdf (20 pages, 278193 bytes).
 PDF statistics:
  269 PDF objects out of 1000 (max. 8388607)
  192 compressed objects within 2 object streams
