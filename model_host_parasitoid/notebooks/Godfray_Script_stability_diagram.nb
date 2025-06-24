@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     68009,       1520]
-NotebookOptionsPosition[     65408,       1472]
-NotebookOutlinePosition[     65814,       1489]
-CellTagsIndexPosition[     65771,       1486]
+NotebookDataLength[     68013,       1514]
+NotebookOptionsPosition[     65412,       1466]
+NotebookOutlinePosition[     65818,       1483]
+CellTagsIndexPosition[     65775,       1480]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -470,9 +470,8 @@ Cell[BoxData[{
   "replacementXu"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
-   RowBox[{
-   "parameterinformation", "=", " ", "\"\<Xu_parameters_figure_report\>\""}], 
-   " ", ";"}], 
+   RowBox[{"parameterinformation", "=", " ", "\"\<Xu_parameters_\>\""}], " ", 
+   ";"}], 
   RowBox[{"(*", 
    RowBox[{
    "Here", " ", "complete", " ", "with", " ", "info", " ", "about", " ", 
@@ -514,7 +513,8 @@ Cell[BoxData[{
    3.9593102454482117`*^9}, {3.959312809453228*^9, 3.959312811100297*^9}, {
    3.959744607919395*^9, 3.9597446103353863`*^9}, {3.959745396378237*^9, 
    3.9597454003481617`*^9}, {3.9597454978681593`*^9, 3.9597455047074003`*^9}, 
-   3.9597455746944942`*^9},ExpressionUUID->"c4cadf45-6950-4213-a44f-\
+   3.9597455746944942`*^9, {3.959759078225762*^9, 
+   3.9597590783528633`*^9}},ExpressionUUID->"c4cadf45-6950-4213-a44f-\
 ebe29adc75fc"],
 
 Cell[BoxData[
@@ -996,7 +996,7 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"Folder", "=", 
     RowBox[{"\"\<Godfray_VP_\>\"", "<>", "paramInfo"}]}], ";"}], 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"CreateDirectory", "[", "Folder", "]"}], ";"}], 
@@ -1075,23 +1075,20 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"FileNameJoin", "[", 
     RowBox[{"{", 
-     RowBox[{
-     "DATADIR", ",", "Folder", ",", "\"\<Godfray_LCT_parameters.csv\>\""}], 
-     "}"}], "]"}], ",", "params"}], "]"}], "\n", 
+     RowBox[{"DATADIR", ",", "Folder", ",", "\"\<parameters.csv\>\""}], "}"}],
+     "]"}], ",", "params"}], "]"}], "\n", 
  RowBox[{"Export", "[", 
   RowBox[{
    RowBox[{"FileNameJoin", "[", 
     RowBox[{"{", 
-     RowBox[{
-     "DATADIR", ",", " ", "Folder", ",", 
-      "\"\<Godfray_LCT_Data_description.csv\>\""}], "}"}], "]"}], ",", 
-   "VPdatadescriptor"}], "]"}], "\[IndentingNewLine]", 
+     RowBox[{"DATADIR", ",", " ", "Folder", ",", "\"\<description.csv\>\""}], 
+     "}"}], "]"}], ",", "VPdatadescriptor"}], "]"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{
    RowBox[{"FileNameJoin", "[", 
     RowBox[{"{", 
-     RowBox[{"DATADIR", ",", "Folder", ",", "\"\<Godfray_LCT_Data.csv\>\""}], 
-     "}"}], "]"}], ",", "VPdata"}], "]"}], "\[IndentingNewLine]"}], "Input",
+     RowBox[{"DATADIR", ",", "Folder", ",", "\"\<data.csv\>\""}], "}"}], 
+    "]"}], ",", "VPdata"}], "]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.9539556540812883`*^9, 3.953955695841188*^9}, {
    3.9539557539352627`*^9, 3.95395579958829*^9}, {3.953955907391642*^9, 
    3.953955951782077*^9}, {3.953955989578267*^9, 3.953956229552394*^9}, {
@@ -1124,8 +1121,9 @@ Cell[BoxData[{
    3.959308939577587*^9}, {3.959309024890546*^9, 3.9593090340385437`*^9}, {
    3.959309513120964*^9, 3.959309515572646*^9}, {3.959309796425372*^9, 
    3.959309852377633*^9}, {3.959310281910907*^9, 3.959310293208996*^9}, {
-   3.9597453772425528`*^9, 3.959745387222639*^9}, 
-   3.959745521915461*^9},ExpressionUUID->"2b403f35-2f39-43e7-9b73-\
+   3.9597453772425528`*^9, 3.959745387222639*^9}, 3.959745521915461*^9, {
+   3.9597591019523993`*^9, 
+   3.959759109010054*^9}},ExpressionUUID->"2b403f35-2f39-43e7-9b73-\
 5655cb041e62"],
 
 Cell[BoxData[
@@ -1244,8 +1242,8 @@ Cell[BoxData[
    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Folder", "=", 
-     RowBox[{"\"\<Godfray_VP_\>\"", "<>", "paramInfo"}]}], ";"}], 
-   "\[IndentingNewLine]", "\n", 
+     RowBox[{"\"\<Godfray_VP_\>\"", "<>", "paramInfo"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"CreateDirectory", "[", "Folder", "]"}], ";"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
@@ -1319,24 +1317,20 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"FileNameJoin", "[", 
       RowBox[{"{", 
-       RowBox[{
-       "DATADIR", ",", " ", "Folder", ",", 
-        "\"\<Godfray_LCT_parameters.csv\>\""}], "}"}], "]"}], ",", "params"}],
-     "]"}], "\n", 
+       RowBox[{"DATADIR", ",", " ", "Folder", ",", "\"\<parameters.csv\>\""}],
+        "}"}], "]"}], ",", "params"}], "]"}], "\n", 
    RowBox[{"Export", "[", 
     RowBox[{
      RowBox[{"FileNameJoin", "[", 
       RowBox[{"{", 
        RowBox[{
-       "DATADIR", ",", " ", "Folder", ",", 
-        "\"\<Godfray_LCT_Data_description.csv\>\""}], "}"}], "]"}], ",", 
-     "VPdatadescriptor"}], "]"}], "\[IndentingNewLine]", 
+       "DATADIR", ",", " ", "Folder", ",", "\"\<description.csv\>\""}], "}"}],
+       "]"}], ",", "VPdatadescriptor"}], "]"}], "\[IndentingNewLine]", 
    RowBox[{"Export", "[", 
     RowBox[{
      RowBox[{"FileNameJoin", "[", 
       RowBox[{"{", 
-       RowBox[{
-       "DATADIR", ",", " ", "Folder", ",", "\"\<Godfray_LCT_Data.csv\>\""}], 
+       RowBox[{"DATADIR", ",", " ", "Folder", ",", "\"\<data.csv\>\""}], 
        "}"}], "]"}], ",", "VPdata"}], "]"}]}]}]], "Input",
  CellChangeTimes->{{3.9539556540812883`*^9, 3.953955695841188*^9}, {
    3.9539557539352627`*^9, 3.95395579958829*^9}, {3.953955907391642*^9, 
@@ -1371,8 +1365,8 @@ Cell[BoxData[
    3.959309060771192*^9}, {3.95930970565479*^9, 3.959309709241022*^9}, {
    3.9593098254249372`*^9, 3.9593098255739737`*^9}, {3.959310152455159*^9, 
    3.9593101627743692`*^9}, {3.9593103004057417`*^9, 3.959310300778161*^9}, {
-   3.959745529642559*^9, 
-   3.9597455371706247`*^9}},ExpressionUUID->"ec88fac3-c011-440c-8da2-\
+   3.959745529642559*^9, 3.9597455371706247`*^9}, {3.959759086799958*^9, 
+   3.9597590938620567`*^9}},ExpressionUUID->"ec88fac3-c011-440c-8da2-\
 6f175f43ef59"],
 
 Cell[BoxData[
@@ -1496,29 +1490,29 @@ Cell[2460, 68, 433, 7, 67, "Chapter",ExpressionUUID->"8b2bf37b-c9bf-4a7b-9244-38
 Cell[2896, 77, 301, 9, 99, "Text",ExpressionUUID->"9ea84f52-9a08-4d9f-98a2-3c8ff572a2e8"],
 Cell[3200, 88, 7966, 207, 310, "Input",ExpressionUUID->"482aa138-1c82-40dd-b78e-0303fabc9297"],
 Cell[CellGroupData[{
-Cell[11191, 299, 9568, 218, 863, "Input",ExpressionUUID->"c4cadf45-6950-4213-a44f-ebe29adc75fc"],
-Cell[20762, 519, 2141, 33, 26, "Message",ExpressionUUID->"8624d352-5ae5-4dcf-9018-521ace7e9cf2"],
-Cell[22906, 554, 2139, 33, 26, "Message",ExpressionUUID->"c217884c-c6d6-4216-9c93-92cce2a74969"],
-Cell[25048, 589, 2558, 42, 33, "Output",ExpressionUUID->"163a14d4-f033-4a86-9438-4200f56c0c60"],
-Cell[27609, 633, 1977, 31, 51, "Output",ExpressionUUID->"06d115bd-bd73-4041-898f-d91f8b95c333"]
+Cell[11191, 299, 9603, 218, 843, "Input",ExpressionUUID->"c4cadf45-6950-4213-a44f-ebe29adc75fc"],
+Cell[20797, 519, 2141, 33, 26, "Message",ExpressionUUID->"8624d352-5ae5-4dcf-9018-521ace7e9cf2"],
+Cell[22941, 554, 2139, 33, 26, "Message",ExpressionUUID->"c217884c-c6d6-4216-9c93-92cce2a74969"],
+Cell[25083, 589, 2558, 42, 33, "Output",ExpressionUUID->"163a14d4-f033-4a86-9438-4200f56c0c60"],
+Cell[27644, 633, 1977, 31, 51, "Output",ExpressionUUID->"06d115bd-bd73-4041-898f-d91f8b95c333"]
 }, Open  ]],
-Cell[29601, 667, 9867, 297, 975, "Input",ExpressionUUID->"5b83ab08-9f65-4704-938b-71bf27492314"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[39505, 969, 265, 6, 67, "Chapter",ExpressionUUID->"514173a0-540f-49b4-bd11-bbc284224cea"],
-Cell[CellGroupData[{
-Cell[39795, 979, 6801, 149, 717, "Input",ExpressionUUID->"2b403f35-2f39-43e7-9b73-5655cb041e62"],
-Cell[46599, 1130, 1361, 20, 33, "Output",ExpressionUUID->"5d2748a8-3e74-47dc-be6e-2947be6b3e53"],
-Cell[47963, 1152, 1559, 22, 53, "Output",ExpressionUUID->"2fe1d5c6-8671-4806-9740-c4127e0fee29"],
-Cell[49525, 1176, 1565, 22, 53, "Output",ExpressionUUID->"b77a06f6-f357-4dba-94ba-f9c353768ed4"],
-Cell[51093, 1200, 1553, 22, 53, "Output",ExpressionUUID->"156d11b7-dd94-4dce-8e0d-e680cddcfc0b"]
+Cell[29636, 667, 9867, 297, 975, "Input",ExpressionUUID->"5b83ab08-9f65-4704-938b-71bf27492314"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[52683, 1227, 6985, 148, 722, "Input",ExpressionUUID->"ec88fac3-c011-440c-8da2-6f175f43ef59"],
-Cell[59671, 1377, 1343, 21, 33, "Output",ExpressionUUID->"436d63dc-8b15-42ee-9e03-144eea192739"],
-Cell[61017, 1400, 1449, 21, 33, "Output",ExpressionUUID->"aae275a5-2ba9-45ca-9431-ab62ee23da33"],
-Cell[62469, 1423, 1455, 21, 33, "Output",ExpressionUUID->"c3a9b4ef-8eef-4df8-b0c0-b0d9f051b5b5"],
-Cell[63927, 1446, 1441, 21, 33, "Output",ExpressionUUID->"f962e992-94c7-40b8-85f0-1d0d8bd5b970"]
+Cell[39540, 969, 265, 6, 67, "Chapter",ExpressionUUID->"514173a0-540f-49b4-bd11-bbc284224cea"],
+Cell[CellGroupData[{
+Cell[39830, 979, 6793, 147, 717, "Input",ExpressionUUID->"2b403f35-2f39-43e7-9b73-5655cb041e62"],
+Cell[46626, 1128, 1361, 20, 33, "Output",ExpressionUUID->"5d2748a8-3e74-47dc-be6e-2947be6b3e53"],
+Cell[47990, 1150, 1559, 22, 53, "Output",ExpressionUUID->"2fe1d5c6-8671-4806-9740-c4127e0fee29"],
+Cell[49552, 1174, 1565, 22, 53, "Output",ExpressionUUID->"b77a06f6-f357-4dba-94ba-f9c353768ed4"],
+Cell[51120, 1198, 1553, 22, 53, "Output",ExpressionUUID->"156d11b7-dd94-4dce-8e0d-e680cddcfc0b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52710, 1225, 6962, 144, 722, "Input",ExpressionUUID->"ec88fac3-c011-440c-8da2-6f175f43ef59"],
+Cell[59675, 1371, 1343, 21, 33, "Output",ExpressionUUID->"436d63dc-8b15-42ee-9e03-144eea192739"],
+Cell[61021, 1394, 1449, 21, 33, "Output",ExpressionUUID->"aae275a5-2ba9-45ca-9431-ab62ee23da33"],
+Cell[62473, 1417, 1455, 21, 33, "Output",ExpressionUUID->"c3a9b4ef-8eef-4df8-b0c0-b0d9f051b5b5"],
+Cell[63931, 1440, 1441, 21, 33, "Output",ExpressionUUID->"f962e992-94c7-40b8-85f0-1d0d8bd5b970"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
