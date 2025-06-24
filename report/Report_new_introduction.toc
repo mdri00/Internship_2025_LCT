@@ -6,8 +6,9 @@
 \contentsline {subsection}{\numberline {2.2}Murdoch (1987) model}{5}%
 \contentsline {subsection}{\numberline {2.3}Godfray and Hassel (1989) model}{6}%
 \contentsline {section}{\numberline {3}Discussion (d'abord sous forme de bullet points}{8}%
-\contentsline {subsection}{\numberline {3.1}Differential sensitivity of models to developmental variability}{8}%
-\contentsline {subsection}{\numberline {3.2}Variability of maturation time in laboratory and in nature}{9}%
+\contentsline {subsection}{\numberline {3.1}Understanding the effect of developmental variability}{8}%
+\contentsline {subsection}{\numberline {3.2}Differential sensitivity of models to developmental variability}{9}%
+\contentsline {subsection}{\numberline {3.3}Variability of maturation time in laboratory and in nature}{10}%
 \contentsline {section}{\numberline {4}Perspectives}{10}%
 \contentsline {section}{\numberline {A}Appendix}{12}%
 \contentsline {subsection}{\numberline {A.1}Murdoch 1987 system}{12}%
