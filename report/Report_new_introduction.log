@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.2.13)  24 JUN 2025 09:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.2.13)  24 JUN 2025 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -895,13 +895,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-[1]
-Overfull \hbox (10.65347pt too wide) in paragraph at lines 121--122
-| \T1/ptm/m/n/12 How-ever, Wear-ing et al. 2004 show that mod-els' pre-dic-tion
-s based on the fixed-development
- []
-
-[2] [3]
+[1] [2] [3]
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/survey_gamma_shape/figs/n_survey_not_clipped.pdf): PDF incl
@@ -1041,30 +1035,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--281
+
+ []
+
 [8 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect
 -of-n1n3.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/God
-fray_effect-of-n2m.pdf>] [9] [10]
-Overfull \hbox (6.04381pt too wide) in paragraph at lines 310--310
+fray_effect-of-n2m.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 281--286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--286
+
+ []
+
+[9] [10] [11]
+Overfull \hbox (6.04381pt too wide) in paragraph at lines 321--321
 |[]\T1/ptm/b/n/12 System con-struc-tion : ap-pli-ca-tion of the Lin-ear Chain T
 rick with a non-autonomous
  []
 
-[11]
-Overfull \hbox (22.12675pt too wide) detected at line 359
+[12]
+Overfull \hbox (22.12675pt too wide) detected at line 370
 []
  []
 
-[12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
+[13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
-[15] [16] [17] (./Report_new_introduction.aux)
+[16] [17] [18] (./Report_new_introduction.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1091,10 +1100,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on Report_new_introduction.pdf (20 pages, 278193 bytes).
+Output written on Report_new_introduction.pdf (21 pages, 290701 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
+ 272 PDF objects out of 1000 (max. 8388607)
+ 194 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

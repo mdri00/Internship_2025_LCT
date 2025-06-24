@@ -116,9 +116,9 @@ Donc surtout les premiers paragraphes retenez plutôt l'intention que le fond du
 
 \tabto{1 cm}The easiest way to account for the transition between stages is to write that the rate of change of the stage population $x$ is proportional to the stage population.  In other words, $\frac{dx}{dt} = -mx$, m being the maturation rate of the stage and 1/m is the mean maturation time. This framework allows parametrizing the timing of transition but it does not allow to control the variability of maturation time inside the stage population. The ODE framework implicitly assumes an underlying stochastic state transmission model with an exponentially distributed dwell time in the stage [Hurtado]. Particularly, it assumes that the probability of transition is maximal at the entrance of the stage. Robertson and co-workers (2018) showed that about half of the stage-structured models found in recent literature use this Ordinary Differential Equations (ODE) framework to account for the transition between states. In line with the work of Gurney and co-workers in 1983, the remaining models by Robertson et al. (2018) majorly used fixed delays (DDE). These models assume that all the individuals of a given cohort mature synchronically, i.e. that the maturation delays are fixed. This means that the models do not account for within-species (within-stage) variability in maturation time.  Overall, despite their flexibility on the parametrization of mean maturation time, the two approaches (ODE and DDE)  rely on fundamentally different assumptions on maturation time variability. However, the latter can greatly influence the models' predictions. 
 
-\tabto{1 cm} The use of fixed delays was shown to be a destabilizing factor of community dynamics as soon as the 1930s (Bailey 1931, cited in Smith and Mead 1974). Seeking higher biological realism, developmental time variability was subsequently introduced and shown to be an important stabilizing factor of community dynamics, including pest populations (Smith and Mead 1974, Blythe et al 1984, Bellows 1986, Briggs 1993, Abrams and Quince 2005, Xu 2010, de Valpine 2014, Robertson 2018), and notably so with experimental support (Cronin et al 2016). In the case of host-parasitoid models, this variability was considered yet another form of parasitism heterogeneity (or risk aggregation), measuring how variably each host is susceptible to parasitism. Risk aggregation was shown to stabilize populations (Chesson and Murdoch 1984, Hassel 2001ab, Taylor 1993, Xu 2010). 
+\tabto{1 cm} The use of fixed delays was shown to be a destabilizing factor of community dynamics as soon as the 1930s (Bailey 1931, cited in Smith and Mead 1974). Seeking higher biological realism, developmental time variability was subsequently introduced and shown to be an important stabilizing factor of community dynamics, including pest populations (Smith and Mead 1974, Blythe et al 1984, Bellows 1986, Briggs 1993, Abrams and Quince 2005, Xu 2010, de Valpine 2014, Robertson 2018), and notably so with experimental support (Cronin et al 2016). In the case of host-parasitoid models, this variability was considered yet another form of parasitism heterogeneity (or risk aggregation), measuring how variably each host is susceptible to parasitism (Xu et al. 2010). Risk aggregation was shown to stabilize populations (Chesson and Murdoch 1984, Hassel 2001ab, Taylor 1993)
 
-\tabto{1 cm} However, Wearing et al. 2004 show that models' predictions based on the fixed-development approach are differentially sensitive to variability and in key life stages of insects. The stage to which developmental time variability is added, the studied dynamic, and the used set of parameters (and their distance to a pre-existing bifurcation) were shown to influence the effect of modified developmental variability. These results suggest that the effect of developmental variability should be studied not only on stability but also on persistence, as well as population equilibria, general properties of oscillations when they exist, etc. 
+\tabto{1 cm} However, Wearing et al. 2004 showed that their host-parasitoid model' predictions based on the fixed-development approach are differentially sensitive to variability and in key life stages of insects. The stage to which developmental time variability is added, the studied dynamic, and the used set of parameters (and their distance to a pre-existing bifurcation) were shown to influence the effect of modified developmental variability. These results suggest that the effect of developmental variability should be studied not only on stability but also on persistence, as well as population equilibria, general properties of oscillations when they exist, etc. 
 
 \tabto{1 cm} Besides, models' sensitivity to maturation variability stresses the need to estimate empirical developmental variability beforehand to properly model given host-parasitoid dynamics. A clear review of the methods used to assess developmental variability was given by de Valpine and co-workers (2014). Empirical distributions of maturation time often display a delay where no maturation occurs, a clear mode as well as a right-skewness. 
 \tabto{1 cm} 
@@ -266,30 +266,41 @@ The internship is funded by the Cacolac project, which objective is to integrati
 
 
 
-\section{Discussion}
+\section{Discussion (d'abord sous forme de bullet points}
+Soit je le structure en mode "n fait changer les modèles dont il ne faut pas l'ignorer et l'estimer" soit l'inverse : "on a ces n là, et les modèles sont +- sensibles, donc ...". Je vais plutôt choisir la première option qui a plus de sens du pdv du storytelling. Mais j'ai tjrs un gros pb avec ça : avec les travaux de Xu et de Wearing, j'ai vraiment l'impression de retrouver naivement ce qu'ils ont déjà dit. En plus, je "spoile" déjà dans l'intro en ayant déjà introduit le concept de sensibilité.
 
-SURVEY
-Figure 1a and 1b show that 
+\subsection{Differential sensitivity of models to developmental variability}
+
+Gurney 1980 model ; Larval cohort competition : model built by Gurney 1980 and further justified in Gurney 1983. Equivalent Erlang-distributed model analytically studied by Beretta et al. 2016. Les résultats sont similaires : on a une évolution "non linéaire" des prop du système avec une apparition brutale d'une zone d'instabilité quand n augmente. Mais cette évolution est dépendante d'autres paramètres (ce qu'illustre très bien Beretta et al. 2016). Idem dans Wearing : changement de type de dynamique entre GC et MGC.
+\tabto{1.5 cm} -> Let sensitivity (understand : to the increase of n) be the propensity of ODE models’ prediction to swiftly change as soon as maturation time variability is reduced (as long as n increases from 1).  Note that this definition of sensitivity is inverse to the one chosen by Wearing et al. In any case, they showed that sensitivity was variable and dependent on several factors (to which developmental time variability is added ; to which dynamic is studied ; to the used set of parameters and their distance to a pre-existing bifurcation).  
+\\
+Murdoch comme Gurney: exemple typique du modèle sensible (avec réf ODE). Remarquer notamment la sensib de l'effet de la fécondité sur la variab dev : important du pdv de la modélisation en biocontrôle.
+\\
+\\
+\textit{Godfray and co-workers collected examples of cycles in tropical insects where the cycle period is roughly equal to the development time of the host, and no climatic fluctuation could account for the oscillating dynamics (Godray and Hassel 1989). They proved that phenological asynchrony can cause single-generation cycles ("GC") in populations (Godfray and Hassel 1989, Godfray et al.1994). This happens if the ratio between host and parasitoid development times leads to a gap between host and parasitoid density peaks. This will lead to high parasitism at times when the host population is at a low point, further reinforcing the trough (Murdoch 2003).  To reproduce this behavior in a "strategic" model, they developed a DDE model that indeed predicts GCs for generation time ratios equal to 0.5, 1.5, ... J'avais écrit ça mais on s'en fout un peu ici. } \\
+\tabto{1.5 cm} -> En gros revenir sur le côté +- "artéfactuel" de ce que j'appelle 'l'effet godfray' qui reste très dép d'un délai parfaitement fixe pour tous les compartiments considérés. A la fois la fixité de H2 et P1 : si pas fixe les GC à ratioT>1 disparaissent. Mais comme les temps de dev des parasitoides sont en général plus court que ceux des hôtes, c'est moins important/fréquent dans la nature probablement. Par contre pour ratioT autour de 0.5 : plus robuste à l'ajout de variab dev, mais pas non plus infiniment robuste. Tres dép de des stades d'attentes H1 et H3 qui ajoutent du délai dans le système. SI on les supprime (j'ai testé personnellement, ça fait remonter +++ les courbes de stabilité en U), ou si on ajout un peu de variab, on perd cette zone GC. 
+\\
+\\
+\\
+-> Donc faut estimer cette variab sur le système qu'on étudie si [on veut pas prendre le risque de rater des propriétés majeures du système] (mal dit?).
+
+
+\subsection{Variability of maturation time in laboratory and in nature}
+Retour sur les résultats : figure 1a and 1b show that 
 	2.effet de constraint : bcp de n envoyés à droite si tau = 0 (avec supplementary graph qui illustre). Ainsi si pas de shift on aura jamais de n en dessous de . 
 	3.n de total dev > mais pas forcément >>>>>.
-	4.eventuellement parler de la cphérence avec Murdoch : on pourra supplementary graph un clipped histogram : même en essayant de reprod oui on a un groupe à 1-10, mais on a bcp bcp + de gens à >20!
-AUSSI UN SURVEY AVEC JUSTE LE CV et la formule qui relie n et CV comme Jules ? 
-
-DISCUSSION ? 
-Note : Gurney 1980 model ; Larval cohort competition : model built by Gurney 1980 and further justified in Gurney 1983. Equivalent Erlang-distributed model analytically studied by Beretta et al. 2016.
-
-Godfray and co-workers collected examples of cycles in tropical insects where the cycle period is roughly equal to the development time of the host, and no climatic fluctuation could account for the oscillating dynamics (Godray and Hassel 1989). They proved that phenological asynchrony can cause single-generation cycles ("GC") in populations (Godfray and Hassel 1989, Godfray et al.1994). This happens if the ratio between host and parasitoid development times leads to a gap between host and parasitoid density peaks. This will lead to high parasitism at times when the host population is at a low point, further reinforcing the trough (Murdoch 2003).  To reproduce this behavior in a "strategic" model, they developed a DDE model that indeed predicts GCs for generation time ratios equal to 0.5, 1.5, ... . 
-
-Let sensitivity (understand : to the increase of n) be the propensity of ODE models’ prediction to swiftly change as soon as maturation time variability is reduced.  Note that this definition of sensitivity is inverse to the one chosen by Wearing et al, who showed that it was variable and dependent on several factors (to which developmental time variability is added ; to which dynamic is studied ; to the used set of parameters and their distance to a pre-existing bifurcation).  
-
-
-
-donc entre n=1 et n=5 : ça change et en plus y'a jamais de n=1 empirique
-attention à la 3e figure : bien être capable de l'expliqu
-
+	4.eventuellement parler de la cphérence avec Xu : on pourra supplementary graph un clipped histogram : même en essayant de reprod oui on a un groupe à 1-10, mais on a bcp bcp + de gens à >20!
+\\
+Autres manières d'estimer la variab développementale :
+	-Trouver des articles où le CV du temps de maturation est donné et appliqué la formule donnée par la loi Gamma (ce que fait Jules)
+	-La technique de Blythe avec la décomposition tau = tau1+tau2 et le rapport tau1/tau2 : on pourrait calculer ce rapport pour nos différentes shapes de loi Gamma (et shift) ? -> En tout cas Blythe a aussi trouvé des rapports très variés (par rapport à un thresold acceptable de 5 qu'il propose via son modèle)  qui soulignent que c'est un peu du cas par cas.
+\\
+On a donc vu que beaucoup de prédictions données par le modèle "simple" H-P Murdoch changent brutalement dans la zone de n 1-10. Or, on voit dans le survey empirique, lorsqu'on n'autorise pas de pré-shift, qu'il n'existe pas de n autour de 1-6. Ca prouve donc que l'approche ODE est effectivement peu réaliste et apporte un réel biais dans les prédictions des modèles, à la fois quantitatives (equilibres, propriétés des oscillations) et qualitatives (types de dynamiques). 
+\\
+Pour autant, les dynamiques GC du modèle de Godfray suggèrent qu'on ne peut pas conclure non plus que l'approche DDE est nécessairement plus acceptable autant du pdv du réalisme que de la robustesse des prédictions des modèles à délaix fixes à l'ajout d'un tout petit peu de variab dev.
 
 \section{Perspectives}
-Survey-CV? 
+Survey-CV : une manière simple et rapide d'estimer le nombre de sous-compartiments à appliquer.... quand le LCT est nécessaire 
 Applications en modèles non autonomes pr prédire les outbreaks : travail de Jules
 Reseaux d'intéractions,?
 
