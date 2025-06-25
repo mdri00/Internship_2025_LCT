@@ -1,15 +1,19 @@
 \babel@toc {english}{}
 \contentsline {section}{\numberline {1}Introduction}{1}%
-\contentsline {subsection}{\numberline {1.1}Funding}{4}%
-\contentsline {section}{\numberline {2}Results}{4}%
+\contentsline {section}{\numberline {2}Models and methods}{4}%
 \contentsline {subsection}{\numberline {2.1}Survey of Erlang/Gamma distribution shape (n)}{4}%
 \contentsline {subsection}{\numberline {2.2}Murdoch (1987) model}{5}%
-\contentsline {subsection}{\numberline {2.3}Godfray and Hassel (1989) model}{7}%
-\contentsline {section}{\numberline {3}Discussion (d'abord sous forme de bullet points}{9}%
-\contentsline {subsection}{\numberline {3.1}Understanding the effect of developmental variability}{9}%
-\contentsline {subsection}{\numberline {3.2}Differential sensitivity of models to developmental variability}{9}%
-\contentsline {subsection}{\numberline {3.3}Variability of maturation time in laboratory and in nature}{11}%
-\contentsline {section}{\numberline {4}Perspectives}{12}%
+\contentsline {subsection}{\numberline {2.3}Godfray and Hassel (1989) model}{5}%
+\contentsline {section}{\numberline {3}Results}{6}%
+\contentsline {subsection}{\numberline {3.1}Survey of Erlang/Gamma distribution shape (n)}{6}%
+\contentsline {subsection}{\numberline {3.2}Murdoch (1987) model}{7}%
+\contentsline {subsection}{\numberline {3.3}Godfray and Hassel (1989) model}{8}%
+\contentsline {section}{\numberline {4}Discussion (d'abord sous forme de bullet points}{9}%
+\contentsline {subsection}{\numberline {4.1}Understanding the effect of developmental variability}{10}%
+\contentsline {subsection}{\numberline {4.2}Differential sensitivity of models to developmental variability}{10}%
+\contentsline {subsection}{\numberline {4.3}Variability of maturation time in laboratory and in nature}{12}%
+\contentsline {section}{\numberline {5}Perspectives}{12}%
+\contentsline {subsection}{\numberline {5.1}Funding : en attente d'un meilleur template?}{12}%
 \contentsline {section}{\numberline {A}Appendix}{14}%
 \contentsline {subsection}{\numberline {A.1}Murdoch 1987 system}{14}%
 \contentsline {subsubsection}{\numberline {A.1.1}System construction : application of the Linear Chain Trick with a non-autonomous mortality term}{14}%
