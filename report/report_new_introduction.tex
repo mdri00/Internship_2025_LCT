@@ -68,8 +68,7 @@
 \begin{titlepage}
 \centering
 \vspace*{3cm}
-{\Huge \bfseries On the use of the linear chain trick to model host-parasitoid dynamics \par}
-{\Huge Evaluating the impact of maturation time variability in stage-structured host-parasitoid models \par}
+{\Huge Evaluating the impact of maturation time variability in stage-structured host-parasitoid models (cette page de garde va changer) \par}
 \vspace{2cm}
 {\Large Mathis Drieu \par}
 \vfill
@@ -80,13 +79,20 @@ February-June 2025
 \noPageNumber
 \begin{abstract}
 xxx
+\\
+xxx
+\\
+\\
+xxx
+\\ 
+
 \end{abstract}
 
 % Table of Contents, List of Abbreviations (no page numbers)
 \noPageNumber
 \tableofcontents
-\newpage
-\noPageNumber
+
+
 % \listoffigures % If needed
 % \listoftables  % If needed
 
@@ -114,7 +120,7 @@ Donc surtout les premiers paragraphes retenez plutôt l'intention que le fond du
 
 \tabto{1 cm} [In any case : reformuler], both host and parasitoid are insect species with discontinuous development. Successive developmental stages are not identically sensitive to the various ecological interactions of the species. In the case of parasitism, it can occur on one or several specific stages of the host (Murdoch et al. 1987, ? ). Hence, stage-structured (or class-structured models) models have been increasingly used to aggregate individuals having certain characteristics, for example, into age classes or size classes, and that critically have the same set of interactions with their environment.  [tout ça manque de source mais Nisbet et Gurney 1983?]. The set of stages raises the challenge of modeling the transition between them, notably the timing of the transition.
 
-\tabto{1 cm}The easiest way to account for the transition between stages is to write that the rate of change of the stage population $x$ is proportional to the stage population.  In other words, $\frac{dx}{dt} = -mx$, m being the maturation rate of the stage and 1/m is the mean maturation time. This framework allows parametrizing the timing of transition but it does not allow to control the variability of maturation time inside the stage population. The ODE framework implicitly assumes an underlying stochastic state transmission model with an exponentially distributed dwell time in the stage [Hurtado]. Particularly, it assumes that the probability of transition is maximal at the entrance of the stage. Robertson and co-workers (2018) showed that about half of the stage-structured models found in recent literature use this Ordinary Differential Equations (ODE) framework to account for the transition between states. In line with the work of Gurney and co-workers in 1983, the remaining models by Robertson et al. (2018) majorly used fixed delays (DDE). These models assume that all the individuals of a given cohort mature synchronically, i.e. that the maturation delays are fixed. This means that the models do not account for within-species (within-stage) variability in maturation time.  Overall, despite their flexibility on the parametrization of mean maturation time, the two approaches (ODE and DDE)  rely on fundamentally different assumptions on maturation time variability. However, the latter can greatly influence the models' predictions. 
+\tabto{1 cm}The easiest way to account for the transition between stages is to write that the rate of change of the stage population $x$ is proportional to the stage population.  In other words, $\frac{dx}{dt} = -mx$, m is the maturation rate of the stage and 1/m is the mean maturation time. This framework allows parametrizing the timing of transition but it does not allow to control the variability of maturation time inside the stage population. The ODE framework implicitly assumes an underlying stochastic state transmission model with an exponentially distributed dwell time in the stage [Hurtado]. Particularly, it assumes that the probability of transition is maximal at the entrance of the stage. Robertson and co-workers (2018) showed that about half of the stage-structured models found in recent literature use this Ordinary Differential Equations (ODE) framework to account for the transition between states. In line with the work of Gurney and co-workers in 1983, the remaining models by Robertson et al. (2018) majorly used fixed delays (DDE). These models assume that all the individuals of a given cohort mature synchronically, i.e. that the maturation delays are fixed. This means that the models do not account for within-species (within-stage) variability in maturation time.  Overall, despite their flexibility on the parametrization of mean maturation time, the two approaches (ODE and DDE)  rely on fundamentally different assumptions on maturation time variability. However, the latter can greatly influence the models' predictions. 
 
 \tabto{1 cm} The use of fixed delays was shown to be a destabilizing factor of community dynamics as soon as the 1930s (Bailey 1931, cited in Smith and Mead 1974). Seeking higher biological realism, developmental time variability was subsequently introduced and shown to be an important stabilizing factor of community dynamics, including pest populations (Smith and Mead 1974, Blythe et al 1984, Bellows 1986, Briggs 1993, Abrams and Quince 2005, Xu 2010, de Valpine 2014, Robertson 2018), and notably so with experimental support (Cronin et al 2016). In the case of host-parasitoid models, this variability was considered yet another form of parasitism heterogeneity (or risk aggregation), measuring how variably each host is susceptible to parasitism (Xu et al. 2010). Risk aggregation was shown to stabilize populations (Chesson and Murdoch 1984, Hassel 2001ab, Taylor 1993)
 
@@ -122,11 +128,24 @@ Donc surtout les premiers paragraphes retenez plutôt l'intention que le fond du
 
 \tabto{1 cm} Besides, models' sensitivity to maturation variability stresses the need to estimate empirical developmental variability beforehand to properly model given host-parasitoid dynamics. A clear review of the methods used to assess developmental variability was given by de Valpine and co-workers (2014). Empirical distributions of maturation time often display a delay where no maturation occurs, a clear mode as well as a right-skewness. 
 \tabto{1 cm} 
-[Hence, It can be argued that] Realistic maturation time distributions [therefore] lie at various positions of a variability spectrum which extrema can be represented by the ODE framework on one side (high variability) and the DDE framework on the other (no variability).  The aim of this study is therefore : 1. To assess the position of various pest and parasitoid species on the maturation variability spectrum ; 2. To elucidate how the position on this spectrum influences the predictions made by host-parasitoid models. 
+[Hence, It can be argued that] [On pourrait dire que... Avec cette idée de spectre, j'essaie ici de retrouver cette idée d'axe de variabilité développementale à explorer facilement avec le n du LCT. J'essaie donc d'introduire les bords de l'axe que je vais explorer avec la LCT. Mais je garde bien à l'esprit que c'est une manière parmi d'autres d'explorer cette variabilité qui ne se limite pas à cet axe : la loi Erlang est arbitraire, on ne la maximise jamais, n=1 est un cas particulier très arbitraire aussi]. Realistic maturation time distributions [therefore] lie at various positions of a variability spectrum which extrema can be represented by the ODE framework on one side (high variability) and the DDE framework on the other (no variability).  The aim of this study is therefore : 1. To assess the position of various pest and parasitoid species on this maturation variability spectrum ; 2. To elucidate how the position on this spectrum influences the predictions made by host-parasitoid models. 
 
-\tabto{1 cm} To explore this spectrum, arbitrary maturation time distributions can be used in integrodifferential equations (IDEs). These systems quickly lead away from analytical methods towards computational ones (de Valpine 2014). Hence, modelers have relied on a few main distributions. Gamma (or Erlang, a special case where the shape parameter is a positive integer) and Normal distributions have been widely used in distributed development models of insect populations (SOURCE? deValpine, Robertson?, Wearing?). They allow for a sufficiently realistic hypothesis about stage transitions with relatively few parameters associated. It is however possible to account for more realistic stage transitions while also constructing models that allow for relatively simple algebraic analysis. Erlang distributions can implicitly be obtained by dividing each stage into n sub-stages governed by a system of n coupled ODEs (MacDonald 1978, Hurtado 2018). This is called the Linear Chain Trick (LCT) and has been increasingly used in ecological (Smith and Mead 1974, McNair 1995, Wearing 2004, Abrams and Quince 2005, Bjornstad et al. 2016, Nelson et al. 2019) and epidemiological studies (Wearing 2005, Hurtado 2019).
- [Hurtado and Kirosingh (2019) suggested a method to bypass the IDE framework and allow modelers to assume maturation (or "passage") time distributions from a family called the phase-type distributions. These distributions can be thought of as the family of all possible hitting time distributions for continuous-time Markov chains. In the case of a "linear chain" of ODEs, the Erlang distribution is involved. As suggested by the example SEIR model with heterogeneity among infected individuals shown by Hurtado and Cameron (2021), this new framework allows highly flexible ODE models assuming more realistic maturation time distribution and can be computationally more efficient. Even outside this framework, the LCT can be judicious. Nelson et al. (2019) used the LCT to implement hierarchical asymmetric larval competition : they assumed the per-capita mortality rate to depend only on the density of animals that are larger or equal to the size of each individual. The competition mortality terms uniquely depend on the downstream LCT subcompartments.]
-\tabto{1 cm} Murdoch et al. (1987) and Godfray and Hassel (1989) constitute two of the first relatively simple models that succeeded in predicting (qualitative) dynamics observed in natural host-parasitoid systems. Their simplicity allowted to greatly contribute to the understanding of the complex dynamics emerging from interactions between hosts and parasitoids [général, gratuit, pas sourcé :( ]. Without detailed justification, these models were built with fixed delays. Thus, the first part of this study aims to evaluate the realism of this hypothesis. We will review the number of subcompartment $n$, i.e. the Gamma law shape, that corresponds to maturation time variability in studies that experimentally measure insects' development times. In the second part, we will apply the LCT to these models, yielding distributed-delay equivalents of them. We will use the number of subcompartments, n, to easily explore the maturation time variability spectrum, thereby assessing the robustness of the models' prediction to manipulation of this new parameter.
+\tabto{1 cm} To explore this spectrum, arbitrary maturation time distributions can be used in integrodifferential equations (IDEs). These systems quickly lead away from analytical methods towards computational ones (de Valpine 2014). Hence, modelers have relied on a few main distributions. Gamma (or Erlang, a special case where the shape parameter is a positive integer) and Normal distributions have been widely used in distributed development models of insect populations (SOURCE? deValpine, Robertson?, Wearing?) [Enoncer l'existence des degré jours et des approches de ce style?]. They allow for a sufficiently realistic hypothesis about stage transitions with relatively few parameters associated. It is however possible to account for more realistic stage transitions while also constructing models that allow for relatively simple algebraic analysis. Erlang distributions can implicitly be obtained by dividing each stage into n sub-stages governed by a system of n coupled ODEs (MacDonald 1978, Hurtado 2018). This is called the Linear Chain Trick (LCT) and has been increasingly used in ecological (Smith and Mead 1974, McNair 1995, Wearing 2004, Abrams and Quince 2005, Bjornstad et al. 2016, Nelson et al. 2019) and epidemiological studies (Wearing 2005, Hurtado 2019).
+ [More generally, Hurtado and Kirosingh (2019) suggested a method to bypass the IDE framework and allow modelers to assume maturation (or "passage") time distributions from a family called the phase-type distributions. These distributions can be thought of as the family of all possible hitting time distributions for continuous-time Markov chains. In the case of a "linear chain" of ODEs, the Erlang distribution is involved. As suggested by the example SEIR model with heterogeneity among infected individuals shown by Hurtado and Cameron (2021), this new framework allows highly flexible ODE models assuming more realistic maturation time distribution and can be computationally more efficient. Even outside this framework, the LCT can be judicious. Nelson et al. (2019) used the LCT to implement hierarchical asymmetric larval competition : they assumed the per-capita mortality rate to depend only on the density of animals that are larger or equal to the size of each individual. The competition mortality terms uniquely depend on the downstream LCT subcompartments.]
+\\ 
+D'ailleurs ces deux paragraphes précédents pourraientt être complétés par une figure qui montre justement l'axe=le spectre de variab dev, une version plus propre de la figure ci-dessous
+\setcounter{figure}{-1}
+\begin{figure}[!ht]
+\centering	
+\includegraphics[width=0.8\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/pbmtq_figure.png}
+\caption{Exploring the effect of developmental (time) variability on host-parasitoid models using the linear chain trick.}
+\label{fig:intro}
+\end{figure}
+
+
+
+
+\tabto{1 cm} Murdoch et al. (1987) and Godfray and Hassel (1989) constitute two of the first relatively simple models that succeeded in predicting (qualitative) dynamics observed in natural host-parasitoid systems. Their simplicity allowted to greatly contribute to the understanding of the complex dynamics emerging from interactions between hosts and parasitoids [général, gratuit, pas sourcé :( ]. These models were built with fixed maturation delays with the justification, introduced by Blythe et al. (1984), that "the witdh of the distribution [...] is short in comparison with the mean developmental time" [je laisse ça? on s'en fout? comment je tourne ça ? Parce que en gros ils le justifient en mode c bon blythe a dit ça passe mais donc peut-être que pr les espèces qui les intéressent (notamment la red scale pour Murdoch) c'est ok mais c'est pas généralisable. Ou peut-être même qu'ils ont jamais eu vraiment de scrupule et que c'est un peu un argument d'autorité]. Thus, the first part of this study aims to evaluate the realism of this hypothesis. We will review the number of subcompartment $n$, i.e. the Gamma law shape, that corresponds to maturation time variability in studies that experimentally measure insects' development times. In the second part, we will apply the LCT to these models, yielding distributed-delay equivalents of them. We will use the number of subcompartments, n, to easily explore the maturation time variability spectrum, thereby assessing the robustness of the models' prediction to manipulation of this new parameter.
 
 
 \subsection{Funding}
@@ -176,7 +195,7 @@ The internship is funded by the Cacolac project, which objective is to integrati
 \tabto{1 cm} We consider the continuous-time host-parasitoid model detailed in Murdoch et al. 1987 in a DDE approach. The host and parasitoid life cycles are divided into 2 stages : juvenile ($H_1, P_1$) and reproductive adult ($H_2, P_2$). Parasitism occurs on the juvenile host stage $H_1$ under a random search hypothesis.  It was shown that the invulnerability of the host adult reproductive stage stabilizes the system, in what has been called a refuge effect. The longevity of the adult host is thus the main stability factor of the system.  The application of the LCT to obtain a distributed-delay model equivalent of the fixed-delay model introduced by Murdoch is detailed in Appendix A1, as well as the non-trivial equilibrium densities. From now on, except in Figure 2c, the temporal scale is normalized by the maturation time of the host : $m_H = 1/T_{H1} = 1$.
 \tabto{1 cm} Local stability was numerically estimated using the function Eigenvalues of Wolfram Mathematica (Version 14.1) applied to the Jacobian matrix of the LCT system. Numerical simulation was realized using the Mathematica function NDSolve with an automatic (and dynamically changing) solver method. In the light of the frequent stiffness issues of the simulations, NDSolve was found to offer the most fast and reliable solver compared to other tested methods in Python. For further details, relevant Mathematica and Python scripts can be found on [GITHUB?].
 
-\tabto{1 cm} Maturation variability causes the non-trivial equilibrium densities to increase, except for the case of $H_1$ (Figure 2a). The increase is particularly sharpe when n is near 1. For instance, between (n,m) = 1 and (n,m) = 5, $H_2^*$ is divided by 5 for this set of parameters. Between (n,m) = 10 and (n,m) = 100, the ratio reduces down to 1.13 . In the ODE framework (n = m = 1), the system is almost always stable, except for a short range of low $T_{H2}/T_{H1}$ values. The unstable area increases as (n,m) increase and does not change much after (n,m) attain values around 20 or 30 (Figure 2b). The bifurcation diagram (Figure 2c) specify the oscillation properties of the system. In addition to increasing the area of unstability, the increase of (n,m) causes the increase of the amplitude and the period of oscillations. This extent of this effect is dependent of the chosen parameters [SUPPL. FIGURE ??]. Finally, Figure 2d suggests that host fecundity is stabilizing for $ n \leq 2 $ and else destabilizing. Altough the parasitoid' maturation variability is stabilizing (SUPPL FIG?), it does not reverse the effect of fecundity on stability (SUPPL. FIGURE avec les courbes pour m=10?). Together, these results indicate that maturation variability is indeed a stabilizing factor and can modulate the effect of other demographic parameters (here fecundity) on stability. 
+\tabto{1 cm} Maturation variability causes the non-trivial equilibrium densities to increase, except for the case of $H_1$ (Figure 2a). The increase is particularly sharpe when n is near 1. For instance, between (n,m) = 1 and (n,m) = 5, $H_2^*$ is divided by 5 for this set of parameters. Between (n,m) = 10 and (n,m) = 100, the ratio reduces down to 1.13 . [\textit{D'ailleurs cette explosion des eq à n très bas est encore plus brutale pour Godfray 1989 avec les paramètres de Xu : soit c un effet des paramètres, soit c un effet de la modification du modèle. Si c le modèle qui fait ça, soit c le nombre de stade, soit c le terme de parasitisme. Si c le nombre de stade (ce que je soupçonne car en gros quand on calcule les équilibres NT, on trouve un equilibre pour le stade d'hôte parasité et la hauteur de l'eq dépend du parasitisme. Ensuite on trouve tous les autres stades de H. Notamment, on 'remonte' les stades en amont et on trouve finalement une population de H1 d'autant plus grande qu'il y a de mortalité de H1 à Hparasité typiquement. Donc par exemple si H9 est parasité il me semble que H1* sera très grand? à vous de me dire si je dis des bêtises, et si c'est pertinent de le remarquer en discussion}]. In the ODE framework (n = m = 1), the system is almost always stable, except for a short range of low $T_{H2}/T_{H1}$ values. The unstable area increases as (n,m) increase and does not change much after (n,m) attain values around 20 or 30 (Figure 2b). The bifurcation diagram (Figure 2c) specify the oscillation properties of the system. In addition to increasing the area of unstability, the increase of (n,m) causes the increase of the amplitude and the period of oscillations. This extent of this effect is dependent of the chosen parameters [SUPPL. FIGURE ??]. Finally, Figure 2d suggests that host fecundity is stabilizing for $ n \leq 2 $ and else destabilizing. Altough the parasitoid' maturation variability is stabilizing (SUPPL FIG?), it does not reverse the effect of fecundity on stability (SUPPL. FIGURE avec les courbes pour m=10?). Together, these results indicate that maturation variability is indeed a stabilizing factor and can modulate the effect of other demographic parameters (here fecundity) on stability. 
 
 
 \begin{figure}[!ht]
@@ -272,43 +291,43 @@ Soit je le structure en mode "n fait changer les modèles dont il ne faut pas l'
 \textbf{Mais donc si je prends cet ordre je devrais surement le prendre aussi pour les résultats?}
 
 \subsection{Understanding the effect of developmental variability}
-Effet de n sur $p_{survie}$ (cf oral de Juin)
+1.Effet de n sur $p_{survie}$ (cf oral de Juin)
 \\
-Ressemblance frappante entre l'effet de l'agrégation spatiale du parasitisme (ajout de pseudointerférénce via k dans un modèle à délai fixe) et l'effet de l'agrégation temporelle du parasitisme (ajout de variab dev. via n dans un modèle sans pseudointerférence)
+2.Ressemblance frappante entre l'effet de l'agrégation spatiale du parasitisme (ajout de pseudointerférénce via k dans un modèle à délai fixe) et l'effet de l'agrégation temporelle du parasitisme (ajout de variab dev. via n dans un modèle sans pseudointerférence)
+
+
 
 \begin{figure}[!ht]
-\centering
-	
+\centering	
 \includegraphics[width=0.8\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Equivalence_k_n.pdf}
-
 \caption{Effect of model parasitism heterogeneity on the stability of the Murdoch 1987. n is the number of subcompartiments, or the shape fo the Gamma distribution of maturation time. In case of $n \rightarrow \infty$, maturation time is fixed and parasitism risk is homogeneous over all hosts. k is the term of overdispersion of parasitism which is dispersed . In case of $k \rightarrow \infty$, parasitism is perfectly homogenenous over all hosts.}
 \label{fig:equivalence_k_n}
 \end{figure}
 
 \subsection{Differential sensitivity of models to developmental variability}
 Gurney 1980 model ; Larval cohort competition : model built by Gurney 1980 and further justified in Gurney 1983. Equivalent Erlang-distributed model analytically studied by Beretta et al. 2016. Les résultats sont similaires : on a une évolution "non linéaire" des prop du système avec une apparition brutale d'une zone d'instabilité quand n augmente. Mais cette évolution est dépendante d'autres paramètres (ce qu'illustre très bien Beretta et al. 2016). Idem dans Wearing : changement de type de dynamique entre GC et MGC.
-\tabto{1.5 cm} -> Let sensitivity (understand : to the increase of n) be the propensity of ODE models’ prediction to swiftly change as soon as maturation time variability is reduced (as long as n increases from 1).  Note that this definition of sensitivity is inverse to the one chosen by Wearing et al. In any case, they showed that sensitivity was variable and dependent on several factors (to which developmental time variability is added ; to which dynamic is studied ; to the used set of parameters and their distance to a pre-existing bifurcation).  
+\tabto{1.5 cm} -> Let sensitivity (understand : to the increase of n) be the propensity of ODE models’ prediction to swiftly change as soon as maturation time variability is reduced (as long as n increases from 1).  Note that this definition of sensitivity is inverse to the one chosen by Wearing et al. In any case, they showed that sensitivity was variable and dependent on several factors (to which developmental time variability is added ; to which dynamic is studied ; to the used set of parameters and their distance to a pre-existing bifurcation).  [... et nous ce qu'on montre c'est exactement la même chose : évolution "non linéaire" du système avec n, mais ça dépend de plein de choses... donc c'est du cas par cas et faut faire gaffe : on a rien réinventé finalement on confirme juste Wearing pour moi? C'est un peu ça qui me donne des difficultés pour structurer ce rapport]
 \\
 Murdoch comme Gurney: exemple typique du modèle sensible (avec réf ODE). Remarquer notamment la sensib de l'effet de la fécondité sur la variab dev : important du pdv de la modélisation en biocontrôle.
 \\
 \\
-\textit{Godfray and co-workers collected examples of cycles in tropical insects where the cycle period is roughly equal to the development time of the host, and no climatic fluctuation could account for the oscillating dynamics (Godray and Hassel 1989). They proved that phenological asynchrony can cause single-generation cycles ("GC") in populations (Godfray and Hassel 1989, Godfray et al.1994). This happens if the ratio between host and parasitoid development times leads to a gap between host and parasitoid density peaks. This will lead to high parasitism at times when the host population is at a low point, further reinforcing the trough (Murdoch 2003).  To reproduce this behavior in a "strategic" model, they developed a DDE model that indeed predicts GCs for generation time ratios equal to 0.5, 1.5, ... J'avais écrit ça mais on s'en fout un peu ici. } \\
-\tabto{1.5 cm} -> En gros revenir sur le côté +- "artéfactuel" de ce que j'appelle 'l'effet godfray' qui reste très dép d'un délai parfaitement fixe pour tous les compartiments considérés. A la fois la fixité de H2 et P1 : si pas fixe les GC à ratioT>1 disparaissent. Mais comme les temps de dev des parasitoides sont en général plus court que ceux des hôtes, c'est moins important/fréquent dans la nature probablement. Par contre pour ratioT autour de 0.5 : plus robuste à l'ajout de variab dev, mais pas non plus infiniment robuste. Tres dép de des stades d'attentes H1 et H3 qui ajoutent du délai dans le système. SI on les supprime (j'ai testé personnellement, ça fait remonter +++ les courbes de stabilité en U), ou si on ajout un peu de variab, on perd cette zone GC. 
+\textit{Godfray and co-workers collected examples of cycles in tropical insects where the cycle period is roughly equal to the development time of the host, and no climatic fluctuation could account for the oscillating dynamics (Godray and Hassel 1989). They proved that phenological asynchrony can cause single-generation cycles ("GC") in populations (Godfray and Hassel 1989, Godfray et al.1994). This happens if the ratio between host and parasitoid development times leads to a gap between host and parasitoid density peaks. This will lead to high parasitism at times when the host population is at a low point, further reinforcing the trough (Murdoch 2003).  To reproduce this behavior in a "strategic" model, they developed a DDE model that indeed predicts GCs for generation time ratios equal to 0.5, 1.5, ... J'avais écrit ça mais on s'en fout un peu ici non? Enfin c'est déjà un peu introduit dans les résultats, pas besoin de s'attarder sur cette théorie-là? } \\
+\tabto{1.5 cm} -> Par contre il faut pour moi dire un truc de ce style : revenir sur le côté +- "artéfactuel" de ce que j'appelle 'l'effet godfray' qui reste très dép d'un délai parfaitement fixe pour tous les compartiments considérés. A la fois la fixité de H2 et P1 : si pas fixe les GC à ratioT>1 disparaissent. Mais comme les temps de dev des parasitoides sont en général plus court que ceux des hôtes, c'est moins important/fréquent dans la nature probablement. Par contre pour ratioT autour de 0.5 : plus robuste à l'ajout de variab dev, mais pas non plus infiniment robuste. Tres dép de des stades d'attentes H1 et H3 qui ajoutent du délai dans le système. SI on les supprime (j'ai testé personnellement, ça fait remonter +++ les courbes de stabilité en U), ou si on ajout un peu de variab, on perd cette zone GC. 
 \\
 \\
 \\
--> Donc faut estimer cette variab sur le système qu'on étudie si [on veut pas prendre le risque de rater des propriétés majeures du système] (mal dit?).
+-> (transi vers la suite) Donc faut estimer cette variab sur le système qu'on étudie si [on veut pas prendre le risque de rater des propriétés majeures du système] (mal dit?).
 
 
 \subsection{Variability of maturation time in laboratory and in nature}
-Retour sur les résultats : figure 1a and 1b show that 
+Retour sur les résultats : figure 1a and 1b show that [à quel point répeter tout? est-ce nécessaire de refaire un summary?]
 	2.effet de constraint : bcp de n envoyés à droite si tau = 0 (avec supplementary graph qui illustre). Ainsi si pas de shift on aura jamais de n en dessous de . 
 	3.n de total dev > mais pas forcément >>>>>.
 	4.eventuellement parler de la cphérence avec Xu : on pourra supplementary graph un clipped histogram : même en essayant de reprod oui on a un groupe à 1-10, mais on a bcp bcp + de gens à >20!
 \\
 Autres manières d'estimer la variab développementale :
 	-Trouver des articles où le CV du temps de maturation est donné et appliqué la formule donnée par la loi Gamma (ce que fait Jules)
-	-La technique de Blythe avec la décomposition tau = tau1+tau2 et le rapport tau1/tau2 : on pourrait calculer ce rapport pour nos différentes shapes de loi Gamma (et shift) ? -> En tout cas Blythe a aussi trouvé des rapports très variés (par rapport à un thresold acceptable de 5 qu'il propose via son modèle)  qui soulignent que c'est un peu du cas par cas.
+	-La technique de Blythe avec la décomposition tau = tau1+tau2 et le rapport tau1/tau2 : on pourrait calculer ce rapport pour nos différentes shapes de loi Gamma (et shift) ? -> En tout cas Blythe a aussi trouvé des rapports très variés (par rapport à un thresold acceptable de 5 qu'il propose via son modèle)  qui soulignent que c'est un peu du cas par cas. On est d'accord avec lui là-dessus.
 \\
 On a donc vu que beaucoup de prédictions données par le modèle "simple" H-P Murdoch changent brutalement dans la zone de n 1-10. Or, on voit dans le survey empirique, lorsqu'on n'autorise pas de pré-shift, qu'il n'existe pas de n autour de 1-6. Ca prouve donc que l'approche ODE est effectivement peu réaliste et apporte un réel biais dans les prédictions des modèles, à la fois quantitatives (equilibres, propriétés des oscillations) et qualitatives (types de dynamiques). 
 \\
@@ -317,7 +336,7 @@ Pour autant, les dynamiques GC du modèle de Godfray suggèrent qu'on ne peut pa
 \section{Perspectives}
 Survey-CV : une manière simple et rapide d'estimer le nombre de sous-compartiments à appliquer.... quand le LCT est nécessaire 
 Applications en modèles non autonomes pr prédire les outbreaks : travail de Jules
-Reseaux d'intéractions,?
+Reseaux d'intéractions?
 
 % References (excluded from page count)
 \newpage
@@ -551,7 +570,19 @@ With :
   \Pi^* &:= k*ln(1+\frac{aP_2^*}{k}) = \frac{\theta_{H2}}{f_{H2}} ((\frac{r}{\delta_{H4}}(f_{H1})^{n1}(f_{H3})^{n3})^{\frac{1}{n2}}f_{H2} -1)\nonumber 
  \end{align}
 
-[+ un Suppl où y'a pas d'effet sur bifurc]
+
+\subsection{Supplementary figures}
+\renewcommand{\figurename}{SFig}
+\setcounter{figure}{0}
+
+
+\begin{figure}[!ht]
+\centering	
+\includegraphics[width=0.8\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf}
+\caption{Bifurcation diagram of the system with parameters inspired from those in Murdoch 1987 : $\delta_{H1} = 0, \delta_{P1} = 1, \delta_{P2} = 8, \rho = 33, m_P = 2,  T_{H2} = 1/\delta_{H2} = 2, T_{H1} = 1/m_H = 1$.}
+\label{fig:bifurc_suppl}
+\end{figure}
+
 
 
 \end{document}
