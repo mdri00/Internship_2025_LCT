@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.2.13)  24 JUN 2025 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.2.13)  25 JUN 2025 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Report_new_introduction.tex
-(./Report_new_introduction.tex
+**report_new_introduction.tex
+(./report_new_introduction.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -749,7 +749,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count344
 \l__pdf_internal_box=\box61
 )
-(./Report_new_introduction.aux
+(./report_new_introduction.aux
 
 LaTeX Warning: Label `fig:a' multiply defined.
 
@@ -781,7 +781,7 @@ LaTeX Warning: Label `fig:b' multiply defined.
 LaTeX Warning: Label `sub@fig:b' multiply defined.
 
 )
-\openout1 = `Report_new_introduction.aux'.
+\openout1 = `report_new_introduction.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
@@ -871,7 +871,7 @@ Package layouts Warning: Layout scale set to 0.5 on input line 63.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./Report_new_introduction.toc
+(./report_new_introduction.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -883,7 +883,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
-\openout4 = `Report_new_introduction.toc'.
+\openout4 = `report_new_introduction.toc'.
 
  [1] [2]
 Underfull \hbox (badness 10000) in paragraph at lines 109--110
@@ -1035,54 +1035,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
+
+
+pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
+Internship_2025_LCT/model_host_parasitoid/figs/Equivalence_k_n.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+</home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
+id/figs/Equivalence_k_n.pdf, id=172, 462.52798pt x 346.89601pt>
+File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
+asitoid/figs/Equivalence_k_n.pdf Graphic file (type pdf)
+<use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
+sitoid/figs/Equivalence_k_n.pdf>
+Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
+_LCT/model_host_parasitoid/figs/Equivalence_k_n.pdf  used on input line 282.
+(pdftex.def)             Requested size: 364.19667pt x 273.16087pt.
 [8 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect
 -of-n1n3.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/God
 fray_effect-of-n2m.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 281--287
+Underfull \hbox (badness 10000) in paragraph at lines 290--296
+
+ []
+
+[9 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_paras
+itoid/figs/Equivalence_k_n.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 296--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--292
+Underfull \hbox (badness 10000) in paragraph at lines 296--301
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 287--292
-
- []
-
-[9] [10] [11]
-Overfull \hbox (6.04381pt too wide) in paragraph at lines 327--327
+[10] [11] [12]
+Overfull \hbox (6.04381pt too wide) in paragraph at lines 336--336
 |[]\T1/ptm/b/n/12 System con-struc-tion : ap-pli-ca-tion of the Lin-ear Chain T
 rick with a non-autonomous
  []
 
-[12]
-Overfull \hbox (22.12675pt too wide) detected at line 376
+[13]
+Overfull \hbox (22.12675pt too wide) detected at line 385
 []
  []
 
-[13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
+[14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
-[16] [17] [18] (./Report_new_introduction.aux)
+[17] [18] [19] (./report_new_introduction.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26248 strings out of 483183
- 643033 string characters out of 5966292
+ 26256 strings out of 483183
+ 643727 string characters out of 5966292
  1005782 words of memory out of 5000000
- 40812 multiletter control sequences out of 15000+600000
+ 40818 multiletter control sequences out of 15000+600000
  568272 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  73i,18n,127p,1737b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1094,16 +1109,17 @@ f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
 public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/times/utmri8a.pfb>
-Output written on Report_new_introduction.pdf (21 pages, 291451 bytes).
+r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on report_new_introduction.pdf (22 pages, 317391 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
+ 301 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

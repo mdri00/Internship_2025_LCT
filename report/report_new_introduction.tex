@@ -268,13 +268,22 @@ The internship is funded by the Cacolac project, which objective is to integrati
 
 \section{Discussion (d'abord sous forme de bullet points}
 Soit je le structure en mode "n fait changer les modèles dont il ne faut pas l'ignorer et l'estimer" soit l'inverse : "on a ces n là, et les modèles sont +- sensibles, donc ...". Je vais plutôt choisir la première option qui a plus de sens du pdv du storytelling. Mais j'ai tjrs un gros pb avec ça : avec les travaux de Xu et de Wearing, j'ai vraiment l'impression de retrouver naivement ce qu'ils ont déjà dit. En plus, je "spoile" déjà dans l'intro en ayant déjà introduit le concept de sensibilité.
+\\
+\textbf{Mais donc si je prends cet ordre je devrais surement le prendre aussi pour les résultats?}
 
 \subsection{Understanding the effect of developmental variability}
 Effet de n sur $p_{survie}$ (cf oral de Juin)
 \\
 Ressemblance frappante entre l'effet de l'agrégation spatiale du parasitisme (ajout de pseudointerférénce via k dans un modèle à délai fixe) et l'effet de l'agrégation temporelle du parasitisme (ajout de variab dev. via n dans un modèle sans pseudointerférence)
 
-Figure
+\begin{figure}[!ht]
+\centering
+	
+\includegraphics[width=0.8\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Equivalence_k_n.pdf}
+
+\caption{Effect of model parasitism heterogeneity on the stability of the Murdoch 1987. n is the number of subcompartiments, or the shape fo the Gamma distribution of maturation time. In case of $n \rightarrow \infty$, maturation time is fixed and parasitism risk is homogeneous over all hosts. k is the term of overdispersion of parasitism which is dispersed . In case of $k \rightarrow \infty$, parasitism is perfectly homogenenous over all hosts.}
+\label{fig:equivalence_k_n}
+\end{figure}
 
 \subsection{Differential sensitivity of models to developmental variability}
 Gurney 1980 model ; Larval cohort competition : model built by Gurney 1980 and further justified in Gurney 1983. Equivalent Erlang-distributed model analytically studied by Beretta et al. 2016. Les résultats sont similaires : on a une évolution "non linéaire" des prop du système avec une apparition brutale d'une zone d'instabilité quand n augmente. Mais cette évolution est dépendante d'autres paramètres (ce qu'illustre très bien Beretta et al. 2016). Idem dans Wearing : changement de type de dynamique entre GC et MGC.

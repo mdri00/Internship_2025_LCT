@@ -9,11 +9,11 @@
 \contentsline {subsection}{\numberline {3.1}Understanding the effect of developmental variability}{8}%
 \contentsline {subsection}{\numberline {3.2}Differential sensitivity of models to developmental variability}{9}%
 \contentsline {subsection}{\numberline {3.3}Variability of maturation time in laboratory and in nature}{10}%
-\contentsline {section}{\numberline {4}Perspectives}{10}%
-\contentsline {section}{\numberline {A}Appendix}{12}%
-\contentsline {subsection}{\numberline {A.1}Murdoch 1987 system}{12}%
-\contentsline {subsubsection}{\numberline {A.1.1}System construction : application of the Linear Chain Trick with a non-autonomous mortality term}{12}%
-\contentsline {subsubsection}{\numberline {A.1.2}Equilibria}{15}%
-\contentsline {subsubsection}{\numberline {A.1.3}Parametrisation}{15}%
-\contentsline {subsubsection}{\numberline {A.1.4}Convergence to ODE and DDE models}{16}%
-\contentsline {subsection}{\numberline {A.2}Godfray 1989 system}{17}%
+\contentsline {section}{\numberline {4}Perspectives}{11}%
+\contentsline {section}{\numberline {A}Appendix}{13}%
+\contentsline {subsection}{\numberline {A.1}Murdoch 1987 system}{13}%
+\contentsline {subsubsection}{\numberline {A.1.1}System construction : application of the Linear Chain Trick with a non-autonomous mortality term}{13}%
+\contentsline {subsubsection}{\numberline {A.1.2}Equilibria}{16}%
+\contentsline {subsubsection}{\numberline {A.1.3}Parametrisation}{16}%
+\contentsline {subsubsection}{\numberline {A.1.4}Convergence to ODE and DDE models}{17}%
+\contentsline {subsection}{\numberline {A.2}Godfray 1989 system}{18}%
