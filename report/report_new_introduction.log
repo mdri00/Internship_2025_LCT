@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.2.13)  25 JUN 2025 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.2.13)  27 JUN 2025 16:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -63,12 +63,24 @@ Package babel Info: \l@newzealand = using hyphenrules for english
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box45
+\UL@hyphenbox=\box46
+\UL@skip=\skip49
+\UL@hook=\toks16
+\UL@height=\dimen136
+\UL@pe=\count177
+\UL@pixel=\dimen137
+\ULC@box=\box47
+Package: ulem 2019/11/18
+\ULdepth=\dimen138
+)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -76,23 +88,23 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2019/11/07 v1.0c TeX engine tests
 ))
-\Gm@cnth=\count177
-\Gm@cntv=\count178
-\c@Gm@tempcnt=\count179
-\Gm@bindingoffset=\dimen136
-\Gm@wd@mp=\dimen137
-\Gm@odd@mp=\dimen138
-\Gm@even@mp=\dimen139
-\Gm@layoutwidth=\dimen140
-\Gm@layoutheight=\dimen141
-\Gm@layouthoffset=\dimen142
-\Gm@layoutvoffset=\dimen143
-\Gm@dimlist=\toks17
+\Gm@cnth=\count178
+\Gm@cntv=\count179
+\c@Gm@tempcnt=\count180
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks18
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tabto-ltx/tabto.sty
 Package: tabto 2018/12/28  v 1.4  Another tabbing mechanism
-\CurrentLineWidth=\dimen144
-\TabPrevPos=\dimen145
+\CurrentLineWidth=\dimen147
+\TabPrevPos=\dimen148
 )
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -100,27 +112,27 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip49
-\f@nch@O@elh=\skip50
-\f@nch@O@erh=\skip51
-\f@nch@O@olh=\skip52
-\f@nch@O@orh=\skip53
-\f@nch@O@elf=\skip54
-\f@nch@O@erf=\skip55
-\f@nch@O@olf=\skip56
-\f@nch@O@orf=\skip57
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box45
-\beforetitleunit=\skip58
-\aftertitleunit=\skip59
-\ttl@plus=\dimen146
-\ttl@minus=\dimen147
-\ttl@toksa=\toks18
-\titlewidth=\dimen148
-\titlewidthlast=\dimen149
-\titlewidthfirst=\dimen150
+\ttl@box=\box48
+\beforetitleunit=\skip59
+\aftertitleunit=\skip60
+\ttl@plus=\dimen149
+\ttl@minus=\dimen150
+\ttl@toksa=\toks19
+\titlewidth=\dimen151
+\titlewidthlast=\dimen152
+\titlewidthfirst=\dimen153
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -139,8 +151,8 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen151
-\Gin@req@width=\dimen152
+\Gin@req@height=\dimen154
+\Gin@req@width=\dimen155
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/01/03 v3.4h Customizing captions (AR)
@@ -148,22 +160,22 @@ Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen153
-\captionmargin@=\dimen154
-\captionwidth=\dimen155
-\caption@tempdima=\dimen156
-\caption@indent=\dimen157
-\caption@parindent=\dimen158
-\caption@hangindent=\dimen159
+\captionmargin=\dimen156
+\captionmargin@=\dimen157
+\captionwidth=\dimen158
+\caption@tempdima=\dimen159
+\caption@indent=\dimen160
+\caption@parindent=\dimen161
+\caption@hangindent=\dimen162
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count180
-\c@continuedfloat=\count181
+\c@caption@flags=\count181
+\c@continuedfloat=\count182
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-\c@subfigure=\count182
-\c@subtable=\count183
+\c@subfigure=\count183
+\c@subtable=\count184
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
@@ -173,13 +185,13 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks19
-\pgfutil@tempdima=\dimen160
-\pgfutil@tempdimb=\dimen161
+\pgfutil@everybye=\toks20
+\pgfutil@tempdima=\dimen163
+\pgfutil@tempdimb=\dimen164
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box46
+\pgfutil@abb=\box49
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -195,33 +207,33 @@ Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks20
-\pgfkeys@temptoks=\toks21
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks22
+\pgfkeys@tmptoks=\toks23
 ))
-\pgf@x=\dimen162
-\pgf@y=\dimen163
-\pgf@xa=\dimen164
-\pgf@ya=\dimen165
-\pgf@xb=\dimen166
-\pgf@yb=\dimen167
-\pgf@xc=\dimen168
-\pgf@yc=\dimen169
-\pgf@xd=\dimen170
-\pgf@yd=\dimen171
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\pgf@xd=\dimen173
+\pgf@yd=\dimen174
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count184
-\c@pgf@countb=\count185
-\c@pgf@countc=\count186
-\c@pgf@countd=\count187
-\t@pgf@toka=\toks23
-\t@pgf@tokb=\toks24
-\t@pgf@tokc=\toks25
-\pgf@sys@id@count=\count188
+\c@pgf@counta=\count185
+\c@pgf@countb=\count186
+\c@pgf@countc=\count187
+\c@pgf@countd=\count188
+\t@pgf@toka=\toks24
+\t@pgf@tokb=\toks25
+\t@pgf@tokc=\toks26
+\pgf@sys@id@count=\count189
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -237,8 +249,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count189
-\pgfsyssoftpath@bigbuffer@items=\count190
+\pgfsyssoftpath@smallbuffer@items=\count190
+\pgfsyssoftpath@bigbuffer@items=\count191
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -267,12 +279,12 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen172
-\pgfmath@count=\count191
-\pgfmath@box=\box47
-\pgfmath@toks=\toks26
-\pgfmath@stack@operand=\toks27
-\pgfmath@stack@operation=\toks28
+\pgfmath@dimen=\dimen175
+\pgfmath@count=\count192
+\pgfmath@box=\box50
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -292,58 +304,58 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count192
+\c@pgfmathroundto@lastzeros=\count193
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen173
-\pgf@picmaxx=\dimen174
-\pgf@picminy=\dimen175
-\pgf@picmaxy=\dimen176
-\pgf@pathminx=\dimen177
-\pgf@pathmaxx=\dimen178
-\pgf@pathminy=\dimen179
-\pgf@pathmaxy=\dimen180
-\pgf@xx=\dimen181
-\pgf@xy=\dimen182
-\pgf@yx=\dimen183
-\pgf@yy=\dimen184
-\pgf@zx=\dimen185
-\pgf@zy=\dimen186
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen187
-\pgf@path@lasty=\dimen188
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen189
-\pgf@shorten@start@additional=\dimen190
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box48
-\pgf@hbox=\box49
-\pgf@layerbox@main=\box50
-\pgf@picture@serial@count=\count193
+\pgfpic=\box51
+\pgf@hbox=\box52
+\pgf@layerbox@main=\box53
+\pgf@picture@serial@count=\count194
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen191
+\pgflinewidth=\dimen194
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen192
-\pgf@pt@y=\dimen193
-\pgf@pt@temp=\dimen194
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -359,13 +371,13 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen195
+\pgfarrowsep=\dimen198
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen196
-\pgf@sys@shading@range@num=\count194
-\pgf@shadingcount=\count195
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count195
+\pgf@shadingcount=\count196
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -373,7 +385,7 @@ File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box51
+\pgfexternal@startupbox=\box54
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -392,15 +404,15 @@ File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box52
+\pgfnodeparttextbox=\box55
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen197
-\pgf@nodesepend=\dimen198
+\pgf@nodesepstart=\dimen256
+\pgf@nodesepend=\dimen257
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -414,10 +426,10 @@ Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen199
-\pgffor@skip=\dimen256
-\pgffor@stack=\toks29
-\pgffor@toks=\toks30
+\pgffor@iter=\dimen258
+\pgffor@skip=\dimen259
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
@@ -425,33 +437,33 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count196
-\pgfplotmarksize=\dimen257
+\pgf@plot@mark@count=\count197
+\pgfplotmarksize=\dimen260
 )
-\tikz@lastx=\dimen258
-\tikz@lasty=\dimen259
-\tikz@lastxsaved=\dimen260
-\tikz@lastysaved=\dimen261
-\tikz@lastmovetox=\dimen262
-\tikz@lastmovetoy=\dimen263
-\tikzleveldistance=\dimen264
-\tikzsiblingdistance=\dimen265
-\tikz@figbox=\box53
-\tikz@figbox@bg=\box54
-\tikz@tempbox=\box55
-\tikz@tempbox@bg=\box56
-\tikztreelevel=\count197
-\tikznumberofchildren=\count198
-\tikznumberofcurrentchild=\count199
-\tikz@fig@count=\count266
+\tikz@lastx=\dimen261
+\tikz@lasty=\dimen262
+\tikz@lastxsaved=\dimen263
+\tikz@lastysaved=\dimen264
+\tikz@lastmovetox=\dimen265
+\tikz@lastmovetoy=\dimen266
+\tikzleveldistance=\dimen267
+\tikzsiblingdistance=\dimen268
+\tikz@figbox=\box56
+\tikz@figbox@bg=\box57
+\tikz@tempbox=\box58
+\tikz@tempbox@bg=\box59
+\tikztreelevel=\count198
+\tikznumberofchildren=\count199
+\tikznumberofcurrentchild=\count266
+\tikz@fig@count=\count267
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count267
-\pgfmatrixcurrentcolumn=\count268
-\pgf@matrix@numberofcolumns=\count269
+\pgfmatrixcurrentrow=\count268
+\pgfmatrixcurrentcolumn=\count269
+\pgf@matrix@numberofcolumns=\count270
 )
-\tikz@expandcount=\count270
+\tikz@expandcount=\count271
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -459,12 +471,12 @@ File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks31
-\t@pgfplots@tokb=\toks32
-\t@pgfplots@tokc=\toks33
-\pgfplots@tmpa=\dimen266
-\c@pgfplots@coordindex=\count271
-\c@pgfplots@scanlineindex=\count272
+\t@pgfplots@toka=\toks32
+\t@pgfplots@tokb=\toks33
+\t@pgfplots@tokc=\toks34
+\pgfplots@tmpa=\dimen269
+\c@pgfplots@coordindex=\count272
+\c@pgfplots@scanlineindex=\count273
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -481,14 +493,14 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count273
+\c@pgfplotsarray@tmp=\count274
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count274
-\t@pgfplotstable@a=\toks34
+\c@pgfplotstable@counta=\count275
+\t@pgfplotstable@a=\toks35
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
 .code.tex)
@@ -500,7 +512,7 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count275
+\c@pgfplotslibrarysurf@no=\count276
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-pdftex.def)))
@@ -527,16 +539,16 @@ e.tex)
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen267
-\pgfdecoratedremainingdistance=\dimen268
-\pgfdecoratedinputsegmentcompleteddistance=\dimen269
-\pgfdecoratedinputsegmentremainingdistance=\dimen270
-\pgf@decorate@distancetomove=\dimen271
-\pgf@decorate@repeatstate=\count276
-\pgfdecorationsegmentamplitude=\dimen272
-\pgfdecorationsegmentlength=\dimen273
+\pgfdecoratedcompleteddistance=\dimen270
+\pgfdecoratedremainingdistance=\dimen271
+\pgfdecoratedinputsegmentcompleteddistance=\dimen272
+\pgfdecoratedinputsegmentremainingdistance=\dimen273
+\pgf@decorate@distancetomove=\dimen274
+\pgf@decorate@repeatstate=\count277
+\pgfdecorationsegmentamplitude=\dimen275
+\pgfdecorationsegmentlength=\dimen276
 )
-\tikz@lib@dec@box=\box57
+\tikz@lib@dec@box=\box60
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.pathmorphing.code.tex
@@ -546,13 +558,13 @@ decorations.pathmorphing.code.tex))
 zlibrarydecorations.pathreplacing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count277
-\pgfplots@xmin@reg=\dimen274
-\pgfplots@xmax@reg=\dimen275
-\pgfplots@ymin@reg=\dimen276
-\pgfplots@ymax@reg=\dimen277
-\pgfplots@zmin@reg=\dimen278
-\pgfplots@zmax@reg=\dimen279
+\pgfplots@numplots=\count278
+\pgfplots@xmin@reg=\dimen277
+\pgfplots@xmax@reg=\dimen278
+\pgfplots@ymin@reg=\dimen279
+\pgfplots@ymax@reg=\dimen280
+\pgfplots@zmin@reg=\dimen281
+\pgfplots@zmax@reg=\dimen282
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryplotmarks.code.tex
@@ -563,88 +575,88 @@ de.tex
 File: pgflibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/layouts/layouts.sty
 Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
-\l@ylen=\skip60
-\layoutsbox=\box58
-\l@youtunitlength=\skip61
-\l@youtlinethick=\skip62
-\l@youtlinethickii=\skip63
-\l@ysetupparskip=\skip64
-\l@ysetupbaselineskip=\skip65
-\l@yonem=\skip66
-\l@yonex=\skip67
-\l@ylmarg=\skip68
-\l@yrmarg=\skip69
-\l@yitmindent=\skip70
-\l@ylblwidth=\skip71
-\l@ylblsep=\skip72
-\l@ylparindent=\skip73
-\l@ytsep=\skip74
-\l@ypskip=\skip75
-\l@yptsep=\skip76
-\l@ypsep=\skip77
-\l@yitmsep=\skip78
-\l@ytok=\toks35
-\l@youtpw=\count278
-\l@youtph=\count279
-\l@youthpi=\count280
-\l@youthpii=\count281
-\l@youthpiii=\count282
-\l@youthpiv=\count283
-\l@youthpv=\count284
-\l@youthpvi=\count285
-\l@youthpvii=\count286
-\l@youtparskip=\count287
-\l@youtvpi=\count288
-\l@youtvpii=\count289
-\l@youtvpiii=\count290
-\l@youtvpiv=\count291
-\l@youtvpv=\count292
-\l@youtvpvi=\count293
-\l@youtvpvii=\count294
-\l@youthdo=\count295
-\l@youthdi=\count296
-\l@youthdii=\count297
-\l@youthdiii=\count298
-\l@youthdiv=\count299
-\l@youthdv=\count300
-\l@youthdvi=\count301
-\l@youthdvii=\count302
-\l@youtvdo=\count303
-\l@youtvdi=\count304
-\l@youtvdii=\count305
-\l@youtvdiii=\count306
-\l@youtvdiv=\count307
-\l@youtvdv=\count308
-\l@youtvdvi=\count309
-\l@youtvdvii=\count310
-\l@youtvdviii=\count311
-\l@youtxci=\count312
-\l@youtxcii=\count313
-\l@youtxciii=\count314
-\l@youtxciv=\count315
-\l@youtxcv=\count316
-\l@youtxcvi=\count317
-\l@youtyci=\count318
-\l@youtycii=\count319
-\l@youtyciii=\count320
-\l@youtyciv=\count321
-\l@youtycv=\count322
-\l@youtycvi=\count323
-\l@youtycvii=\count324
-\l@youtycviii=\count325
-\l@youtxco=\count326
-\l@youtyco=\count327
-\l@ytempdima=\skip79
-\stockwidth=\skip80
-\stockheight=\skip81
-\trimedge=\skip82
-\trimtop=\skip83
-\uppermargin=\skip84
-\spinemargin=\skip85
+\l@ylen=\skip61
+\layoutsbox=\box61
+\l@youtunitlength=\skip62
+\l@youtlinethick=\skip63
+\l@youtlinethickii=\skip64
+\l@ysetupparskip=\skip65
+\l@ysetupbaselineskip=\skip66
+\l@yonem=\skip67
+\l@yonex=\skip68
+\l@ylmarg=\skip69
+\l@yrmarg=\skip70
+\l@yitmindent=\skip71
+\l@ylblwidth=\skip72
+\l@ylblsep=\skip73
+\l@ylparindent=\skip74
+\l@ytsep=\skip75
+\l@ypskip=\skip76
+\l@yptsep=\skip77
+\l@ypsep=\skip78
+\l@yitmsep=\skip79
+\l@ytok=\toks36
+\l@youtpw=\count279
+\l@youtph=\count280
+\l@youthpi=\count281
+\l@youthpii=\count282
+\l@youthpiii=\count283
+\l@youthpiv=\count284
+\l@youthpv=\count285
+\l@youthpvi=\count286
+\l@youthpvii=\count287
+\l@youtparskip=\count288
+\l@youtvpi=\count289
+\l@youtvpii=\count290
+\l@youtvpiii=\count291
+\l@youtvpiv=\count292
+\l@youtvpv=\count293
+\l@youtvpvi=\count294
+\l@youtvpvii=\count295
+\l@youthdo=\count296
+\l@youthdi=\count297
+\l@youthdii=\count298
+\l@youthdiii=\count299
+\l@youthdiv=\count300
+\l@youthdv=\count301
+\l@youthdvi=\count302
+\l@youthdvii=\count303
+\l@youtvdo=\count304
+\l@youtvdi=\count305
+\l@youtvdii=\count306
+\l@youtvdiii=\count307
+\l@youtvdiv=\count308
+\l@youtvdv=\count309
+\l@youtvdvi=\count310
+\l@youtvdvii=\count311
+\l@youtvdviii=\count312
+\l@youtxci=\count313
+\l@youtxcii=\count314
+\l@youtxciii=\count315
+\l@youtxciv=\count316
+\l@youtxcv=\count317
+\l@youtxcvi=\count318
+\l@youtyci=\count319
+\l@youtycii=\count320
+\l@youtyciii=\count321
+\l@youtyciv=\count322
+\l@youtycv=\count323
+\l@youtycvi=\count324
+\l@youtycvii=\count325
+\l@youtycviii=\count326
+\l@youtxco=\count327
+\l@youtyco=\count328
+\l@ytempdima=\skip80
+\stockwidth=\skip81
+\stockheight=\skip82
+\trimedge=\skip83
+\trimtop=\skip84
+\uppermargin=\skip85
+\spinemargin=\skip86
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip86
+\@mathmargin=\skip87
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -652,51 +664,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks36
-\ex@=\dimen280
+\@emptytoks=\toks37
+\ex@=\dimen283
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen281
+\pmbraise@=\dimen284
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count328
+\inf@bad=\count329
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count329
-\leftroot@=\count330
+\uproot@=\count330
+\leftroot@=\count331
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count331
-\DOTSCASE@=\count332
+\classnum@=\count332
+\DOTSCASE@=\count333
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box59
-\strutbox@=\box60
-\big@size=\dimen282
+\Mathstrutbox@=\box62
+\strutbox@=\box63
+\big@size=\dimen285
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count333
-\c@MaxMatrixCols=\count334
+\macc@depth=\count334
+\c@MaxMatrixCols=\count335
 \dotsspace@=\muskip16
-\c@parentequation=\count335
-\dspbrk@lvl=\count336
-\tag@help=\toks37
-\row@=\count337
-\column@=\count338
-\maxfields@=\count339
-\andhelp@=\toks38
-\eqnshift@=\dimen283
-\alignsep@=\dimen284
-\tagshift@=\dimen285
-\tagwidth@=\dimen286
-\totwidth@=\dimen287
-\lineht@=\dimen288
-\@envbody=\toks39
-\multlinegap=\skip87
-\multlinetaggap=\skip88
-\mathdisplay@stack=\toks40
+\c@parentequation=\count336
+\dspbrk@lvl=\count337
+\tag@help=\toks38
+\row@=\count338
+\column@=\count339
+\maxfields@=\count340
+\andhelp@=\toks39
+\eqnshift@=\dimen286
+\alignsep@=\dimen287
+\tagshift@=\dimen288
+\tagwidth@=\dimen289
+\totwidth@=\dimen290
+\lineht@=\dimen291
+\@envbody=\toks40
+\multlinegap=\skip88
+\multlinetaggap=\skip89
+\mathdisplay@stack=\toks41
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -705,16 +717,16 @@ Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count340
-\calc@Bcount=\count341
-\calc@Adimen=\dimen289
-\calc@Bdimen=\dimen290
-\calc@Askip=\skip89
-\calc@Bskip=\skip90
+\calc@Acount=\count341
+\calc@Bcount=\count342
+\calc@Adimen=\dimen292
+\calc@Bdimen=\dimen293
+\calc@Askip=\skip90
+\calc@Bskip=\skip91
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count342
-\calc@Cskip=\skip91
+\calc@Ccount=\count343
+\calc@Cskip=\skip92
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
@@ -723,15 +735,15 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count343
-\l_MT_multwidth_dim=\dimen291
-\origjot=\skip92
-\l_MT_shortvdotswithinadjustabove_dim=\dimen292
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen293
-\l_MT_above_intertext_sep=\dimen294
-\l_MT_below_intertext_sep=\dimen295
-\l_MT_above_shortintertext_sep=\dimen296
-\l_MT_below_shortintertext_sep=\dimen297
+\g_MT_multlinerow_int=\count344
+\l_MT_multwidth_dim=\dimen294
+\origjot=\skip93
+\l_MT_shortvdotswithinadjustabove_dim=\dimen295
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen296
+\l_MT_above_intertext_sep=\dimen297
+\l_MT_below_intertext_sep=\dimen298
+\l_MT_above_shortintertext_sep=\dimen299
+\l_MT_below_shortintertext_sep=\dimen300
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -746,8 +758,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count344
-\l__pdf_internal_box=\box61
+\l__kernel_color_stack_int=\count345
+\l__pdf_internal_box=\box64
 )
 (./report_new_introduction.aux
 
@@ -780,24 +792,39 @@ LaTeX Warning: Label `fig:b' multiply defined.
 
 LaTeX Warning: Label `sub@fig:b' multiply defined.
 
+
+LaTeX Warning: Label `fig:a' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:a' multiply defined.
+
+
+LaTeX Warning: Label `fig:b' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:b' multiply defined.
+
+
+LaTeX Warning: Label `fig:Godfray' multiply defined.
+
 )
 \openout1 = `report_new_introduction.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 63
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 64
 .
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -838,17 +865,17 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
-\scratchdimen=\dimen298
-\scratchbox=\box62
-\nofMPsegments=\count346
-\nofMParguments=\count347
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count348
-\MPscratchDim=\dimen299
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
-\everyMPtoPDFconversion=\toks42
+\scratchcounter=\count346
+\scratchdimen=\dimen301
+\scratchbox=\box65
+\nofMPsegments=\count347
+\nofMParguments=\count348
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count349
+\MPscratchDim=\dimen302
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
+\everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -866,17 +893,17 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 63.
+Package layouts Warning: Layout scale set to 0.5 on input line 64.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 81--88
+Underfull \hbox (badness 10000) in paragraph at lines 82--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--88
+Underfull \hbox (badness 10000) in paragraph at lines 82--89
 
  []
 
@@ -895,12 +922,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `report_new_introduction.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
@@ -912,7 +939,7 @@ asitoid/figs/pbmtq_figure.png Graphic file (type png)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
 sitoid/figs/pbmtq_figure.png>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/model_host_parasitoid/figs/pbmtq_figure.png  used on input line 140.
+_LCT/model_host_parasitoid/figs/pbmtq_figure.png  used on input line 138.
 (pdftex.def)             Requested size: 364.19667pt x 170.2825pt.
  [3] [4 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_
 parasitoid/figs/pbmtq_figure.png>] [5]
@@ -921,13 +948,13 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/survey_gamma_shape/figs/n_survey_not_clipped.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/
-figs/n_survey_not_clipped.pdf, id=41, 433.72139pt x 334.46054pt>
+figs/n_survey_not_clipped.pdf, id=39, 433.72139pt x 334.46054pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_s
 hape/figs/n_survey_not_clipped.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sh
 ape/figs/n_survey_not_clipped.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/survey_gamma_shape/figs/n_survey_not_clipped.pdf  used on input line 172.
+_LCT/survey_gamma_shape/figs/n_survey_not_clipped.pdf  used on input line 179.
 (pdftex.def)             Requested size: 218.51521pt x 168.5057pt.
 
 
@@ -935,13 +962,13 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/survey_gamma_shape/figs/n_survey_clipped.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/
-figs/n_survey_clipped.pdf, id=42, 433.72139pt x 334.46054pt>
+figs/n_survey_clipped.pdf, id=40, 433.72139pt x 334.46054pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_s
 hape/figs/n_survey_clipped.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sh
 ape/figs/n_survey_clipped.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/survey_gamma_shape/figs/n_survey_clipped.pdf  used on input line 180.
+_LCT/survey_gamma_shape/figs/n_survey_clipped.pdf  used on input line 187.
 (pdftex.def)             Requested size: 218.51521pt x 168.5057pt.
 
 
@@ -949,32 +976,32 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/survey_gamma_shape/figs/n_survey_example_species.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/
-figs/n_survey_example_species.pdf, id=43, 718.89378pt x 442.05048pt>
+figs/n_survey_example_species.pdf, id=41, 718.89378pt x 442.05048pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_s
 hape/figs/n_survey_example_species.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sh
 ape/figs/n_survey_example_species.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/survey_gamma_shape/figs/n_survey_example_species.pdf  used on input line 1
-89.
+96.
 (pdftex.def)             Requested size: 227.62206pt x 139.96161pt.
-[6 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sha
-pe/figs/n_survey_not_clipped.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Inter
-nship_2025_LCT/survey_gamma_shape/figs/n_survey_clipped.pdf> </home/mathisdr/De
-sktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/figs/n_survey_exam
-ple_species.pdf>]
+[6] [7 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma
+_shape/figs/n_survey_not_clipped.pdf> </home/mathisdr/Desktop/2024-2025/Stage/I
+nternship_2025_LCT/survey_gamma_shape/figs/n_survey_clipped.pdf> </home/mathisd
+r/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/figs/n_survey_
+example_species.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Murdoch_equilibrium.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_equilibri
-um.pdf, id=94, 462.52798pt x 346.89601pt>
+um.pdf, id=98, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_equi
 librium.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_equil
 ibrium.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_equilibrium.pdf  used on input line 211.
+igures/Murdoch_equilibrium.pdf  used on input line 218.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -982,13 +1009,13 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Murdoch_stability_diagram.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_stability
-_diagram.pdf, id=95, 462.52798pt x 346.89601pt>
+_diagram.pdf, id=99, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_stab
 ility_diagram.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_stabi
 lity_diagram.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_stability_diagram.pdf  used on input line 218.
+igures/Murdoch_stability_diagram.pdf  used on input line 225.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -996,13 +1023,13 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Murdoch_bifurcation_diagram_Wearing-par.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_bifurcati
-on_diagram_Wearing-par.pdf, id=96, 462.52798pt x 346.89601pt>
+on_diagram_Wearing-par.pdf, id=100, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_bifu
 rcation_diagram_Wearing-par.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_bifur
 cation_diagram_Wearing-par.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_bifurcation_diagram_Wearing-par.pdf  used on input line 227.
+igures/Murdoch_bifurcation_diagram_Wearing-par.pdf  used on input line 234.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
@@ -1010,108 +1037,153 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Murdoch_fecundity.pdf): PDF inclusion: found PDF version 
 <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_fecundity
-.pdf, id=97, 462.52798pt x 346.89601pt>
+.pdf, id=101, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_fecu
 ndity.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_fecun
 dity.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Murdoch_fecundity.pdf  used on input line 234.
+igures/Murdoch_fecundity.pdf  used on input line 241.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
-Jupyter_stage/Figures/Godfray_effect-of-n1n3.pdf): PDF inclusion: found PDF ver
-sion <1.7>, but at most version <1.5> allowed
-</home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect-of
--n1n3.pdf, id=98, 462.52798pt x 346.89601pt>
-File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effe
-ct-of-n1n3.pdf Graphic file (type pdf)
-<use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effec
-t-of-n1n3.pdf>
-Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Godfray_effect-of-n1n3.pdf  used on input line 249.
+Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_rhobifurcation_diagram_n
+1_m1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
+lowed
+</home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
+id/figs/Murdoch_rhobifurcation_diagram_n1_m1.pdf, id=102, 462.52798pt x 346.896
+01pt>
+File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
+asitoid/figs/Murdoch_rhobifurcation_diagram_n1_m1.pdf Graphic file (type pdf)
+<use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
+sitoid/figs/Murdoch_rhobifurcation_diagram_n1_m1.pdf>
+Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
+_LCT/model_host_parasitoid/figs/Murdoch_rhobifurcation_diagram_n1_m1.pdf  used 
+on input line 254.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
-Jupyter_stage/Figures/Godfray_effect-of-n2m.pdf): PDF inclusion: found PDF vers
-ion <1.7>, but at most version <1.5> allowed
-</home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect-of
--n2m.pdf, id=99, 462.52798pt x 346.89601pt>
-File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effe
-ct-of-n2m.pdf Graphic file (type pdf)
-<use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effec
-t-of-n2m.pdf>
-Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
-igures/Godfray_effect-of-n2m.pdf  used on input line 256.
+Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_rhobifurcation_diagram_n
+20_m1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
+llowed
+</home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
+id/figs/Murdoch_rhobifurcation_diagram_n20_m1.pdf, id=103, 462.52798pt x 346.89
+601pt>
+File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
+asitoid/figs/Murdoch_rhobifurcation_diagram_n20_m1.pdf Graphic file (type pdf)
+<use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
+sitoid/figs/Murdoch_rhobifurcation_diagram_n20_m1.pdf>
+Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
+_LCT/model_host_parasitoid/figs/Murdoch_rhobifurcation_diagram_n20_m1.pdf  used
+ on input line 261.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
-[7] [8 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_eq
+
+
+pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
+Internship_2025_LCT/model_host_parasitoid/figs/Godfray_effect-of-n1n3.pdf): PDF
+ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+</home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
+id/figs/Godfray_effect-of-n1n3.pdf, id=104, 462.52798pt x 346.89601pt>
+File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
+asitoid/figs/Godfray_effect-of-n1n3.pdf Graphic file (type pdf)
+<use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
+sitoid/figs/Godfray_effect-of-n1n3.pdf>
+Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
+_LCT/model_host_parasitoid/figs/Godfray_effect-of-n1n3.pdf  used on input line 
+278.
+(pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
+Internship_2025_LCT/model_host_parasitoid/figs/Godfray_effect-of-n2m.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+</home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
+id/figs/Godfray_effect-of-n2m.pdf, id=105, 462.52798pt x 346.89601pt>
+File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
+asitoid/figs/Godfray_effect-of-n2m.pdf Graphic file (type pdf)
+<use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
+sitoid/figs/Godfray_effect-of-n2m.pdf>
+Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
+_LCT/model_host_parasitoid/figs/Godfray_effect-of-n2m.pdf  used on input line 2
+85.
+(pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
+[8] [9 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_eq
 uilibrium.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Mu
 rdoch_stability_diagram.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_st
 age/Figures/Murdoch_bifurcation_diagram_Wearing-par.pdf> </home/mathisdr/Deskto
-p/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_fecundity.pdf>] [9 </home/mathi
-sdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect-of-n1n3.pdf> <
-/home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Godfray_effect-of-
-n2m.pdf>]
+p/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_fecundity.pdf>] [10 </home/math
+isdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Mur
+doch_rhobifurcation_diagram_n1_m1.pdf> </home/mathisdr/Desktop/2024-2025/Stage/
+Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_rhobifurcation_diagram_n
+20_m1.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_ho
+st_parasitoid/figs/Godfray_effect-of-n1n3.pdf> </home/mathisdr/Desktop/2024-202
+5/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Godfray_effect-of-n2m.pd
+f>]
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/model_host_parasitoid/figs/Equivalence_k_n.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
-id/figs/Equivalence_k_n.pdf, id=204, 462.52798pt x 346.89601pt>
+id/figs/Equivalence_k_n.pdf, id=258, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
 asitoid/figs/Equivalence_k_n.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
 sitoid/figs/Equivalence_k_n.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/model_host_parasitoid/figs/Equivalence_k_n.pdf  used on input line 307.
+_LCT/model_host_parasitoid/figs/Equivalence_k_n.pdf  used on input line 336.
 (pdftex.def)             Requested size: 364.19667pt x 273.16087pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--320
+Underfull \hbox (badness 10000) in paragraph at lines 343--349
 
  []
 
-[10 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
+[11 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
 sitoid/figs/Equivalence_k_n.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 320--325
+Underfull \hbox (badness 10000) in paragraph at lines 349--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--325
+Underfull \hbox (badness 10000) in paragraph at lines 349--354
 
  []
 
-[11] [12] [13]
-Overfull \hbox (6.04381pt too wide) in paragraph at lines 374--374
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--372
+
+ []
+
+[12] [13] [14] [15]
+Overfull \hbox (6.04381pt too wide) in paragraph at lines 406--406
 |[]\T1/ptm/b/n/12 System con-struc-tion : ap-pli-ca-tion of the Lin-ear Chain T
 rick with a non-autonomous
  []
 
-[14]
-Overfull \hbox (22.12675pt too wide) detected at line 423
+[16]
+Overfull \hbox (22.12675pt too wide) detected at line 455
 []
  []
 
-[15] [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
+[17] [18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
 
  []
 
-[18] [19]
+[20] [21]
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_bifurcation_diagram_Othe
 r-par.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
-id/figs/Murdoch_bifurcation_diagram_Other-par.pdf, id=263, 462.52798pt x 346.89
+id/figs/Murdoch_bifurcation_diagram_Other-par.pdf, id=319, 462.52798pt x 346.89
 601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
 asitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf Graphic file (type pdf)
@@ -1119,9 +1191,9 @@ asitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf Graphic file (type pdf)
 sitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf  used
- on input line 600.
+ on input line 632.
 (pdftex.def)             Requested size: 364.19667pt x 273.16087pt.
-[20 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
+[22 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
 sitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf>]
 (./report_new_introduction.aux)
 
@@ -1129,32 +1201,33 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26269 strings out of 483183
- 645002 string characters out of 5966292
- 1005782 words of memory out of 5000000
- 40829 multiletter control sequences out of 15000+600000
- 565469 words of font info for 65 fonts, out of 8000000 for 9000
+ 26358 strings out of 483183
+ 647451 string characters out of 5966292
+ 1006835 words of memory out of 5000000
+ 40911 multiletter control sequences out of 15000+600000
+ 565575 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  73i,18n,127p,2314b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on report_new_introduction.pdf (23 pages, 436022 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on report_new_introduction.pdf (25 pages, 467989 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 233 compressed objects within 3 object streams
+ 387 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
