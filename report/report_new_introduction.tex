@@ -37,6 +37,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{wrapfig}
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
@@ -70,6 +71,12 @@
 \centering
 \vspace*{3cm}
 {\Huge Evaluating the impact of maturation time variability in stage-structured host-parasitoid models (cette page de garde va changer) \par}
+
+\begin{figure}[]
+\centering
+\includegraphics[width = 1\textwidth]{/home/mathisdr/Desktop/ParisTexas5.png}
+\end{figure}
+
 \vspace{2cm}
 {\Large Mathis Drieu \par}
 \vfill
@@ -114,7 +121,7 @@ xxx
 \section{Introduction}
 \tabto{1 cm}[Agricultural pest species [Insects] constitute a fundamental challenge [economic loss?] facing food production in all agroecosystems]. Biocontrol is a field of pest control that relies on biological agents to curb pest populations. This field is [old but quickly developing] notably in agroecology, one of its main goals being to avoid, or at least reduce, the use of industrial insecticides. One of the primary levers of biocontrol is the introduction of insect parasitoids that target pest species. They induce the death of their host by laying eggs [inside them : reformuler] at various stages of their developmental cycle. The host's body provides shelter and food for layed parasitoid juveniles, that eventually emerge and reproduce thus [closing the cycle : reformuler]. Mathematical models have been developed to model and better understand the evolution of two interacting populations: the pest and its enemy. More specifically, in the case of host-parasitoid interactions, the parasitoid constitutes a supplementary mortality factor for the host and is dependent on the host population for its own reproduction. \sout{Regarding the continuous property of parasitism [et le fait que le modèle discret de Nicholson Bailey est instable???]}, continuous time models have been widely used in host-parasitoid modeling and [have relied on the set of a term giving the rate of parasitism through time as a function of parasitoid population] [source? nulle la phrase non?]
 
-\tabto{1 cm} [In any case : reformuler], both host and parasitoid are insect species with discontinuous development. Insects' development is made up of an egg, a larval and a pupal stage. These main stages can themselves be made up of several distinguishable stages, for instance through larval instars. Such successive stages are not identically sensitive to the various ecological interactions of the species. In the case of parasitism, it can occur on one or several specific stages of the host (Murdoch et al. 1987, ? ). Hence, stage-structured (or class-structured models) models have been increasingly used to aggregate individuals having certain characteristics, for example, into age classes or size classes [Jules "La structuration en age ou taille se fait très souvent de manière continue ; je ne suis pas sûr que ce soit pertinent. " Réponse : Pour moi c'est l'originalité de Nisbet and Gurney 1983 : partir d'EDP (âge continu) et arriver à des EDD en faisant des paquets d'âges]:, and that critically have the same set of interactions with their environment.  [tout ça manque de source mais Nisbet et Gurney 1983?]. The set of stages raises the challenge of modeling the transition between them, notably the timing of the transition.
+\tabto{1 cm} [In any case : reformuler], both host and parasitoid are insect species with discontinuous development. The taxa of interest in agriculture are maily holometabolous, which means that their development is made up of an egg, a larval and a pupal stage. These main stages can themselves be made up of several distinguishable stages, for instance through larval instars. Such successive stages are not identically sensitive to the various ecological interactions of the species. In the case of parasitism, it can occur on one or several specific stages of the host (Murdoch et al. 1987, ? ). Hence, stage-structured (or class-structured models) models have been increasingly used to aggregate individuals having certain characteristics, for example, into age classes or size classes [Jules "La structuration en age ou taille se fait très souvent de manière continue ; je ne suis pas sûr que ce soit pertinent. " Réponse : Pour moi c'est l'originalité de Nisbet and Gurney 1983 : partir d'EDP (âge continu) et arriver à des EDD en faisant des paquets d'âges]:, and that critically have the same set of interactions with their environment.  [tout ça manque de source mais Nisbet et Gurney 1983?]. The set of stages raises the challenge of modeling the transition between them, notably the timing of the transition.
 
 \tabto{1 cm}The easiest way to account for the transition between stages is to write that the rate of change of the stage population $x$ is proportional to the stage population.  In other words, $\frac{dx}{dt} = -mx$, m is the maturation rate of the stage and 1/m is the mean maturation time. With this approach, models belong to the Ordinary Differential Equation (ODE) class. This approach allows parametrizing the timing of transition but it does not allow to control the variability of maturation time inside the stage population. The ODE framework implicitly assumes an underlying stochastic state transmission model with an exponentially distributed dwell time in the stage [Hurtado]. Particularly, it assumes that the probability of transition is maximal at the entrance of the stage. Robertson and co-workers (2018) showed that about half of the stage-structured models found in recent literature use the ODE framework to account for the transition between states. In line with the work of Gurney and co-workers in 1983, most remaining models reviewed by Robertson et al. (2018) majorly used fixed delays through Delayed Differential Equations (DDE). These models assume that all the individuals of a given cohort mature synchronically, i.e. that the maturation delays are fixed. This means that the models do not account for within-species (within-stage) variability in maturation time.  Overall, despite their flexibility on the parametrization of mean maturation time, the two approaches (ODE and DDE)  rely on fundamentally different assumptions on maturation time variability. Hereafter, maturation variability will be understood as the the coefficient of variation (CV) of the maturation time, i.e. its standard deviation divided by its mean. We prefer this definition over the variance because, contrary to the variance, a greater mean development time does not entail a greater CV. 
 
@@ -124,44 +131,57 @@ xxx
 
 \tabto{1 cm} Models' sensitivity to maturation variability stresses the need to estimate empirical developmental variability beforehand to properly model given host-parasitoid dynamics. A clear review of the methods used to assess developmental variability was given by de Valpine and co-workers (2014). Empirical distributions of maturation time often display a delay where no maturation occurs, a clear mode as well as a relatively pronounced right-skewness.  [Hence, It can be argued that] [On pourrait dire que... Avec cette idée de spectre, j'essaie ici de retrouver cette idée d'axe de variabilité développementale à explorer facilement avec le n du LCT. J'essaie donc d'introduire les bords de l'axe que je vais explorer avec la LCT. Mais je garde bien à l'esprit que c'est une manière parmi d'autres d'explorer cette variabilité qui ne se limite pas à cet axe : la loi Erlang est arbitraire, on ne la maximise jamais, n=1 est un cas particulier très arbitraire aussi]. Overall, [it can be argued that : check de Valpine] realistic maturation time distributions lie at various positions of a variability spectrum which extrema can be represented by the ODE framework on one side (high variability) and the DDE framework on the other (no variability).  The aim of this study is therefore : 1. To assess the position of various pest and parasitoid species on this maturation variability spectrum ; 2. To elucidate how the position on this spectrum influences the predictions made by host-parasitoid models. 
 
-\tabto{1 cm} To explore this spectrum, arbitrary maturation time distributions can be used in Integro-Differential Equations (IDEs). These systems quickly lead away from analytical methods towards computational ones (de Valpine 2014). Hence, modelers have relied on a few main distributions. Gamma (or Erlang, a special case where the shape parameter is a positive integer) and Normal distributions have been widely used in distributed development models of insect populations (SOURCE? deValpine, Robertson?, Wearing?) [Enoncer l'existence des degré jours et des approches de ce style?]. They allow for a sufficiently realistic hypothesis about stage transitions with relatively few parameters associated. It is however possible to account for more realistic stage transitions while also constructing models that allow for relatively simple algebraic analysis. Since Erlang distributions are defined as the distribution of a sum of n independant exponential variable,  they can be obtained by dividing each stage into n sub-stages governed by a system of n coupled ODEs (MacDonald 1978, Hurtado 2018). This is called the Linear Chain Trick (LCT) and has been increasingly used in ecological (Smith and Mead 1974, McNair 1995, Wearing 2004, Abrams and Quince 2005, Bjornstad et al. 2016, Nelson et al. 2019) and epidemiological studies (Wearing 2005, Hurtado 2019). [This approach allows working with an ODE system with the cost of being made up of more equations. [Despite the potential inflated number of equations,] Algebraic analysis and numerical simulation of ODE systems are much easier than DDE systems and a fortiori IDE systems].
-\\ 
-D'ailleurs ces deux paragraphes précédents pourraientt être complétés par une figure qui montre justement l'axe=le spectre de variab dev, une version plus propre de la figure ci-dessous. POUR LA DISTRIBUTION ERLANG, On pourra se référer à la figure du MM qui donne Weibull et Erlang
-\setcounter{figure}{-1}
-\begin{figure}[!ht]
-\centering	
-\includegraphics[width=0.8\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/pbmtq_figure.png}
-\caption{Exploring the effect of developmental (time) variability on host-parasitoid models using the linear chain trick.}
-\label{fig:intro}
-\end{figure}
+\tabto{1 cm} To explore this spectrum, arbitrary maturation time distributions can be used in Integro-Differential Equations (IDEs). These systems quickly lead away from analytical methods towards computational ones (de Valpine 2014). Hence, modelers have relied on a few main distributions. Gamma (or Erlang, a special case where the shape parameter is a positive integer) and Normal distributions have been widely used in distributed development models of insect populations (SOURCE? deValpine, Robertson?, Wearing?) [Enoncer l'existence des degré jours et des approches de ce style?]. They allow for a sufficiently realistic hypothesis about stage transitions with relatively few parameters associated. It is however possible to account for more realistic stage transitions while also constructing models that allow for relatively simple algebraic analysis. Since Erlang distributions are defined as the distribution of a sum of n independant exponential variable,  they can be obtained by dividing each stage into n sub-stages governed by a system of n coupled ODEs (MacDonald 1978, Hurtado 2018). This is called the Linear Chain Trick (LCT) and has been increasingly used in ecological (Smith and Mead 1974, McNair 1995, Wearing 2004, Abrams and Quince 2005, Bjornstad et al. 2016, Nelson et al. 2019) and epidemiological studies (Wearing 2005, Hurtado 2019). \textit{[This approach allows working with an ODE system with the cost of being made up of more equations. [Despite the potential inflated number of equations,]} Algebraic analysis and numerical simulation of ODE systems are much easier than DDE systems and a fortiori IDE systems.\\
 
 
+[Figure Thierry-axe LCT et changement des propriétés du modèle selon plusieurs courbes possibles : pour l'instant le texte me paraît suffire à lui-même.]\\
 
-
-\tabto{1 cm} Murdoch et al. (1987) and Godfray and Hassel (1989) constitute two of the first relatively simple models that succeeded in predicting (qualitative) dynamics observed in natural host-parasitoid systems. Their simplicity allowed to greatly contribute to the understanding of the complex dynamics emerging from interactions between hosts and parasitoids [général, gratuit, pas sourcé :( ]. These models were built with fixed maturation delays with the justification, introduced by Blythe et al. (1984), that "the witdh of the distribution [...] is short in comparison with the mean developmental time" [je laisse ça? on s'en fout? comment je tourne ça ? Parce que en gros ils le justifient en mode c bon blythe a dit ça passe mais donc peut-être que pr les espèces qui les intéressent (notamment la red scale pour Murdoch) c'est ok mais c'est pas généralisable. Ou peut-être même qu'ils ont jamais eu vraiment de scrupule et que c'est un peu un argument d'autorité]. Thus, the first part of this study aims to evaluate the realism of this hypothesis. We will review the number of subcompartment n, i.e. the Erlang law shape, that corresponds to maturation time variability in studies that experimentally measure insects' development times. In the second part, we will apply the LCT to these models, yielding distributed-delay equivalents of them. We will use the number of subcompartments, n, to easily explore the maturation time variability spectrum, thereby assessing the robustness of the models' prediction to manipulation of this new parameter.
-
-[Jules : "A ce stade, un lecteur non familier avec le LCT pourrait ce demander quel intérêt on a à fitter des Erlang plutôt que de directement utiliser les Weibull. Je pense qu'il faut davantage insister (même si c'est déjà un peu fait dans l'intro) sur les gros apports et les simplifications permises par le LCT, notamment du point de vue de la résolution numérique. 
-
-Tu peux aussi mentionner que les Erlang shifted permettent seulement d'obtenir un système mixte entre EDO et EDD, ce qui expliciterait l'intérêt de ne pas avoir de shift." -> Je pensais que c'était suffisamment clair et justifié dans le paragraphe ou j'introduis le LCT : je devrais sûrement + insister à ce moment-là]
+\tabto{1 cm} The model of Murdoch et al. (1987) constitutes one of the simplest host-parasitoid models that introduces a stage-structure and that shows the direct effect of the added structure. With only two stages, the invulnerability of the reproducing adult stage was shown to be sufficient so that the model predicts a stable node equilibrium.  Godfray and Hassel (1989) built upon this [/ used a similar? ] model by adding two non-interacting juvenile host stages and by changing the parasitism term. This model was sufficient to predict the common single-generation population cycles sometimes observed in natural host-parasitoid systems. Both models were built with fixed maturation delays. The authors were already aware that this hypothesis could have effects on their results. They justified their choice using the work of Blythe et al. (1984), who showed that the use of fixed delays was satisfactory if "the width of the distribution [...] is short in comparison with the mean developmental time".  Although Murdoch and co-workers deemed that this was true for their studied system (California red scale, \textit{Aonidiella aurantii}), this suggests that the [broad-spectrum, theoretical, generalistic, mecanistic?] results of these two papers cannot be abusively generalized. Thus, the first part of this study is devoted to will applying the LCT to these models, introducing distributed-delays in the stage transition hypothesis. The number of subcompartments, n, will be used to easily explore the maturation time variability spectrum, thereby assessing the robustness of the models' prediction to the manipulation of this new parameter. In the second part, the realism of this hypothesis will be evaluated. We will review the number of subcompartment n, i.e. the Erlang law shape, that corresponds to maturation time variability in studies that experimentally measure insects' development times.\\
+\textit{[Jules : "Tu peux aussi mentionner que les Erlang shifted permettent seulement d'obtenir un système mixte entre EDO et EDD, ce qui expliciterait l'intérêt de ne pas avoir de shift." -> Je pensais que c'était suffisamment clair et justifié dans le paragraphe ou j'introduis le LCT : je devrais sûrement + insister à ce moment-là]}
 
 \section{Models and methods}
 
 \subsection{Murdoch (1987) model}
 [Changement à faire probable : moins de théorie sur ce qu'a trouvé Murdoch (à remettre dans les résultats, plus d'explication de stability diagram etc]
-\tabto{1 cm} We consider the continuous-time host-parasitoid model detailed in Murdoch et al. 1987 in a DDE approach. [something about the fact that this model is said "strategic"?]. The host and parasitoid life cycles are divided into 2 stages: juvenile ($H_1, P_1$) and reproductive adult ($H_2, P_2$). Parasitism occurs on the juvenile host stage $H_1$, and parasitoids search randomly and independently at rate a such that the rate of $H_1$ mortality from parasitism is $aP_2(t)H_1(t)$. Adults die through a constant mortality rate, which means that the adult survival time follows an exponential distribution. There is no density-dependent component to host mortality. Is can be justified by the fact that host populations are much below the level where food or other resources can be limiting if the (bio)control is successful (Murdoch 1987). From now on, except in Figure 2c, the temporal scale is normalized by the maturation time of the host : $m_H = 1/T_{H1} = 1$. The application of the LCT to obtain a distributed-delay model as close as possible as the fixed-delay model introduced by Murdoch is detailed in Appendix A1. In both (LCT and DDE) models, the mean development times are equal, and the proportion of juvenile survival can be equalized too (future publication of J.Guilberteau). However, for simplicity, the parametrization was kept simple and thus the proportion of juvenile survival depends on n (see Discussion). Apart from this, the construction of the LCT model is made such that the only difference between the DDE and the LC models are maturation time variability.
-\\
-FIGURE : COMPARTIMENTS, SYSTEME MATH LCT EQUATIONS
-\\
-\tabto{1 cm} Local stability was numerically estimated using the function Eigenvalues of Wolfram Mathematica (Version 14.1) applied to the Jacobian matrix of the LCT system. Numerical simulation was realized using the Mathematica function NDSolve with an automatic (and dynamically changing) solver method. In the light of the frequent stiffness issues of the simulations, NDSolve was found to offer the most fast and reliable solver compared to other tested methods in Python. For further details, relevant Mathematica and Python scripts can be found on [GITHUB?].
+\tabto{1 cm} We consider the continuous-time host-parasitoid model detailed in Murdoch et al. 1987 in a DDE approach. [something about the fact that this model is said "strategic"?]. The host and parasitoid life cycles are divided into 2 stages: juvenile ($H_1, P_1$) and reproductive adult ($H_2, P_2$). Parasitism occurs on the juvenile host stage $H_1$, and parasitoids search randomly and independently at rate a such that the rate of $H_1$ mortality from parasitism is $aP_2(t)H_1(t)$. Adults die through a constant mortality rate, which means that the adult survival time follows an exponential distribution. There is no density-dependent component to host mortality. Is can be justified by the fact that host populations are much below the level where food or other resources can be limiting if the (bio)control is successful (Murdoch 1987). From now on, except in Figure 2c, the temporal scale is normalized by the maturation time of the host: $m_H = 1/T_{H1} = 1$. The application of the LCT to obtain a distributed-delay model as close as possible as the fixed-delay model introduced by Murdoch is detailed in Appendix A1. 
+\begin{wrapfigure}{l}{0.5\textwidth}
+\centering
+\includegraphics[width=0.5\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_box_system2.pdf}
+\caption{The LCT-ODE host-parasitoid model based on the model described in Murdoch (1987). H1 and P1 population densities are equal to $\sum_{i=1}^{n} H_{1,i}(t)$ and $\sum_{i=1}^{m} P_{1,i}(t)$.}
+\label{fig:system}
+\end{wrapfigure}
+
+\tabto{1 cm} A spectrum of LCT-ODE models is obtained, including the case where the number of subcompartments is 1, i.e. the exponentially-distributed model (Figure 1). The resulting LCT-ODE system of equation is given by equation (1) (or (X) in Appendix), with notation $\dot{X} := \frac{dX}{dt}$. \\
+
+\tabto{1 cm} In all models, the mean development times are set equal, and the proportion of juvenile survival can be equalized too (future publication of J.Guilberteau). However, for simplicity, the parametrization was kept simple. Ignoring juvenile intrinsic mortality,  the constraint on the mean development time gives (in the case of the host, the parasitoid has an analogous formula) $\theta_H = n*m_H = n/T_{H1}$. With this parametrization, the proportion of juvenile survival depends on n (see Appendix and Discussion). Apart from this, the construction of the LCT-ODE model is made such that the only difference between all the models are maturation time variability. 
+
+\begin{equation}
+\begin{dcases}
+\dot{H_{1,1}}(t) = H_{1,1}(t)(-a P_2(t) - \delta_{H1} - \theta_H) + r H_2(t) \\
+\vdots \\
+\dot{H_{1,i}}(t) = \theta_H(H_{1,i-1}(t) - H_{1,i}(t)) - \delta_{H1} H_{1,i}(t) - aP_2H_{1,i}(t), \quad i \in (2, 3, \dots, n) \\
+\vdots \\
+\dot{H_{2}}(t) = \theta_H H_{1,n}(t) - \delta_{H2} H_{2}(t) \\
+\dot{P_{1,1}}(t) = P_{1,1}(t)(- \delta_{P1} - \theta_P) + a P_2(t) \sum_{i=1}^{n} H_{1,i}(t) \\
+\vdots \\
+\dot{P_{1,i}}(t) = \theta_P(P_{1,i-1}(t) - P_{1,i}(t)) - \delta_{P1} P_{1,i}(t), \quad i \in (2, 3, \dots, m) \\
+\vdots \\
+\dot{P_{2}}(t) = \theta_P P_{1,m}(t) - \delta_{P2} P_{2}(t) \\
+\end{dcases}
+\end{equation}
+
+\tabto{1 cm} The local stability of the non-trivial equilibria of the system will be analyzed using linear stability theory. Specifically, the characteristic equation derived from the linearized system at each equilibrium point yields a set of roots. These roots correspond to the eigenvalues of the jacobian matrix in the case of a ODE-type system. The real parts of these roots determine the local behavior of the system near the equilibrium. If all the eigenvalues of the Jacobian matrix evaluated at a non-trivial equilibrium have strictly negative real parts, then the equilibrium is locally asymptotically stable. Conversely, if at least one eigenvalue has a positive real part, the equilibrium is unstable. 
+\tabto{1 cm} Local stability diagrams will be generated. They map out regions of parameter space where equilibria are stable or unstable. These diagrams are built by systematically computing the Jacobian matrix across a grid of parameter values and analyzing the sign of the real parts of its eigenvalues. When an eigenvalue's real part crosses 0, a boundary is drawn. Here, the two parameter axes will be the longevity of the adult host $T_{H2} := 1/\delta_{H2}$ and the maturation time of the parasitoid $T_{P1} := 1/m_P$ which were found to have a strong impact on stability. The diagrams were generated using the function Eigenvalues of Wolfram Mathematica (Version 14.1) applied to the Jacobian matrix of the LCT-ODE system. 
+\tabto{1 cm} Bifurcation diagram will also be generated. These diagrams show equilibria or periodic solutions as functions of a  parameter, highlighting points where stability changes (i.e. bifurcations). By giving information about the periodic solutions when the asymptotic behavior of the model are limit cycles, bifurcation diagram are complementary to local stability diagram. To evaluate these oscillations, numerical simulations were realized using the Mathematica function NDSolve with an automatic (and dynamically changing) solver method. In the light of the frequent stiffness issues of the simulations, NDSolve was found to offer the most fast and reliable solver compared to other tested methods with various Python libraries. For further details, relevant Mathematica and Python scripts can be found on [GITHUB?].
 
 
 
 \subsection{Godfray and Hassel (1989) model}
-\tabto{1 cm} Godfray and Hassel (1989) introduced a slightly complexified version of the Murdoch 1987 DDE model. First, two invulnerable juvenile stages ($H_1$ and $H_3$) were added for the host and surround the vulnerable stage $H_2$. Second, the parasitism term was changed to involve density-dependence to $P_2$. Parasitism thus saturates with the (local) density of adult parasitoids : this is called pseudo-interference. The LCT model equivalent to the DDE model is detailed in [Appendix 2]. It was built and analyzed analogously to the Murdoch 1987 LCT model using the Jacobian of the LCT system (see [GITHUB XXX]). Details about the system can be found in the appendix.
+\tabto{1 cm} Godfray and Hassel (1989) introduced a slightly complexified version of the Murdoch 1987 DDE model. First, two invulnerable juvenile stages ($H_1$ and $H_3$) were added for the host and surround the vulnerable stage $H_2$. Second, the parasitism term was changed to involve density-dependence to $P_2$. Parasitism thus saturates with the (local) density of adult parasitoids : this is [was?] called pseudo-interference. The ODE-LCT models construction is detailed in [Appendix 2]. Details about the system can be found in the appendix. They were built and analyzed analogously to the Murdoch 1987 ODE-LCT models (see [GITHUB XXX]).
 
 
 \subsection{Survey of Erlang/Gamma distribution shape (n)}
-\tabto{1 cm} Wagner et al. (1984) introduced a method to fit a Weibull distribution to normalized maturation time of individually marked insects bred in laboratory at various temperatures. Their method contributed to establishing the Weibull distribution as a standard tool for estimating variability in insect maturation times. The Weibull and Gamma distributions can be visualized in [FIGURE ?]. They are equal for a shape equal to 1. They both converge to a dirac distribution when their shape goes to infinity. [Note the slight left-skewness of the Weibull distribution for the distributions with the largest shapes].
+\tabto{1 cm} Wagner et al. (1984) introduced a method to fit a Weibull distribution to normalized maturation time of individually marked insects bred in laboratory at various temperatures. Their method contributed to establishing the Weibull distribution as a standard tool for estimating variability in insect maturation times (SOURCE?). The Weibull and Gamma distributions can be visualized in Figure 2. They are equal for a shape equal to 1. They both converge to a dirac distribution when their shape goes to infinity. [Note the slight left-skewness of the Weibull distribution for the distributions with the largest shapes].
 
 \begin{figure}[!ht]
 \centering
@@ -175,8 +195,8 @@ FIGURE : COMPARTIMENTS, SYSTEME MATH LCT EQUATIONS
 	  \includegraphics[width=\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/figs/gamma_distribution.pdf}
 	\end{subfigure}
 
-\caption{Weibull (left) and Erlang (right) distributions for various shapes. The respective Weibull and Erlang shapes are $\beta$ and n. The respective Weibull and Erlang rates are $\eta$ and $\theta$, and were set to fix the mean of the distribution to 1. Line colors are set according to the value of the coefficient of variation CV (standard deviation / mean) of the given distribution.}
-\label{fig:Distributions}
+\caption{Weibull (left) and Erlang (right) distributions for various shapes as well as their respective probability density function. The respective Weibull and Erlang shapes are $\beta$ and n. The respective Weibull and Erlang rates are $\eta$ and $\theta$, and were set to fix the mean of the distribution to 1. Line colors are set according to the value of the coefficient of variation CV (standard deviation / mean) of the given distribution.}
+\label{fig:distributions}
 \end{figure}
 
 \tabto{1 cm} In their method, times are normalized (divided) by the median maturation time at the given temperature, the distribution is built to only represent the variability of maturation time (independently of its mean). Xu et al. (2010) reviewed the literature using Wagner's method. The raw data of insects' developmental times are rarely provided in the papers. The Weibull estimates are thus a practical and condensed set of information about empirical maturation variability. Xu et al. (2010) thus gathered the Weibull parameters of various insects' developmental stages, and simulated 5000 time variates from the given Weibull laws. Then, they fitted a Gamma law by finding the Gamma parameters that maximize the likelihood of the simulated data. 
@@ -542,19 +562,20 @@ Thus, $H_{1,1} + \dots + H_{1,n}$ does satisfy the initial condition $(1)$.
 
 In particular, if $H_{1,1}(0) + \dots + H_{1,n}(0) =  H_1^0$, then $H_1(t) = y(t) = H_{1,1}(t) + \dots + H_{1,n}(t)$ and $(1)$ is equivalent to $(8)$. This is called the Linear Chain Trick.
 
-Applying the same method on the parasitoid maturation term with Erlang rate $\theta_P$ and shape $m$, choosing a linear parasitism term of parasitism assuming a random and homogeneous search of hosts by the parasitoids (May 1978), and assuming a linear birth rate, the final LCT system can be rewritten as a system of coupled ODEs  :
+Applying the same method on the parasitoid maturation term with Erlang rate $\theta_P$ and shape $m$, choosing a linear parasitism term of parasitism assuming a random and homogeneous search of hosts by the parasitoids (May 1978), and assuming a linear birth rate, the final LCT system can be rewritten as a system of coupled ODEs:
+
 \begin{equation}
 \begin{dcases}
-H_{1,1}'(t) = H_{1,1}(t)(-a P_2(t) - \delta_{H1} - \theta_H) + r H_2(t) \\
+\dot{H_{1,1}}(t) = H_{1,1}(t)(-a P_2(t) - \delta_{H1} - \theta_H) + r H_2(t) \\
 \vdots \\
-H_{1,i}'(t) = \theta_H(H_{1,i-1}(t) - H_{1,i}(t)) - \delta_{H1} H_{1,i}(t) - aP_2H_{1,i}(t), \quad i \in [[2,n]] \\
+\dot{H_{1,i}}(t) = \theta_H(H_{1,i-1}(t) - H_{1,i}(t)) - \delta_{H1} H_{1,i}(t) - aP_2H_{1,i}(t), \quad i \in (2, 3, \dots, n) \\
 \vdots \\
-H_{2}'(t) = \theta_H H_{1,n}(t) - \delta_{H2} H_{2}(t) \\
-P_{1,1}'(t) = P_{1,1}(t)(- \delta_{P1} - \theta_P) + a P_2(t) \sum_{i=1}^{n} H_{1,i}(t) \\
+\dot{H_{2}}(t) = \theta_H H_{1,n}(t) - \delta_{H2} H_{2}(t) \\
+\dot{P_{1,1}}(t) = P_{1,1}(t)(- \delta_{P1} - \theta_P) + a P_2(t) \sum_{i=1}^{n} H_{1,i}(t) \\
 \vdots \\
-P_{1,i}'(t) = \theta_P(P_{1,i-1}(t) - P_{1,i}(t)) - \delta_{P1} P_{1,i}(t), \quad i \in [[2,m]] \\
+\dot{P_{1,i}}(t) = \theta_P(P_{1,i-1}(t) - P_{1,i}(t)) - \delta_{P1} P_{1,i}(t), \quad i \in (2, 3, \dots, m) \\
 \vdots \\
-P_{2}'(t) = \theta_P P_{1,m}(t) - \delta_{P2} P_{2}(t) \\
+\dot{P_{2}}(t) = \theta_P P_{1,m}(t) - \delta_{P2} P_{2}(t) \\
 \end{dcases}
 \end{equation}
 
@@ -673,6 +694,13 @@ With :
 \label{fig:bifurc_suppl}
 \end{figure}
 
+\setcounter{figure}{-1}
+\begin{figure}[!ht]
+\centering	
+\includegraphics[width=0.8\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/pbmtq_figure.png}
+\caption{Exploring the effect of developmental (time) variability on host-parasitoid models using the linear chain trick.}
+\label{fig:intro}
+\end{figure}
 
 
 \end{document}
