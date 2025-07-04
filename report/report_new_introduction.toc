@@ -1,24 +1,24 @@
 \babel@toc {english}{}
 \contentsline {section}{\numberline {1}Introduction}{1}%
-\contentsline {section}{\numberline {2}Models and methods}{4}%
-\contentsline {subsection}{\numberline {2.1}Murdoch (1987) model}{4}%
-\contentsline {subsection}{\numberline {2.2}Godfray and Hassel (1989) model}{6}%
-\contentsline {subsection}{\numberline {2.3}Survey of Erlang/Gamma distribution shape (n)}{6}%
-\contentsline {section}{\numberline {3}Results}{7}%
-\contentsline {subsection}{\numberline {3.1}Murdoch (1987) model}{7}%
-\contentsline {subsection}{\numberline {3.2}Godfray and Hassel (1989) model}{8}%
-\contentsline {subsection}{\numberline {3.3}Survey of Erlang/Gamma distribution shape (n)}{10}%
-\contentsline {section}{\numberline {4}Discussion (d'abord sous forme de bullet points}{12}%
-\contentsline {subsection}{\numberline {4.1}Understanding the effect of developmental variability}{13}%
-\contentsline {subsection}{\numberline {4.2}Differential sensitivity of models to developmental variability}{13}%
-\contentsline {subsection}{\numberline {4.3}Variability of maturation time in laboratory and in nature}{15}%
-\contentsline {section}{\numberline {5}Perspectives}{16}%
-\contentsline {subsection}{\numberline {5.1}Funding : en attente d'un meilleur template?}{16}%
-\contentsline {section}{\numberline {A}Appendix}{18}%
-\contentsline {subsection}{\numberline {A.1}Murdoch 1987 system}{18}%
-\contentsline {subsubsection}{\numberline {A.1.1}System construction : application of the Linear Chain Trick with a non-autonomous mortality term}{18}%
-\contentsline {subsubsection}{\numberline {A.1.2}Equilibria}{21}%
-\contentsline {subsubsection}{\numberline {A.1.3}Parametrisation}{21}%
-\contentsline {subsubsection}{\numberline {A.1.4}Convergence to ODE and DDE models}{22}%
-\contentsline {subsection}{\numberline {A.2}Godfray 1989 system}{23}%
-\contentsline {subsection}{\numberline {A.3}Supplementary figures}{24}%
+\contentsline {section}{\numberline {2}Models and methods}{5}%
+\contentsline {subsection}{\numberline {2.1}Murdoch (1987) model}{5}%
+\contentsline {subsection}{\numberline {2.2}Godfray and Hassel (1989) model}{8}%
+\contentsline {subsection}{\numberline {2.3}Survey of Erlang/Gamma distribution shape (n)}{8}%
+\contentsline {section}{\numberline {3}Results}{9}%
+\contentsline {subsection}{\numberline {3.1}Murdoch (1987) model}{9}%
+\contentsline {subsection}{\numberline {3.2}Godfray and Hassel (1989) model}{10}%
+\contentsline {subsection}{\numberline {3.3}Survey of Erlang/Gamma distribution shape (n)}{12}%
+\contentsline {section}{\numberline {4}Discussion (d'abord sous forme de bullet points}{13}%
+\contentsline {subsection}{\numberline {4.1}Understanding the effect of developmental variability}{14}%
+\contentsline {subsection}{\numberline {4.2}Differential sensitivity of models to developmental variability}{15}%
+\contentsline {subsection}{\numberline {4.3}Variability of maturation time in laboratory and in nature}{17}%
+\contentsline {section}{\numberline {5}Perspectives}{18}%
+\contentsline {section}{\numberline {6}Funding : en attente d'un meilleur template?}{18}%
+\contentsline {section}{\numberline {A}Appendix}{20}%
+\contentsline {subsection}{\numberline {A.1}Murdoch 1987 system}{20}%
+\contentsline {subsubsection}{\numberline {A.1.1}System construction : application of the Linear Chain Trick with a non-autonomous mortality term}{20}%
+\contentsline {subsubsection}{\numberline {A.1.2}Equilibria}{23}%
+\contentsline {subsubsection}{\numberline {A.1.3}Parametrisation}{23}%
+\contentsline {subsubsection}{\numberline {A.1.4}Convergence to ODE and DDE models}{24}%
+\contentsline {subsection}{\numberline {A.2}Godfray 1989 system}{25}%
+\contentsline {subsection}{\numberline {A.3}Supplementary figures}{26}%
