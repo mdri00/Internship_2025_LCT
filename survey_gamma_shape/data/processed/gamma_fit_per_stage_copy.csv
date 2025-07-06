@@ -1,0 +1,65 @@
+shape,scale,shift,species,stage
+    0.0013,  756.7855,    0.0000,Otiorhynchus sulcatu,Egg
+    0.0081,  119.1001,    0.0000,Otiorhynchus sulcatu,Larva
+    0.0047,  202.8423,    0.0000,Otiorhynchus sulcatu,Pupa
+    0.0054,  100.0526,    0.4290,A. urticae,Larva
+    0.0314,    6.2293,    0.7575,A. urticae,Pupa
+    0.0023,  115.3551,    0.4149,Inachis io,Larva
+    0.0069,   64.5795,    0.4890,Inachis io,Pupa
+    0.0056,   96.1601,    0.4239,Polygonia c-album,Larva
+    0.0294,    5.7675,    0.7765,Polygonia c-album,Pupa
+    0.3698,    1.7655,    0.4357,Languria mozardi,Egg
+    0.1302,    4.4124,    0.4708,Languria mozardi,Larva
+    0.0925,    5.6854,    0.6205,Languria mozardi,Pupa
+    0.0425,    3.1591,    0.8748,Campylomma verbasci,Egg
+    0.0911,    2.6088,    0.7814,Zonosemata electa,Pupa
+    0.0554,    5.8843,    0.8990,Cotesia melanoscela,Pupa
+    0.0164,   30.5556,    0.9480,Cotesia melanoscela,Pupa
+    0.0874,    3.8995,    0.6700,Typhlocyba pomaria,Egg
+    0.0267,    7.9775,    0.7610,Acantholyda erythrocephala ,Egg
+    0.0587,    6.2150,    0.5880,Acantholyda erythrocephala ,Larva
+    0.0661,    3.4192,    0.7520,Acantholyda erythrocephala ,Larva
+    0.0368,    3.3595,    0.8900,Hylobius pales,Egg
+    0.0527,    4.3559,    0.7800,Hylobius pales,Larva
+    0.1288,    3.2205,    0.6300,Hylobius pales,Prepupa
+    0.0389,    7.3572,    0.7200,Hylobius pales,Pupa
+    0.1078,    2.3593,    0.7594,Rhagoletis mendax,Pupa
+    0.0556,    2.1555,    0.8959,Bemisia tabaci,Egg
+    0.0978,    2.4266,    0.7875,Bemisia tabaci,Pupa
+    0.0759,    3.9322,    0.7138,Ips calligraphus,Egg
+    0.1102,    2.3079,    0.7754,Ips calligraphus,Larva
+    0.1372,    3.8728,    0.4874,Ips calligraphus,Pupa
+    0.1179,    4.5309,    0.4788,Ips avulsus,Egg
+    0.1126,    4.3708,    0.5177,Ips avulsus,Larva
+    0.2026,    4.2651,    0.1636,Ips avulsus,Pupa
+    0.0452,    5.4403,    0.7594,Toxoptera aurantii,Pupa
+    0.0344,    3.6446,    0.8819,Calosoma sycophanta,Pupa
+    0.1698,    1.9278,    0.7081,Diabrotica barberi,Egg PD
+    0.0366,    4.3739,    0.8337,Myzus persicae ,Nymph
+    0.0262,    8.9725,    0.7644,Myzus persicae ,Nymph
+    0.0091,  107.3853,    0.0000,Tenebrio molitor,Larva
+    0.0136,   70.0414,    0.0000,Cnaphalocrocis medinalis,Egg
+    0.0139,   71.0460,    0.0000,Cnaphalocrocis medinalis,Larva
+    0.0388,   25.5508,    0.0000,Cnaphalocrocis medinalis,Prepupa
+    0.0107,   92.2762,    0.0000,Cnaphalocrocis medinalis,Pupa
+    0.0235,   11.3897,    0.0000,Thrips palmi,Egg
+    0.0336,   11.3231,    0.0000,Thrips palmi,Larva
+    0.0185,  305.7474,    0.0000,Thrips palmi,Prepupa
+    0.0247,   39.4867,    0.0000,Feltiella acarisuga,Egg
+    0.0509,   19.5179,    0.0000,Feltiella acarisuga,Larva
+    0.0389,   25.4529,    0.0000,Feltiella acarisuga,Pupa
+    0.1490,    7.9227,   -0.3740,Neoseiulus californicus,Egg
+    0.1016,    4.9480,    0.1860,Neoseiulus californicus,Larva
+    0.0818,   12.2712,   -0.2280,Neoseiulus californicus,Protonymph
+    0.2597,    1.8264,    0.3020,Neoseiulus californicus,Deutonymph
+    0.0104,   91.4091,    0.0000,Laodelphax striatellus ,Egg PD
+    0.0237,   41.1513,    0.0000,Thecodiplosis japonensis,Larva PD
+    0.0251,   36.8411,    0.0000,Thecodiplosis japonensis,Pupa PD
+    0.0595,    9.1069,    0.3560,"Aphis 
+Gossypii",Protonymph
+    0.0388,   12.2816,    0.3420,"Aphis 
+Gossypii",Deutonymph
+    0.2733,    5.6537,   -0.5170,Amblyseius womersleyi,Egg
+    0.2524,    3.9240,    0.0486,Amblyseius womersleyi,Larva
+    0.5817,    2.0674,   -0.0762,Amblyseius womersleyi,Protonymph
+    0.4176,    3.0037,   -0.1790,Amblyseius womersleyi,Deutonymph

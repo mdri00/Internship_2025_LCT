@@ -48,7 +48,9 @@ shape,scale,shift,species,stage
     0.0247,   39.4867,    0.0000,Feltiella acarisuga,Egg
     0.0509,   19.5179,    0.0000,Feltiella acarisuga,Larva
     0.0389,   25.4529,    0.0000,Feltiella acarisuga,Pupa
+    0.4883,    1.6519,    0.0000,Neoseiulus californicus,Egg
     0.0663,   10.3873,    0.0000,Neoseiulus californicus,Larva
+    0.1372,    5.6534,    0.0000,Neoseiulus californicus,Protonymph
     0.1277,    6.0792,    0.0000,Neoseiulus californicus,Deutonymph
     0.0104,   91.4091,    0.0000,Laodelphax striatellus ,Egg PD
     0.0237,   41.1513,    0.0000,Thecodiplosis japonensis,Larva PD
@@ -57,4 +59,7 @@ shape,scale,shift,species,stage
 Gossypii",Protonymph
     0.0206,   39.7303,    0.0000,"Aphis 
 Gossypii",Deutonymph
+    1.1798,    0.8711,    0.0000,Amblyseius womersleyi,Egg
     0.2320,    4.4772,    0.0000,Amblyseius womersleyi,Larva
+    0.8607,    1.3085,    0.0000,Amblyseius womersleyi,Protonymph
+    0.8901,    1.2081,    0.0000,Amblyseius womersleyi,Deutonymph
