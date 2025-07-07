@@ -181,9 +181,11 @@ def fit_all_weibulls(
     weibull_pars = np.array(weibull_pars)
     info_array = np.array(info_array)
 
+    shape1 = weibull_pars.shape[0] # shape of numpy array that will be generated and saved an given in output
+    shape2 = weibull_pars.shape[1] + 1 # Adding Wesserstein distance column 
+    
     ### Fit of non-shifted gamma distributions
-    gamma_pars = np.zeros(weibull_pars.shape)
-    w_dists = np.zeros(weibull_pars.shape[0])
+    gamma_results_zero = np.zeros((shape1, shape2))
     print("Beginning non shifted analysis")
     for i,pars in enumerate(weibull_pars):
         print((i,weibull_pars.shape[0]))
@@ -195,14 +197,13 @@ def fit_all_weibulls(
             save = True,
             info = info_temp,
             fig_dir = fig_dir,
-            type_of_stage_and_shift = type_of_stage)   
+            type_of_stage_and_shift = type_of_stage + "_zero")   
         
-        gamma_pars[i,:] = gamma_pars_temp
-        w_dists[i] = w_dist_temp
+        gamma_results_zero[i,:-1] = gamma_pars_temp
+        gamma_results_zero[i,-1] = w_dist_temp
 
     ### Fit of shifted gamma distributions : first allow shift in [-1;1]
-    gamma_pars_pos = np.zeros(weibull_pars.shape)
-    w_dists_pos = np.zeros(weibull_pars.shape[0])
+    gamma_results_pos = np.zeros((shape1, shape2))
     print("Beginning positive shift analysis")
     for i,pars in enumerate(weibull_pars):
         print((i,weibull_pars.shape[0]))
@@ -216,13 +217,13 @@ def fit_all_weibulls(
             fig_dir = fig_dir,
             type_of_stage_and_shift = type_of_stage + "_positive") 
         
-        gamma_pars_pos[i,:] = gamma_pars_pos_temp
-        w_dists_pos[i] = w_dist_temp
+        gamma_results_pos[i,:-1] = gamma_pars_pos_temp
+        gamma_results_pos[i,-1] = w_dist_temp
         
         
 
     ### Fit of shifted gamma distributions : second copy shift from weibull
-    gamma_pars_copy = np.zeros(weibull_pars.shape)
+    gamma_results_copy = np.zeros((shape1, shape2))
     w_dists_copy = np.zeros(weibull_pars.shape[0])
     print("Beginning copy shift analysis")
     for i,pars in enumerate(weibull_pars):
@@ -237,21 +238,21 @@ def fit_all_weibulls(
             fig_dir = fig_dir,
             type_of_stage_and_shift = type_of_stage + "_copy")   
         
-        gamma_pars_copy[i,:] = gamma_pars_copy_temp
-        w_dists_copy[i] = w_dist_temp
+        gamma_results_copy[i,:-1] = gamma_pars_copy_temp
+        gamma_results_copy[i,-1] = w_dist_temp
 
 
     ### Save parameters results
-    np.save(processed_data_dir / f"{output}.npy", gamma_pars)
-    np.save(processed_data_dir / f"{output}_pos.npy", gamma_pars_pos)
-    np.save(processed_data_dir / f"{output}_copy.npy", gamma_pars_copy)
+    np.save(processed_data_dir / f"{output}_zero.npy", gamma_results_zero)
+    np.save(processed_data_dir / f"{output}_pos.npy", gamma_results_pos)
+    np.save(processed_data_dir / f"{output}_copy.npy", gamma_results_copy)
 
-    csv_file_path1 = processed_data_dir / f"{output}.csv"
+    csv_file_path1 = processed_data_dir / f"{output}_zero.csv"
     csv_file_path2 = processed_data_dir / f"{output}_pos.csv"
     csv_file_path3 = processed_data_dir / f"{output}_copy.csv"
-    np.savetxt(csv_file_path1, gamma_pars, fmt="%10.4f",delimiter=",")
-    np.savetxt(csv_file_path2, gamma_pars_pos, fmt="%10.4f",delimiter=",")
-    np.savetxt(csv_file_path3, gamma_pars_copy, fmt="%10.4f",delimiter=",")
+    np.savetxt(csv_file_path1, gamma_results_zero, fmt="%10.4f",delimiter=",")
+    np.savetxt(csv_file_path2, gamma_results_pos, fmt="%10.4f",delimiter=",")
+    np.savetxt(csv_file_path3, gamma_results_copy, fmt="%10.4f",delimiter=",")
 
     # Add header, add two columns giving species and stage
     with open(csv_file_path1, 'r') as file: # non shifted file
@@ -262,7 +263,7 @@ def fit_all_weibulls(
         data[i].append(info_array[i,1])
     with open(csv_file_path1, 'w', newline='') as file:
         ### header
-        writer = csv.DictWriter(file, fieldnames = ["shape", "scale", "shift", "species", "stage"])
+        writer = csv.DictWriter(file, fieldnames = ["shape", "scale", "shift", "w-dist", "species", "stage"])
         writer.writeheader()
         ### data
         writer = csv.writer(file)
@@ -276,12 +277,11 @@ def fit_all_weibulls(
         data[i].append(info_array[i,1])
     with open(csv_file_path2, 'w', newline='') as file:
         ### header
-        writer = csv.DictWriter(file, fieldnames = ["shape", "scale", "shift", "species", "stage"])
+        writer = csv.DictWriter(file, fieldnames = ["shape", "scale", "shift", "w-dist", "species", "stage"])
         writer.writeheader()
         ### data
         writer = csv.writer(file)
         writer.writerows(data)
-
 
     with open(csv_file_path3, 'r') as file: # shifted file
         reader = csv.reader(file)
@@ -291,25 +291,12 @@ def fit_all_weibulls(
         data[i].append(info_array[i,1])
     with open(csv_file_path3, 'w', newline='') as file:
         ### header
-        writer = csv.DictWriter(file, fieldnames = ["shape", "scale", "shift", "species", "stage"])
+        writer = csv.DictWriter(file, fieldnames = ["shape", "scale", "shift", "w-dist", "species", "stage"])
         writer.writeheader()
         ### data
         writer = csv.writer(file)
         writer.writerows(data)
 
-    
-    # Save fitting distance results
-    np.save(processed_data_dir / f"{output}_wdist.npy", w_dists)
-    np.save(processed_data_dir / f"{output}_wdist_pos.npy", w_dists_pos)
-    np.save(processed_data_dir / f"{output}_wdist_copy.npy", w_dists_copy)
-
-    csv_file_path1 = processed_data_dir / f"{output}_wdist_.csv"
-    csv_file_path2 = processed_data_dir / f"{output}_wdist_pos.csv"
-    csv_file_path3 = processed_data_dir / f"{output}_wdist_copy.csv"
-    np.savetxt(csv_file_path1, w_dists, fmt="%10.4f",delimiter=",")
-    np.savetxt(csv_file_path2, w_dists_pos, fmt="%10.4f",delimiter=",")
-    np.savetxt(csv_file_path3, w_dists_copy, fmt="%10.4f",delimiter=",")
-
-    return (gamma_pars, gamma_pars_pos, gamma_pars_copy)
+    return (gamma_results_zero, gamma_results_pos, gamma_results_copy)
    
 
