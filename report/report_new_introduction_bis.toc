@@ -1,0 +1,10 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Funding : en attente d'un meilleur template?}{1}%
+\contentsline {section}{\numberline {A}Appendix}{3}%
+\contentsline {subsection}{\numberline {A.1}Murdoch 1987 system}{3}%
+\contentsline {subsubsection}{\numberline {A.1.1}System construction : application of the Linear Chain Trick with a non-autonomous mortality term}{3}%
+\contentsline {subsubsection}{\numberline {A.1.2}Equilibria}{6}%
+\contentsline {subsubsection}{\numberline {A.1.3}Parametrisation}{6}%
+\contentsline {subsubsection}{\numberline {A.1.4}Convergence to ODE and DDE models}{7}%
+\contentsline {subsection}{\numberline {A.2}Godfray 1989 system}{8}%
+\contentsline {subsection}{\numberline {A.3}Supplementary figures}{9}%

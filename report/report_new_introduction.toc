@@ -2,15 +2,17 @@
 \contentsline {section}{\numberline {1}Introduction}{1}%
 \contentsline {section}{\numberline {2}Models and methods}{5}%
 \contentsline {subsection}{\numberline {2.1}Murdoch (1987) model}{5}%
-\contentsline {subsection}{\numberline {2.2}Godfray and Hassel (1989) model}{8}%
-\contentsline {subsection}{\numberline {2.3}Survey of Erlang/Gamma distribution shape (n)}{8}%
+\contentsline {subsection}{\numberline {2.2}Godfray and Hassel (1989) model}{7}%
+\contentsline {subsection}{\numberline {2.3}Comparing the effect of May's implementation of parasitism heterogeneity and the effect of developmental variability}{7}%
+\contentsline {subsection}{\numberline {2.4}Survey of Erlang/Gamma distribution shape (n)}{7}%
 \contentsline {section}{\numberline {3}Results}{9}%
-\contentsline {subsection}{\numberline {3.1}Murdoch (1987) model}{9}%
-\contentsline {subsection}{\numberline {3.2}Godfray and Hassel (1989) model}{10}%
-\contentsline {subsection}{\numberline {3.3}Survey of Erlang/Gamma distribution shape (n)}{12}%
-\contentsline {section}{\numberline {4}Discussion (d'abord sous forme de bullet points}{13}%
-\contentsline {subsection}{\numberline {4.1}Understanding the effect of developmental variability}{14}%
-\contentsline {subsection}{\numberline {4.2}Differential sensitivity of models to developmental variability}{15}%
+\contentsline {subsection}{\numberline {3.1}The sensitivity of the refuge-stage effect to developmental variability : Murdoch (1987) model}{9}%
+\contentsline {subsection}{\numberline {3.2}Sensitivity of the phenological-mismatch-effect to developmental variability : Godfray and Hassel (1989) model}{9}%
+\contentsline {subsection}{\numberline {3.3}Comparing the effect of May's implementation of parasitism heterogeneity and the effect of developmental variability}{12}%
+\contentsline {subsection}{\numberline {3.4}Survey of Erlang/Gamma distribution shape (n)}{13}%
+\contentsline {section}{\numberline {4}Discussion (d'abord sous forme de bullet points}{15}%
+\contentsline {subsection}{\numberline {4.1}Differential sensitivity of models to developmental variability}{15}%
+\contentsline {subsection}{\numberline {4.2}Understanding the effect of developmental variability}{16}%
 \contentsline {subsection}{\numberline {4.3}Variability of maturation time in laboratory and in nature}{17}%
 \contentsline {section}{\numberline {5}Perspectives}{18}%
 \contentsline {section}{\numberline {6}Funding : en attente d'un meilleur template?}{18}%
