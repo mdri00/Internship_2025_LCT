@@ -395,14 +395,14 @@ xxx
 	  \label{fig:b}
 	\end{subfigure}
 	
-\caption{SFIGsurvey : \textbf{(a)} : FFitted n for stages or whole juvenile development of a few insects involved in agroecosystems. Ips avulsus and Feltiella acarisuga have only 1 nymphal stage. Grey bars indicate that the Gamma distribution of the corresponding stage was not fitted due to a negative shift in the Weibull law estimates given in the original paper. \textbf{(b)} : }
+\caption{SFIGsurvey : \textbf{(a)} : FFitted n for stages or whole juvenile development of a few insects involved in agroecosystems. Ips avulsus and Feltiella acarisuga have only 1 nymphal stage. Grey bars indicate that the Gamma distribution of the corresponding stage was not fitted due to a negative shift in the Weibull law estimates given in the original paper. \textbf{(b)} : Fitted Gamma shape as a function of the original Weibull shift, with the constraint that the Gamma shift has to be null.}
 \label{fig:Survey}
 \end{figure}
 
-FIGURE : Deux graph avec zoom ou échelle log pour (a), (b)? Que mettre dans (c) et (d) entre la version actuelle et SFIGsurvey? 
+FIGURE : Deux graph avec zoom ou échelle log pour (a), (b)? Que mettre dans (c) et (d) entre la version actuelle et SFIGsurvey?  La table 1 est un peu redondante avec 7a;7b, et j'utilise peu 7a7b dans le texte : ça me dérange. 
 
 
-\tabto{1 cm} Most fits generate a visualization figure comparable to SFigXa and SFigXb. The respective means of the Wasserstein distances for the constraints "$\tau = 0$", "$\tau \in [0;1]$", and "$\tau$ copied" are : 0.030, 0.029 and 0.020. The respective medians are 0.013, 0.012 and 0.016. The inconsistent ordering between mean and median is caused by 5 sets of Weibull parameters that yield unusually high distances for the constraints "$\tau = 0$" and "$\tau \in [0;1]$", skewing their mean upward. These sets of parameters have a negative Weibull shift (Lee et Ahn (2000) - \textit{Amblyesius womersley} ; Kim et al. (2009) - \textit{Neoseiulus californicus}). With the constraint of a positive or null Gamma shift, the Maximum Likelihood method entails a very poor fitting of these distributions. The fits markedly improve when the Gamma shifts is allowed to be negative with the constraint "$\tau$ copied". For these reasons, these sets were ignored in the following analysis. Overall, the Wasserstein distances suggest that the goodness-of-fit is less variable when the shift is taken from the Weibull distribution, and that it is similar between the constraints "$\tau = 0$" and "$\tau \in [0;1]$" (Figure 7c). 
+\tabto{1 cm} Most fits generate a visualization figure comparable to SFigXa and SFigXb. The constraints "$\tau = 0$" and "$\tau \in [0;1]$" yield similar Wasserstein distances between the fitted Gamma distribution and the corresponding Weibull distribution. The mean Wasserstein distance is decreased by about 33\% between this group of constraint and the third one ("$\tau$ copied") (Table 1). Conversely, the median Wasserstein distance is increased by about 30\%. The inconsistent ordering between mean and median is caused by 5 sets of Weibull parameters that yield unusually high distances for the constraints "$\tau = 0$" and "$\tau \in [0;1]$", skewing their mean upward. These sets of parameters have a negative Weibull shift (Lee et Ahn (2000) - \textit{Amblyesius womersley} ; Kim et al. (2009) - \textit{Neoseiulus californicus}). With the constraint of a positive or null Gamma shift, the Maximum Likelihood method entails a very poor fitting of these distributions. The fits markedly improve when the Gamma shifts is allowed to be negative with the constraint "$\tau$ copied". For these reasons, these sets were ignored in the following analysis. Overall, the Wasserstein distances suggest that the goodness-of-fit is less variable when the shift is taken from the Weibull distribution, and that it is similar between the constraints "$\tau = 0$" and "$\tau \in [0;1]$" (Figure 7c). 
 
 \tabto{1 cm} [Distance de Kolmogorov Smirnov ?]
 
@@ -412,7 +412,9 @@ FIGURE : Deux graph avec zoom ou échelle log pour (a), (b)? Que mettre dans (c)
 \toprule
 \textbf{} & $\boldsymbol{\tau = 0}$ & $\boldsymbol{\tau \in [0,1]}$ & $\boldsymbol{\tau}$ \textbf{copied} \\
 \midrule
-Mean shift & 0.000 & 0.194 & 0.436 \\
+Mean Wasserstein distance & 0.030 & 0.029 & 0.020 \\ 
+Median Wasserstein distance & 0.013 & 0.012 & 0.016 \\\cmidrule{1-4}
+Mean shift & 0.000 & 0.194 & 0.436 \\ 
 Mean shape & 123.3 & 96.0 & 45.5 \\
 Median shape & 57.9 & 31.3 & 6.2 \\
 Max shape & 782.2 & 782.2 & 756.8 \\
@@ -421,17 +423,15 @@ Low shape count ($\leq 20$) & 11 (19\%) & 24 (42\%) & 38 (67\%) \\
 Significant shape change ($\tau=0$ vs $\tau \in  [0;1]$) & \multicolumn{2}{c}{20 (35\%)} & -- \\
 \bottomrule
 \end{tabular}
-\caption{Summary statistics for the three $\tau$ constraints.  Fractions are out of 57 cases.  Sets of parameters with negative shifts are not included. A significant shape change is counted when the shape differs by at least 1 between the 2 given constraints.}
+\caption{Summary statistics of the Weibull-to-Gamma distribution fitting across the three $\tau$ constraints.  62 sets of Weibull parameters were analyzed in total.  The 5 sets of parameters with negative shifts are included in the lines about Wasserstein distances, and ignored otherwise. A significant shape change is counted when the shape differs by at least 1 between the 2 given constraints.}
 \end{table}
 
+\tabto{1 cm} The average Gamma shape decreases by 22\% between the "$\tau = 0$" constraint and the "$\tau \in [0;1]$" constraint (Table 1, Figure 7a). Similarly, the median shape decreases by 46\%, the minimum shape goes from 4.5 to 1.9, and the proportion of low ($\leq 20$) shapes goes from 19\% to 42\%. The maximum shape is 782.2 with both constraints. The "$\tau$ copied" constraint is associated with markedly lower fitted Gamma shapes (Table 1, Figure 7a;7b). 
 
-\tabto{1 cm} [Faire un tableau ?] The average Gamma shape (n) obtained is 96.0 if the fitted shift is constrained in $[0;1]$ and 123.3 if it is forced to 0 (Figure 7a). The minimal shapes are respectively 1.9 and 4.5. The maximum shape is 782.2 regardless of the constraint on the shift. These ranges are substantially greater than the one indicated in Xu et al. (2010). The lines connecting the two violins in Figure 7a;7b indicate that the constraint to have a null shift is associated with a higher fitted n. SFigY gives a representative example of such a case.
+\tabto{1 cm} The lines connecting the two violins in Figure 7a;7b indicate that the constraint to have a null shift is associated with a higher fitted n. In line, Figure 8 (SFigsurvey) indicates that a large original Weibull shift is associated with a large Gamma shape for the $\tau = 0$ constraint fits. It shows that when the original Weibull shape is $\geq 0.8$, the fitted Gamma shape cannot be lower than around 50. [SFig?? Vis graph gives a representative example of such a case]. This suggests that the absence of maturation during the early phase of the stage is either taken into account through the shift ("$\tau \in [0;1]$" and "$\tau$ copied" constraints), or it is taken into account through a larger shape ("$\tau = 0$" constraint"). [Discussion cette phrase ??:  This can thus cause the discrepancy between these two groups of fitting constraint]. [PHRASE PAS CLAIRE DONC DEUX ESSAIS : 1: For 20 out of 57 fitted stages (35\% of cases), the difference between the fitted n with constraint $\tau = 0$ and the fitted n with constraint $\tau \in [0;1]$ is superior to 1 ;;;;;; 2: Overall,  in 37 out of 57 fits (65\% of cases), the fitted Gamma shape was the same (with a threshold of difference of 1) whether the shift was allowed in [0;1] or forced to 0]. In all three constraints, an originally higher Weibull shift is significantly associated with a lower Wasserstein distance between the fitted Gamma distribution and its corresponding Weibull distribution (Linear regression estimated with Ordinary Least Squares method, Wald test with all 3 p-values < 1e-3) (Figure 7d). This suggests that even with the constraint to have a null Gamma shift, a large Weibull shift does not entail a poorer fit according to the chosen distance metric.
+
+\tabto{1 cm} [Results about whole dev and substage dev : juste dire rapidement que le whole dev c quasi tjrs un plus grand n que nptquel autre stage de l'espèce]
  
-[PHRASE PAS CLAIRE DONC DEUX ESSAIS :
-1: For 20 out of 57 fitted stages (35\% of cases), the difference between the fitted n with constraint $\tau = 0$ and the fitted n with constraint $\tau \in [0;1]$ is superior to 1
-2: Overall,  in 37 out of 57 fits (65\% of cases), the fitted Gamma shape was the same (with a threshold of difference of 1) for both shift constraints
-]
-\tabto{1 cm} The Gamma shape (n) lies in a large range of values across species and stages (Figure 7a). Ips avulus show a relatively high developmental variability, with gamma shapes around 5~20 (and 30 for the whole development). Eg 3 : à voir si je fit les shits négatifs . Conversely. The difference of developmental variability can be high between species, as suggested by the 5 species detailed in Figure 7c. Figure 1c also suggests that maturation variability is generally lower when considering combined stages such as the complete development of insects [MIEUX QUANTIFIER CA d'abord]. 
 
 
 
@@ -451,8 +451,6 @@ Significant shape change ($\tau=0$ vs $\tau \in  [0;1]$) & \multicolumn{2}{c}{20
 
 
 \section{Discussion (d'abord sous forme de bullet points}
-avec les travaux de Xu et de Wearing, j'ai vraiment l'impression de retrouver naivement ce qu'ils ont déjà dit. En plus, je "spoile" déjà dans l'intro en ayant déjà introduit le concept de sensibilité.
-
 \subsection{Differential sensitivity of models to developmental variability}
 Gurney 1980 model ; Larval cohort competition : model built by Gurney 1980 and further justified in Gurney 1983. Equivalent Erlang-distributed model analytically studied by Beretta et al. 2016. Les résultats sont similaires : on a une évolution "non linéaire" des prop du système avec une apparition brutale d'une zone d'instabilité quand n augmente. Mais cette évolution est dépendante d'autres paramètres (ce qu'illustre très bien Beretta et al. 2016). Idem dans Wearing : changement de type de dynamique entre GC et MGC.
 \tabto{1.5 cm} -> Let sensitivity (understand : to the increase of n) be the propensity of ODE models’ prediction to swiftly change as soon as maturation time variability is reduced (as long as n increases from 1).  Note that this definition of sensitivity is inverse to the one chosen by Wearing et al. In any case, they showed that sensitivity was variable and dependent on several factors (to which developmental time variability is added ; to which dynamic is studied ; to the used set of parameters and their distance to a pre-existing bifurcation).  [... et nous ce qu'on montre c'est exactement la même chose : évolution "non linéaire" du système avec n, mais ça dépend de plein de choses... donc c'est du cas par cas et faut faire gaffe : on a rien réinventé finalement on confirme juste Wearing pour moi? C'est un peu ça qui me donne des difficultés pour structurer ce rapport]
@@ -475,6 +473,13 @@ Together with the results of Xu et al. (2010) that showed the low effect of m co
 \\
 -> (transi vers la suite) Donc faut estimer cette variab sur le système qu'on étudie si [on veut pas prendre le risque de rater des propriétés majeures du système] (mal dit?).
 
+
+
+
+
+
+
+
 \subsection{Understanding the effect of developmental variability}
 1.Effet de n sur $p_{survie}$ (cf oral de Juin) -> pcque on a pas paramétré de manière à égaliser la prop de survie. On pourrait (cf mon fichier reparamétrage2.nb -> ça enlève les effets sur les eq, mais ça change peu les effets sur les zones de stabilité!)
 \\
@@ -488,25 +493,34 @@ C pas l'effet de la mortalité intrinsèque : ca vient peut etre du fait que les
 -> on a sous-côté ce type d'agrégation!!
 
 
-\subsection{Variability of maturation time in laboratory and in nature}
-[Xu found that the estimated shapes (n) were either relatively small (1-10) or larger (>20). -> résultats]
- 
-More generally, Hurtado and Kirosingh (2019) suggested a method to bypass the IDE framework and allow modelers to assume maturation (more generally, passage) time distributions from a family called the phase-type distributions. These distributions can be thought of as the family of all possible hitting time distributions for continuous-time Markov chains. In the case of a "linear chain" of ODEs, the Erlang distribution is involved. As suggested by the example SEIR model with heterogeneity among infected individuals shown by Hurtado and Cameron (2021), this new framework allows highly flexible ODE models assuming more realistic maturation time distribution and can be computationally more efficient. Even outside this framework, the LCT can be judicious. Nelson et al. (2019) used the LCT to implement hierarchical asymmetric larval competition. In the case of this modeling of development, individuals advance through the subcompartments of their stage as they grow. Nelson et al. assumed each subcompartment's per-capita mortality rate to depend only on the density of individuals that are larger or equal to the size of each individual, i.e to the density of downstream subcompartments. Hence, the competition mortality terms uniquely depend on the downstream LCT subcompartments.
-\\
-\\
-Retour sur les résultats : figure 1a and 1b show that [à quel point répeter tout? est-ce nécessaire de refaire un summary?]
-	2.effet de constraint : bcp de n envoyés à droite si tau = 0 (avec supplementary graph qui illustre). Ainsi si pas de shift on aura jamais de n en dessous de . 
-	3.n de total dev > mais pas forcément >>>>>.
-	4.eventuellement parler de la cphérence avec Xu : on pourra supplementary graph un clipped histogram : même en essayant de reprod oui on a un groupe à 1-10, mais on a bcp bcp + de gens à >20!
-\\
-Autres manières d'estimer la variab développementale :
-	-Trouver des articles où le CV du temps de maturation est donné et appliqué la formule donnée par la loi Gamma (ce que fait Jules)
-	-La technique de Blythe avec la décomposition tau = tau1+tau2 et le rapport tau1/tau2 : on pourrait calculer ce rapport pour nos différentes shapes de loi Gamma (et shift) ? -> En tout cas Blythe a aussi trouvé des rapports très variés (par rapport à un thresold acceptable de 5 qu'il propose via son modèle)  qui soulignent que c'est un peu du cas par cas. On est d'accord avec lui là-dessus.
-\\
+
+
+
+
+
+
+\subsection{Developmental variability in laboratory and in nature}
+
+\tabto{1 cm} More generally, Hurtado and Kirosingh (2019) suggested a method to bypass the IDE framework and allow modelers to assume maturation (more generally, passage) time distributions from a family called the phase-type distributions. These distributions can be thought of as the family of all possible hitting time distributions for continuous-time Markov chains. In the case of a "linear chain" of ODEs, the Erlang distribution is involved. As suggested by the example SEIR model with heterogeneity among infected individuals shown by Hurtado and Cameron (2021), this new framework allows highly flexible ODE models assuming more realistic maturation time distribution and can be computationally more efficient. Even outside this framework, the LCT can be judicious. Nelson et al. (2019) used the LCT to implement hierarchical asymmetric larval competition. In the case of this modeling of development, individuals advance through the subcompartments of their stage as they grow. Nelson et al. assumed each subcompartment's per-capita mortality rate to depend only on the density of individuals that are larger or equal to the size of each individual, i.e to the density of downstream subcompartments. Hence, the competition mortality terms uniquely depend on the downstream LCT subcompartments.\\
+
+\tabto{1 cm} Wagner's (1984) method has allowed the production of a large literature about the developmental variability of numerous insects with economical interests in agriculture.  The use of the Weibull distribution is a convenient way of summarizing the developmental data without sharing the raw data about development timings.  However, the use of (non-shifted) Erlang distributions in host-parasitoid models entails the necessity to find the corresponding Gamma (since we allow the shape parameter to be non-integer) law parameters parameters such that both distributions are as close as possible. Xu et al. (2010) introduced a way to do using a Maximum Likelihood method. They found, setting the Gamma shift equal to the Weibull shift, that the estimated Gamma shapes (n) were either relatively small (1-10) or larger (>20) in their survey.
+
+\tabto{1 cm} Here, we show that Weibull and Gamma distributions look closely similar (Figure 1) and that that the correspondance between the two types of distribution is very good [Mal dit? : en gros je veux dire que le transfert Weibull->Gamma est vrmt bien : on perd peu d'info, c prouvé grace a la distance et aussi à l'oeil on voit que ça marche bien].
+
+\tabto{1 cm} Besides, the use of the same constraint on the shift ("$\tau$ copied") does entail low values of Gamma shapes consistent with those found in Xu et al. (2010). We also show that the early phase with no maturation is either taken into account through a large Gamma shift or a large Gamma shape. Thus, the high Weibull shifts allow the Gamma shapes to be lower with this constraint. When the Gamma shift is either allowed in [0;1] or forced to 0, the fitted shifts decrease, and, mechanically, the fitted shapes increase. Since However, the use of the Wasserstein distance to quantitatively estimate the goodness-of-fit suggests that high Weibull shifts and null Gamma shits are not associated with poorer fits. Together, these results indicate two things. First, since the LCT framework does not allow shifts, the Erlang/Gamma shapes (or number of subcompartments) that allow realistic maturation distributions are generally relatively large (median shape of the survey : 57.9, Table 1) and diverse (range in the survey : 4.5 to 782.2, Table 1, Figure 7a;7b). Second, the LCT models' assumptions about developmental variability are not less realistic than the assumptions of models that allow shifts. Thus, the mathematical and computational advantages of LCT models are not necessarily produced [do not necessarily come?] at the cost of their realism. \\
+
+\tabto{1 cm}Contrary to Xu et al. (2010), Weibull parameters covering the whole juvenile development was included in the survey. We show that most whole development Gamma shapes are superior to any of the Gamma shape of the species' stage of development. This means that empirical developmental variability is lower when all developmental stages are fused into one implicit juvenile stage. This implicit choice is the one made by Murdoch et al. (1987), our first model and numerous host-parasitoid models. Modelers should thus bear in mind that the realism of developmental variability depend on the structuring (namely here, numbering) of the juvenile stage(s). [Something about intraspecific vs interspecific variability of n : with examples SFig ça a l'air gros l'inter et petit l'intra mais ça nécessiterait des travaux dédiés. The Gamma shape (n) lies in a large range of values across species and stages (Figure 7a). Ips avulus show a relatively high developmental variability, with gamma shapes around 5~20 (and 30 for the whole development). Eg 3 : à voir si je fit les shits négatifs . Conversely. The difference of developmental variability can be high between species, as suggested by the 5 species detailed in Figure 7c. Figure 1c also suggests that maturation variability is generally lower when considering combined stages such as the complete development of insects [MIEUX QUANTIFIER CA d'abord]]\\
+
+
 On a donc vu que beaucoup de prédictions données par le modèle "simple" H-P Murdoch changent brutalement dans la zone de n 1-10. Or, on voit dans le survey empirique, lorsqu'on n'autorise pas de pré-shift, qu'il n'existe pas de n autour de 1-6. Ca prouve donc que l'approche ODE est effectivement peu réaliste et apporte un réel biais dans les prédictions des modèles, à la fois quantitatives (equilibres, propriétés des oscillations) et qualitatives (types de dynamiques). 
 \\
 Pour autant, les dynamiques GC du modèle de Godfray suggèrent qu'on ne peut pas conclure non plus que l'approche DDE est nécessairement plus acceptable autant du pdv du réalisme que de la robustesse des prédictions des modèles à délaix fixes à l'ajout d'un tout petit peu de variab dev.
 \\ Diff labo-nature (y'a des méthodo Wagner appliquées sur des données d'émergence)
+
+\tabto{1 cm}  Autres manières d'estimer la variab développementale :
+	-Trouver des articles où le CV du temps de maturation est donné et appliqué la formule donnée par la loi Gamma (ce que fait Jules)
+	-La technique de Blythe avec la décomposition tau = tau1+tau2 et le rapport tau1/tau2 : on pourrait calculer ce rapport pour nos différentes shapes de loi Gamma (et shift) ? -> En tout cas Blythe a aussi trouvé des rapports très variés (par rapport à un thresold acceptable de 5 qu'il propose via son modèle)  qui soulignent que c'est un peu du cas par cas. On est d'accord avec lui là-dessus.
+
 
 \section{Perspectives}
 Survey-CV : une manière simple et rapide d'estimer le nombre de sous-compartiments à appliquer.... quand le LCT est nécessaire 
