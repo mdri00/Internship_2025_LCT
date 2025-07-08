@@ -33,6 +33,9 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.5em}
 
+% Table
+\usepackage{booktabs}
+
 % Figure management
 \usepackage{graphicx}
 \usepackage{caption}
@@ -372,13 +375,58 @@ xxx
 	\end{subfigure}
 
 
-\caption{Survey of Gamma shape parameter of insects stages found in literature. In \textbf{(a)} and  \textbf{(b)}, only stages like Egg, Larva, Pupa/Nymph and Proto/Deutonymph were retained. \textbf{(a)} : Fitted gamma shape parameters (n). Shift was either constrained to [0;1] (top) or to 0 (bottom). \textbf{(b)} : Fitted n with all n>100 counted as 100. \textbf{(c)} : Fitted n for stages or whole juvenile development of a few insects involved in agroecosystems. Ips avulsus and Feltiella acarisuga have only 1 nymphal stage. Grey bars indicate that the Gamma distribution of the corresponding stage was not fitted due to a negative shift in the Weibull law estimates given in the original paper.}
+\caption{Survey of Gamma shape parameter of insects stages found in literature. The Gamma fitting processed was conducted with 3 types of constraint : either the Gamma shift parameter ($\tau$) was forced to 0 ("$\tau = 0$"), either it was allowed in the range [0;1] ("$\tau \in [0;1]$"), or it was set equal to the given Weibull shift parameter ("$\tau$ copied"). Only stages like Egg, Larva, Pupa/Nymph and Proto/Deutonymph were retained. \textbf{(a)} : Fitted gamma shape parameters (n). Each grey line connects a couples of species and stage across the fitting constraints. \textbf{(b)} : Zoom on the figure (a). \textbf{(c)} : Wasserstein distance between the fitted Gamma distribution and the corresponding Weibull to determine the goodness-of-fit for the three fitting constraints.  \textbf{(d)} : Wasserstein distance as a function of the original Weibull shift parameter across the three fitting constraints, with linear regression line estimated with the Ordinary Least Square method.}
 \label{fig:Survey}
 \end{figure}
 
-\tabto{1 cm} Most fits generate a visualization figure comparable to SFigXa, in both the cases of the $\tau = 0$ and $\tau \in [0;1]$ constraints. Hence, the overall Weibull-to-Gamma fit was deemed satisfactory. However, when the fitted n is relatively low, the goodness-of-fit seems better when $\tau$ is constrained in $[0;1]$ compared to when it is forced to 0, as suggested by the example given by SFigXb.
-\tabto{1 cm} a[Ici on ajoute d'autres méthodes d'évaluation de la goodness of fit : distances?]
-\tabto{1 cm} The average Gamma shape (n) obtained is 96.0 if the fitted shift is constrained in $[0;1]$ and 123.3 if it is forced to 0 (Figure 7a). The minimal shapes are respectively 1.9 and 4.5. The maximum shape is 782.2 regardless of the constraint on the shift. These ranges are substantially greater than the one indicated in Xu et al. (2010). The lines connecting the two violins in Figure 7a;7b indicate that the constraint to have a null shift is associated with a higher fitted n. SFigY gives a representative example of such a case. 
+\begin{figure}[]
+\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+	  \centering
+	  \includegraphics[width=\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/figs/n_survey_example_species.pdf}
+	  \caption{}
+	  \label{fig:a}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+	  \centering
+	  \includegraphics[width=\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/figs/n_survey_shape_according_to_weibull-shift.pdf}
+	  \caption{}
+	  \label{fig:b}
+	\end{subfigure}
+	
+\caption{SFIGsurvey : \textbf{(a)} : FFitted n for stages or whole juvenile development of a few insects involved in agroecosystems. Ips avulsus and Feltiella acarisuga have only 1 nymphal stage. Grey bars indicate that the Gamma distribution of the corresponding stage was not fitted due to a negative shift in the Weibull law estimates given in the original paper. \textbf{(b)} : }
+\label{fig:Survey}
+\end{figure}
+
+FIGURE : Deux graph avec zoom ou échelle log pour (a), (b)? Que mettre dans (c) et (d) entre la version actuelle et SFIGsurvey? 
+
+
+\tabto{1 cm} Most fits generate a visualization figure comparable to SFigXa and SFigXb. The respective means of the Wasserstein distances for the constraints "$\tau = 0$", "$\tau \in [0;1]$", and "$\tau$ copied" are : 0.030, 0.029 and 0.020. The respective medians are 0.013, 0.012 and 0.016. The inconsistent ordering between mean and median is caused by 5 sets of Weibull parameters that yield unusually high distances for the constraints "$\tau = 0$" and "$\tau \in [0;1]$", skewing their mean upward. These sets of parameters have a negative Weibull shift (Lee et Ahn (2000) - \textit{Amblyesius womersley} ; Kim et al. (2009) - \textit{Neoseiulus californicus}). With the constraint of a positive or null Gamma shift, the Maximum Likelihood method entails a very poor fitting of these distributions. The fits markedly improve when the Gamma shifts is allowed to be negative with the constraint "$\tau$ copied". For these reasons, these sets were ignored in the following analysis. Overall, the Wasserstein distances suggest that the goodness-of-fit is less variable when the shift is taken from the Weibull distribution, and that it is similar between the constraints "$\tau = 0$" and "$\tau \in [0;1]$" (Figure 7c). 
+
+\tabto{1 cm} [Distance de Kolmogorov Smirnov ?]
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{} & $\boldsymbol{\tau = 0}$ & $\boldsymbol{\tau \in [0,1]}$ & $\boldsymbol{\tau}$ \textbf{copied} \\
+\midrule
+Mean shift & 0.000 & 0.194 & 0.436 \\
+Mean shape & 123.3 & 96.0 & 45.5 \\
+Median shape & 57.9 & 31.3 & 6.2 \\
+Max shape & 782.2 & 782.2 & 756.8 \\
+Min shape & 4.5 & 1.9 & 1.8 \\
+Low shape count ($\leq 20$) & 11 (19\%) & 24 (42\%) & 38 (67\%) \\
+Significant shape change ($\tau=0$ vs $\tau \in  [0;1]$) & \multicolumn{2}{c}{20 (35\%)} & -- \\
+\bottomrule
+\end{tabular}
+\caption{Summary statistics for the three $\tau$ constraints.  Fractions are out of 57 cases.  Sets of parameters with negative shifts are not included. A significant shape change is counted when the shape differs by at least 1 between the 2 given constraints.}
+\end{table}
+
+
+\tabto{1 cm} [Faire un tableau ?] The average Gamma shape (n) obtained is 96.0 if the fitted shift is constrained in $[0;1]$ and 123.3 if it is forced to 0 (Figure 7a). The minimal shapes are respectively 1.9 and 4.5. The maximum shape is 782.2 regardless of the constraint on the shift. These ranges are substantially greater than the one indicated in Xu et al. (2010). The lines connecting the two violins in Figure 7a;7b indicate that the constraint to have a null shift is associated with a higher fitted n. SFigY gives a representative example of such a case.
+ 
 [PHRASE PAS CLAIRE DONC DEUX ESSAIS :
 1: For 20 out of 57 fitted stages (35\% of cases), the difference between the fitted n with constraint $\tau = 0$ and the fitted n with constraint $\tau \in [0;1]$ is superior to 1
 2: Overall,  in 37 out of 57 fits (65\% of cases), the fitted Gamma shape was the same (with a threshold of difference of 1) for both shift constraints

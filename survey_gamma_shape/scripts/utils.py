@@ -78,7 +78,7 @@ def fit_gamma(weibull_par : np.ndarray,
             (0, 1),        # loc in [0, 1]
             (1e-5, None)    # scale > 0
         ]
-        constraint = r"Shift $\in [-1;1]$"
+        constraint = r"Shift $\in [0;1]$"
         initial_guess = [1.0, 0.0, 1.0]
     elif tau_forced == "copy" :
         bounds = [
