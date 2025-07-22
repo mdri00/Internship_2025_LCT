@@ -2,10 +2,11 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {2}Models and methods}{5}{}%
 \contentsline {subsection}{\numberline {2.1}Host-parasitoid models in continuous time}{5}{}%
-\contentsline {subsection}{\numberline {2.2}Survey of Erlang/Gamma distribution shape (n)}{7}{}%
+\contentsline {subsection}{\numberline {2.2}Comparing the effect of spatial heterogeneity and developmental variability}{7}{}%
+\contentsline {subsection}{\numberline {2.3}Survey of Erlang/Gamma distribution shape (n)}{7}{}%
 \contentsline {section}{\numberline {3}Results}{9}{}%
-\contentsline {subsection}{\numberline {3.1}The sensitivity of the refuge-stage effect to developmental variability : Murdoch (1987) model}{9}{}%
-\contentsline {subsection}{\numberline {3.2}Sensitivity of the phenological-mismatch-effect to developmental variability : Godfray and Hassel (1989) model}{10}{}%
+\contentsline {subsection}{\numberline {3.1}Sensitivity to developmental variability in Murdoch's model}{9}{}%
+\contentsline {subsection}{\numberline {3.2}Sensitivity to developmental variability in Godfray and Hassel's model}{11}{}%
 \contentsline {subsection}{\numberline {3.3}Comparing the effect of May's implementation of parasitism heterogeneity and the effect of developmental variability}{13}{}%
 \contentsline {subsection}{\numberline {3.4}Survey of Erlang/Gamma distribution shape (n)}{13}{}%
 \contentsline {section}{\numberline {4}Discussion}{16}{}%
