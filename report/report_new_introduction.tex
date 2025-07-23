@@ -290,7 +290,7 @@ xxx
 
 
 \subsection{Sensitivity to developmental variability in Godfray and Hassel's model}
-\tabto{1 cm} The change to a non-linear term for the parasitism rate by Godfray and Hassel (1989) on a Murdoch-type model caused the system to display a new type of oscillations which period is roughly the same as the generation time of the host. These (single-) generation cycles will hereafter be named "GC". Their model predict that GCs are possible when the ratio between the parasitoid generation time and the host generation time (hereafter named "ratioT") is non-integer (0.5, 1.5, ...).  Mathematically, this is caused by areas delimited by local stability boundaries arising from new couples of conjugated characteristic roots that can have positive reals parts (Godfray and Hassel 1989, Xu et al. 2010). These areas can be viewed in Figure 6a. To help comprehension, let us say that GCs appear in the area delimited by the crossing of the "black" curve by any of the blue curves (possibly called "U-curves", corresponding to the new couples of characteristic roots mentioned just above). To study the various dynamics of the system (especially the occurrence of GCs) under a distributed delay assumption, the linear chain trick was used. Hereafter, Erlang shape parameters are respectively $n_1, n_2, n_3, m$ for $H_1, H_2, H_3, P_1$ maturation times.
+\tabto{1 cm} The change to a non-linear term for the parasitism rate by Godfray and Hassel (1989) on a Murdoch-type model caused the system to display a new type of oscillations which period is roughly the same as the generation time of the host. These (single-) generation cycles will hereafter be named "GC". Their model predict that GCs are possible when the ratio between the parasitoid generation time and the host generation time (hereafter named "ratioT") is non-integer (0.5, 1.5, ...).  Mathematically, this is caused by areas delimited by local stability boundaries arising from new couples of conjugated characteristic roots that can have positive reals parts (Godfray and Hassel 1989, Xu et al. 2010). These areas can be viewed in Figure 6a. To help comprehension, let us say that GCs appear in the area delimited by the crossing of the "black" curve by any of the blue curves (named "U-curves", corresponding to the new couples of characteristic roots mentioned just above). To study the various dynamics of the system (especially the occurrence of GCs) under a distributed delay assumption, the linear chain trick was used. Hereafter, Erlang shape parameters are respectively $n_1, n_2, n_3, m$ for $H_1, H_2, H_3, P_1$ maturation times.
 
 \begin{figure}[!ht]
 \centering
@@ -340,7 +340,7 @@ xxx
 \label{fig:equivalence_k_n}
 \end{wrapfigure}
 
-\tabto{1 cm} We have ve already seen that the expansion of the stability area as textit{n} decreases indicates that developmental variability is stabilizing (Figure 7 - full lines ; Figure 3a). The decrease of k, i.e the increase of parasitism risk heterogeneity through pseudo-interference, causes the stability area to increase as well (Figure 7 - dashed lines). The stability areas delimited by the blue lines (when n=m or k are large) are nearly equal. This means that both models converge to the homogeneous risk model in a remarkably similar manner:  around n=m or k = 50 and a fortiori n=m or k = 100, the stability areas brought about by each type of risk heterogeneity are very close. Even from n=m or k = 10, areas are very similar. However, they differ at low values of n=m or k. For example, the stability limit curve for k = 1 lies across higher values of $T_{P1}/T_{H1}$ than the maximum value (1.0) displayed in the diagram. Moreover, the local stability limit seems to be more dependent on $T_{P1}$  in the case of spatial heterogeneity than developmental variability (nearly vertical line at n=m=1).
+\tabto{1 cm} We have already seen that the expansion of the stability area as \textit{n} decreases indicates that developmental variability is stabilizing (Figure 7 - full lines ; Figure 3a). The decrease of k, i.e the increase of parasitism risk heterogeneity through pseudo-interference, causes the stability area to increase as well (Figure 7 - dashed lines). The stability areas delimited by the blue lines (when n=m or k are large) are nearly equal. This means that both models converge to the homogeneous risk model in a remarkably similar manner:  around n=m or k = 50 and a fortiori n=m or k = 100, the stability areas brought about by each type of risk heterogeneity are very close. Even from n=m or k = 10, areas are very similar. However, they differ at low values of n=m or k. For example, the stability limit curve for k = 1 lies across higher values of $T_{P1}/T_{H1}$ than the maximum value (1.0) displayed in the diagram. Moreover, the local stability limit seems to be more dependent on $T_{P1}$  in the case of spatial heterogeneity than developmental variability (nearly vertical line at n=m=1).
 
 
 \subsection{Survey of Erlang/Gamma distribution shape (n)}
@@ -511,14 +511,15 @@ The internship is funded by the Cacolac project (OFB, Ecophyto...), which object
 \noPageNumber
 \appendix
 \section{Appendix}
+\setcounter{equation}{0}
 
 \subsection{Murdoch 1987 system}
 \subsubsection{System construction : application of the Linear Chain Trick with a non-autonomous mortality term}
 Note that Hurtado et al. 2018 as well as Lou and Sun 2022 give detailed justifications about the construction of continuous stage-structured models with an arbitrary maturation distribution and their convergence to a coupled system of ODEs in the case of the Erlang distribution. However, they do not include a non-autonomous mortality term. Let us thereby justify thoroughly how the studied LCT model was built analogously to the DDE model given by Murdoch (1987).
 
-Let us consider the general form of the models used both in the ODE and DDE framework :  
+Let us consider the general form of the models used both in the ODE and DDE framework:
 \begin{equation}
-\dot{H_{1}}(t) = B(t) - M_n(t) - \delta(t, ...) H_1(t)
+\dot{H_{1}}(t) = B(t) - M_n(t) - \delta(t, ...) H_1(t).
 \end{equation}
 
 $H_1(t)$ is the density of juvenile hosts. $B(t)$ is the recruitment term of the juveniles, ie the birth rate. $M_n(t)$ is the maturation term. In the ODE framework, it would be of the form $M_{ODE}(t)= m_H H_1(t)$. In the DDE framework, it would be of the form $M_{DDE}(t) = B(t-\tau_H)S_{DDE}(t)$ with $S_{DDE}(t) := \exp\left( -\int_{t-\tau_H}^{t} \delta(u, ...) \, du \right)$ (Gurney and Nisbet 1983). 
@@ -527,91 +528,91 @@ $\delta_H(t, ...)$ is a mortality term. \textbf{We assume that $\delta$ can depe
 
 We give to the equation the initial conditions $H_1(0) = H_1^0$ and $B(-t) = B^{-}(t)$, $\delta(-t) = \delta^{-}(t)$, for $t \geq 0$.
 
-To account for a arbitrary residence time distribution, the maturation term can be written in an integral form :
+To account for the specifically chosen Erlang residence time distribution, the maturation term can be written in an integral form:
 \begin{equation}
-M_n(t) = \int_0^{+\infty} B(t-s)\varphi_n(s) \exp\left( -\int_{t-s}^{t} \delta(u) \, du \right) ds
+M_n(t) = \int_0^{+\infty} B(t-s)\varphi_n(s) \exp\left( -\int_{t-s}^{t} \delta(u) \, du \right) ds.
 \end{equation}
 where $\varphi_n$ is the probability density function (PDF) of a gamma distribution of rate $\theta_H$ and shape n. Let's recall that
 
 \begin{align}
 \varphi_1(0) &= \theta_H, & \varphi_1' &= -\theta_H \varphi_1 \\
-\varphi_n(0) &= 0, & \varphi_n' &= \theta_H (\varphi_{n-1} - \varphi_n) \quad \text{for } n \geq 2
+\varphi_n(0) &= 0, & \varphi_n' &= \theta_H (\varphi_{n-1} - \varphi_n) \quad \text{for } n \geq 2.
 \end{align}
 
-Let us write :
+Let us write 
 \[
-S(s, t) := \exp\left( -\int_{t-s}^{t} \delta(u) \, du \right)
+S(s, t) := \exp\left( -\int_{t-s}^{t} \delta(u) \, du, \right)
 \]
-which satisfies :
-\begin{equation}
-S(0, t) = 1, \quad \partial_s S(s,t) + \partial_t S(s,t) = -\delta(t) S(s,t)
-\end{equation}
-
-We can thus write :
-\begin{equation}
-M_n(t) = \int_0^{+\infty} B(t-s)\varphi_n(s)S(s,t) \, ds
-\end{equation}
-
-By derivation :
+which satisfies
 \[
-M_n'(t) = \int_0^{+\infty} B'(t-s)\varphi_n(s)S(s,t) \, ds + \int_0^{+\infty} B(t-s)\varphi_n(s) \partial_t S(s,t) \, ds
+S(0, t) = 1, \quad \partial_s S(s,t) + \partial_t S(s,t) = -\delta(t) S(s,t).
 \]
 
-The first term, with an integration by part in s and using $S(0,t) = 1$, gives :
+We can thus write 
+\[
+M_n(t) = \int_0^{+\infty} B(t-s)\varphi_n(s)S(s,t) \, ds.
+\]
+
+By derivation,
+\begin{equation}
+M_n'(t) = \int_0^{+\infty} B'(t-s)\varphi_n(s)S(s,t) \, ds + \int_0^{+\infty} B(t-s)\varphi_n(s) \partial_t S(s,t) \, ds.
+\end{equation}
+
+The first term, with an integration by part in s and using $S(0,t) = 1$, gives
 \begin{align*}
 \int_0^{+\infty} B'(t-s)\varphi_n(s)S(s,t) \, ds &= -[B(t-s) \varphi_n(s) S(s,t) ]_{0}^{\infty} + \int_0^{+\infty} B(t-s)\frac{d}{ds}(\varphi_n(s)S(s,t)) \, ds \\
 &\quad = -0 + \varphi_n(0) B(t) + \int_0^{+\infty} B(t-s)\varphi_n'(s) S(s,t) \, ds \\
-&\quad + \int_0^{+\infty} B(t-s)\varphi_n(s) \partial_s S(s,t) \, ds
+&\quad + \int_0^{+\infty} B(t-s)\varphi_n(s) \partial_s S(s,t) \, ds.
 \end{align*}
 
-With $(4)$, we have :
+By $(4)$, we get :
 \begin{align*}
 &\int_0^{+\infty} B(t-s)\varphi_n(s) \partial_s S(s,t) \, ds  + \int_0^{+\infty} B(t-s)\varphi_n(s) \partial_t S(s,t) \, ds \\
 &\quad = - \delta(t) \int_0^{+\infty} B(t-s)\varphi_n(s) S(s,t)  \, ds \\
-&\quad = - \delta(t) M_n(t)
+&\quad = - \delta(t) M_n(t).
 \end{align*}
 
-we finally get :
+By $(6)$, we finally get :
 \[
-M_n'(t) = \varphi_n(0) B(t) + \int_0^{+\infty} B(t-s)\varphi_n'(s) S(s,t) \, ds - \delta(t) M_n(t)
+M_n'(t) = \varphi_n(0) B(t) + \int_0^{+\infty} B(t-s)\varphi_n'(s) S(s,t) \, ds - \delta(t) M_n(t).
 \]
 
-In the case $n = 1$, i.e in the ODE framework, using $(3)$ : 
+In the case $n = 1$, i.e in the ODE framework, using $(3)$,
 \begin{align*}
 M_{1}'(t) &= M_{ODE}'(t)= -\theta_H B(t) + \int_0^{+\infty} B(t-s)(-\theta_H \varphi_1(s)) S(s,t) \, ds - \delta(t) M_1(t) \\
-&= \theta_H B(t) - (\theta_H + \delta(t)) M_1(t)
+&= \theta_H B(t) - (\theta_H + \delta(t)) M_1(t) ;
 \end{align*}
 
-And for $n \geq 2$, using $(4)$  :
+and for $n \geq 2$, using $(4)$,
 \[
-M_n'(t) = \theta_H M_{n-1}(t) - (\theta_H + \delta(t)) M_n(t)
+M_n'(t) = \theta_H M_{n-1}(t) - (\theta_H + \delta(t)) M_n(t).
 \]
 
-Thus, \(M_n\) is solution of the system :
+Thus, \(M_n\) is solution of the system 
 \begin{equation}
 \begin{cases}
 \dot{M}_1(t) = \theta_H B(t) - (\theta_H + \delta(t)) M_1(t) \\
-\dot{M}_k(t) = \theta_H M_{k-1}(t) - (\theta_H + \delta(t)) M_k(t), \quad k \in \{2, \dots, n\}
+\dot{M}_k(t) = \theta_H M_{k-1}(t) - (\theta_H + \delta(t)) M_k(t), \quad k \in \{2, \dots, n\}.
 \end{cases}
 \end{equation}
 
-The initial conditions of this system  $(M_1(0), \dots, M_N(0))$ are given by $(2)$, with $t = 0$.
-Now, let us write, for \(k \in \{1, \dots, N\}\), $H_{1,k}(t) := \frac{M_k(t)}{\theta_H}$. Then : 
+The initial conditions of this system  $(M_1(0), \dots, M_n(0))$ are given by $(2)$, with $t = 0$.
+Now, let us write, for \(k \in \{1, \dots, n\}\), $H_{1,k}(t) := \frac{M_k(t)}{\theta_H}$. Then:
 \begin{equation}
 \begin{cases}
 \dot{H_{1,1}}(t) = B(t) - (\theta_H + \delta(t)) H_{1,1}(t) \\
-\dot{H_{1,1}}(t) = \theta_H H_{1, k-1}(t) - (\theta_H + \delta(t)) H_{1,k}(t), \quad k \in \{2, \dots, n\}
+\dot{H_{1,1}}(t) = \theta_H H_{1, k-1}(t) - (\theta_H + \delta(t)) H_{1,k}(t), \quad k \in \{2, \dots, n\}.
 \end{cases}
 \end{equation}
 
-By summing all the lines, and writing $y(t) := H_{1,1}(t) + \dots + H_{1,n}(t)$, we get :
+By summing all the lines, and writing $y(t) := H_{1,1}(t) + \dots + H_{1,n}(t)$, we get 
 \[
-\dot{y}(t) = B(t) - \theta_H H_{1,n}(t) - \delta(t) y(t) = B(t) - M_n(t) - \delta(t) y(t)
+\dot{y}(t) = B(t) - \theta_H H_{1,n}(t) - \delta(t) y(t) = B(t) - M_n(t) - \delta(t) y(t).
 \]
 
 Thus, $H_{1,1} + \dots + H_{1,n}$ does satisfy the initial condition $(1)$.
 
-In particular, if $H_{1,1}(0) + \dots + H_{1,n}(0) =  H_1^0$, then $H_1(t) = y(t) = H_{1,1}(t) + \dots + H_{1,n}(t)$ and $(1)$ is equivalent to $(8)$. This is called the Linear Chain Trick.
+In particular, if $H_{1,1}(0) + \dots + H_{1,n}(0) =  H_1^0$, then $H_1(t) = y(t) = H_{1,1}(t) + \dots + H_{1,n}(t)$ and $(1)$ is equivalent to $(7)$. This is called the Linear Chain Trick.
 
 Applying the same method on the parasitoid maturation term with Erlang rate $\theta_P$ and shape $m$, choosing a linear parasitism term of parasitism assuming a random and homogeneous search of hosts by the parasitoids (May 1978), and assuming a linear birth rate, the final LCT system can be rewritten as a system of coupled ODEs:
 
@@ -632,80 +633,100 @@ Applying the same method on the parasitoid maturation term with Erlang rate $\th
 
 \subsubsection{Equilibria}
 
-Setting the right side of the model system equal to zero and solving for equilibrium yields the following non-trivial equilibrium densities :
+Setting the right side of the model system equal to zero and solving for equilibrium yields the following non-trivial equilibrium densities:
 \begin{align}
-H_1^* &= \frac{\delta_{P2}}{a(f_P)^m} \nonumber \\
-H_2^* &= H_1^* * \frac{\theta_{H} (\rho^{\frac{1}{n}}-1)}{\delta_{H2} (\rho-1)} \nonumber \\
-P_1^* &= P_2^* * \frac{\alpha_P \delta_{P2}}{\theta_P (f_P)^{m-1}}  \\
-P_2^*&= \frac{\theta_H}{a f_H} (\rho^{\frac{1}{n}}f_H -1) \nonumber
+H_1^* &= \frac{\delta_{P2}}{a(f_P)^m}, \nonumber \\
+H_2^* &= H_1^* * \frac{\theta_{H} (\rho^{\frac{1}{n}}-1)}{\delta_{H2} (\rho-1)}, \nonumber \\
+P_1^* &= P_2^* * \frac{\alpha_P \delta_{P2}}{\theta_P (f_P)^{m-1}},  \\
+P_2^*&= \frac{\theta_H}{a f_H} ((\frac{r}{\delta_{H2}})^{\frac{1}{n}}f_H -1); \nonumber
 \end{align}
 
-With :
+with 
 \begin{align}
-f_* &:= \frac{\theta_*}{\theta_* + \delta_*}, \quad \text{$_*$ equals H,P} \nonumber  \\
-s_H^* &:= \frac{\theta_H}{\theta_H + \delta_H + aP_2^*} = \rho^{-\frac{1}{n}} \nonumber \\
-\alpha_H^* &:= \sum_{i=0}^{n-1} (s_H^*)^i   \\
-\alpha_P^* &:= \sum_{i=0}^{m-1} (f_P^*)^i \nonumber
+X_1^* &:= \sum_{i=1}^{n} (X_{1,i}^*), \quad \text{$X$ equals H,P} \quad ,  \nonumber  \\
+f_X &:= \frac{\theta_X}{\theta_X + \delta_X}, \quad \text{$X$ equals H,P} \quad , \nonumber \\
+s_H^* &:= \frac{\theta_H}{\theta_H + \delta_H + aP_2^*},  \\
+\alpha_P^* &:= \sum_{i=0}^{m-1} (f_P^*)^i = \frac{1-(f_p^*)^m}{1-f_p^*} \quad \text{if} \quad f_p^* \neq 1 . \nonumber
 \end{align}
 
-These equilibria are strictly positive if :
+Since all parameters are strictly positive and $f_H \in ]0;1[$, these equilibria are all strictly positive if $P_2^* > 0$, i.e. if
 \begin{equation}
-(\frac{\beta}{\delta_{H2}})^{\frac{1}{n}} f_H  > 1
+(\frac{r}{\delta_{H2}})^{\frac{1}{n}} f_H  > 1.
 \end{equation}
 
 \subsubsection{Parametrisation}
 To find the mean development time, or expected lifespan of juveniles that reach maturity, the Erlang distribution properties can be used.
-For clarity, let us reason for hosts in the following equations. Parasitoid terms are set in the same way.  Let us recall that the maturation time is Erlang-distributed with rate $\theta_H$ and shape n. For juveniles, the mean maturation time $\hat{\tau_{H}}$, the variance of maturation time $\sigma^2_{H}$ and the coefficient of variation of maturation time $CV_{H}$ would be : 
+For clarity, let us reason for hosts in the following equations. Parasitoid terms are set in the same way.  Let us recall that the maturation time is Erlang-distributed with rate $\theta_H$ and shape n. For juveniles, the mean maturation time $\hat{\tau_{H}}$, the variance of maturation time $\sigma^2_{H}$ and the coefficient of variation of maturation time $CV_{H}$ would be 
 \begin{align}
-\hat{\tau_{H}} = \frac{n}{\theta_{H}} \nonumber \\
-\sigma^2_{H} = \frac{n}{(\theta_{H})^2} \\
-CV_{H} = \frac{1}{\sqrt{n}} \nonumber 
+\hat{\tau_{H}} = \frac{n}{\theta_{H}}, \nonumber \\
+\sigma^2_{H} = \frac{n}{(\theta_{H})^2}, \\
+CV_{H} = \frac{1}{\sqrt{n}}. \nonumber 
 \end{align}
 
-Setting  $\hat{\tau_{H}} = 1/m_H$, the maturation term becomes :
+$_(n, m) tq  lim_{n\to \infty} lim{m\to \infty} u_(n, m) \neq  im_{m\to \infty} lim{n\to \infty} u_(n, m). $
+
+Setting  $\hat{\tau_{H}} = 1/m_H$, the maturation term becomes
 \begin{equation}
-\theta_H = n*m_H
+\theta_H = n*m_H.
 \end{equation}
 
-Also, setting $\rho$ the mean number of offspring yielded by a host individual during its adult lifetime, we get :
+Also, setting $\rho$ the mean number of offspring yielded by a host individual during its adult lifetime, we get 
 \begin{equation}
-r = \rho \delta_{H2}
+\rho := \frac{r}{\delta_{H2}}.
 \end{equation}
 
-However, in the previous lines, juvenile intrinsic mortality was not taken in account. Alternatively, a continuous-time stochastic agent-based model can be built. This intuitively accounts for the stochastic process lying behind the model assumptions.
+However, in the previous lines, juvenile intrinsic mortality was not taken in account. Alternatively, a continuous-time stochastic agent-based model can be built. This intuitively accounts for the stochastic process lying behind the model assumptions (Hurtado 2018).
 
-Consider a juvenile agent that either matures or dies. Maturation time $\tau_m$ is drawn from the Erlang distribution $\varphi(\theta_H, n)$ and death time $\tau_d$ is drawn from the Exponential distribution $\mathcal{E}(\delta_H)$. If $\tau_m \leq \tau_d$ then the agent matures. Once adult, new juveniles are produced from a Poisson point process of rate $\beta$.
+Consider a juvenile agent that either matures or dies. Maturation time $\tau_m$ is drawn from the Erlang distribution $\varphi(\theta_H, n)$ and death time $\tau_d$ is drawn from the Exponential distribution $\mathcal{E}(\delta_H)$. If $\tau_m \leq \tau_d$ then the agent matures at age $\tau_m$ ; otherwise, it dies as a juvenile, at age $\tau_d$. Then, the adult lifetime is modeled with an exponential law with the mortality rate $\delta_{H2}$, and new juveniles are produced from a Poisson point process of rate $\beta$.
 
-Thus, let $f_{surv,H1}$ be the mean proportion of surviving host individuals and (13) become :
+Thus, let $f_{surv,H1}$ be the mean proportion of surviving host individuals and (13) become 
 
 \begin{align}
-\hat{\tau_{H}} = \frac{n}{\theta_{H} + \delta_{H}} \nonumber \\
-\sigma^2_{H1} = \frac{n}{(\theta_{H} + \delta_{H})^2} \\
-CV_{H} = \frac{1}{\sqrt{n}} \\
-f_{surv,H1} = (\frac{\theta_{H}}{\theta_{H} + \delta_{H}})^n
+\hat{\tau_{H}} = \frac{n}{\theta_{H} + \delta_{H}}, \nonumber \\
+\sigma^2_{H1} = \frac{n}{(\theta_{H} + \delta_{H})^2}, \\
+CV_{H} = \frac{1}{\sqrt{n}}, \\
+f_{surv,H1} = (\frac{\theta_{H}}{\theta_{H} + \delta_{H}})^n.
 \end{align}
 
-Still setting $\hat{\tau_{H}} = 1/m_H$, the maturation and intrinsic mortality terms then become :
+Still setting $\hat{\tau_{H}} = 1/m_H$, the maturation and intrinsic mortality terms then become 
 \begin{equation}
 \begin{alignedat}{2}
-\theta_{H} = n * m_{H}* (f_{surv,H1})^{1/n} \\
-\delta_{H} = n* m_{H}* (1-(f_{surv,H1})^{1/n})
+\theta_{H} = n * m_{H}* (f_{surv,H1})^{1/n}, \\
+\delta_{H} = n* m_{H}* (1-(f_{surv,H1})^{1/n}).
 \end{alignedat}
 \end{equation}
 
-We notice that the existence of a positive non-trivial equilibrium can be rewritten as :
-$$\rho^{\frac{1}{n}}f_H = (\rho f_{surv,H1})^{\frac{1}{n}} > 1 \qquad \impliedby \qquad \rho f_{surv,H1} > 1$$
+We notice that the existence of a positive non-trivial equilibrium can be rewritten as 
+$$\rho^{\frac{1}{n}}f_H = (\rho f_{surv,H1})^{\frac{1}{n}} > 1 \qquad \iff \qquad \rho f_{surv,H1} > 1.$$
 
 \subsubsection{Convergence to ODE and DDE models}
-If $n,m = (1,1)$, the Erlang distribution is equal to an exponential distribution and the system is equivalent to its simple ODE system counterpart. Then, $f_*$, $s_H$, $\alpha_*$ are all equal to 1 and equilibrium densities are those found in the simple ODE system. \\ \\
+If $n = m = 1$, the Erlang distribution is equal to an exponential distribution and the system is equivalent to its simple ODE system counterpart. Then, $f_*$, $s_H$, $\alpha_*$ are all equal to 1 and equilibrium densities are those found in the simple ODE system. \\ \\
 
-If $n,m\to\infty$, the Erlang distribution of maturation time converges to a dirac distribution and the system is equivalent to its DDE counterpart. Then, equibrium densities become : 
+Let us study the limits of the equilibrium densities if \textit{n} and \textit{m} go to +$\infty$. In this case, the Erlang distribution of maturation time converges to a Dirac distribution and the system is equivalent to its DDE counterpart. Let us proceed one limit at a time. Let $X = H_1, H_2, P_1, P_2$. Let $X^{*(n, \infty)} := lim_{m\to\infty}(X^*)$,  $X^{*(\infty,m)}) := lim_{n\to\infty}(X^*)$. Let us prove that $X^{*(\infty, \infty)} = lim_{m\to\infty} (X^{*(\infty, m)}) = lim_{n\to\infty}(X^{*(n,\infty)})$ and give its expression. \\
+
+First, 
 \begin{align}
-H_1^* & \xrightarrow[n,m\to\infty]{} \frac{\delta_{P2}}{a\gamma} \nonumber \\
-H_2^* & \xrightarrow[n,m\to\infty]{} \frac{ln(\rho)}{\rho-1} \frac{\delta_{P2} m_H}{a \gamma \delta_{H2}} \nonumber \\
-P_1^* & \xrightarrow[n,m\to\infty]{} P_2^{* \infty} \frac{\gamma -1}{\gamma} \frac{\delta_{P2}}{m_P ln(\gamma)} = \frac{(\gamma-1)m_H(ln(\rho) - \frac{\delta_{H1}}{m_H})}{\gamma  a  m_P   ln(\gamma)} \\
-P_2^*&  \xrightarrow[n,m\to\infty]{} \frac{m_H}{a}(ln(\rho) - \frac{\delta_{H1}}{m_H}) \nonumber  \\
-\text{With} \quad \gamma & := e^{-\frac{\delta_{P1}}{m_P}} \sim_{m \to \infty} (f_P)^m \nonumber
+H_1^{*(\infty,m)} &= \frac{\delta_{P2}}{a(f_P)^m}, \nonumber \\
+H_2^{*(\infty,m)} &= H_1^{*(\infty,m)} * \frac{m_H \, ln(\rho)}{\delta_{H2} \, (\rho -1)}, \nonumber \\
+P_1^{*(\infty,m)} &= P_2^{*(\infty,m)} * \frac{\alpha_P \delta_{P2}}{\theta_P (f_P)^{m-1}},  \\
+P_2^{*(\infty,m)} &= \frac{m_H}{a}(ln(\rho) - \frac{\delta_{H1}}{m_H}), \nonumber 
+\end{align}
+
+Second, 
+\begin{align}
+H_1^{*(n,\infty)} &= \frac{\delta_{P2}}{a \gamma}, \nonumber \\
+H_2^{*(n,\infty)} &= H_1^{*(n,\infty)} * \frac{\theta_{H} (\rho^{\frac{1}{n}}-1)}{\delta_{H2} (\rho-1)}, \nonumber \\
+P_1^{*(n,\infty)} &= P_2^{*(n,\infty)} * \frac{\gamma - 1}{\gamma \, ln(\gamma)} \frac{delta_{P2}}{m_P},  \\
+P_2^{*(n,\infty)} &= \frac{\theta_H}{a f_H} ((\frac{r}{\delta_{H2}})^{\frac{1}{n}}f_H -1), \nonumber \\
+\text{With} \quad \gamma & := e^{-\frac{\delta_{P1}}{m_P}}. \nonumber
+\end{align}
+
+Hence, 
+\begin{align}
+H_1^{*(\infty,\infty)} &= \frac{\delta_{P2}}{a\gamma}, \nonumber \\
+H_2^{*(\infty,\infty)} &=  \frac{ln(\rho)}{\rho-1} \frac{\delta_{P2} \, m_H}{a \, \gamma \, \delta_{H2}}, \nonumber \\
+P_1^{*(\infty,\infty)} &= P_2^{* \infty} \frac{\gamma -1}{\gamma} \frac{\delta_{P2}}{m_P \, ln(\gamma)} = \frac{(\gamma-1)\, m_H \, (ln(\rho) - \frac{\delta_{H1}}{m_H})}{\gamma \,  a \,  m_P \,  ln(\gamma)}, \\
+P_2^{*(\infty,\infty)} &=\frac{m_H}{a}(ln(\rho) - \frac{\delta_{H1}}{m_H}). \nonumber  
 \end{align}
 
 
@@ -713,23 +734,48 @@ Expectedly, they are strictly equivalent to equilibrium densities given in Murdo
 
 \subsection{Godfray 1989 system}
 
+Analogously to what was done with Murdoch's model, we could prove that the final LCT system close to the model given in Godfray and Hassel (1989) is 
+
+\begin{equation}
+\begin{dcases}
+\dot{H_{1,1}}(t) = H_{1,1}(t)(- \delta_{H1} - \theta_{H1}) + r H_4(t), \\
+\vdots \\
+\dot{H_{1,i}}(t) = \theta_{H1}(H_{1,i-1}(t) - H_{1,i}(t)) - \delta_{H1} H_{1,i}(t), \quad i \in (2, 3, \dots, n_1), \\
+\vdots \\
+\dot{H_{2,1}}(t) = H_{2,1}(t)(-k\,ln(1+\frac{a P_2(t)}{k}) - \delta_{H2} - \theta_{H2}) + \theta_{H1} H_{1,n_1},  \\
+\vdots \\
+\dot{H_{2,i}}(t) = \theta_{H2}(H_{2,i-1}(t) - H_{2,i}(t)) - \delta_{H2} H_{2,i}(t) -k\,ln(1+\frac{a P_2(t)}{k})H_{2,i}(t), \quad i \in (2, 3, \dots, n_2), \\
+\vdots \\
+\dot{H_{3,1}}(t) = H_{3,1}(t)(- \delta_{H3} - \theta_{H3}) + \theta_{H2} H_{2,n_2}, \\
+\vdots \\
+\dot{H_{3,i}}(t) = \theta_{H3}(H_{3,i-1}(t) - H_{3,i}(t)) - \delta_{H3} H_{3,i}(t), \quad i \in (2, 3, \dots, n_3), \\
+\vdots \\
+\dot{H_{4}}(t) = \theta_{H3} H_{3,n_3}(t) - \delta_{H4} H_{4}(t), \\
+\dot{P_{1,1}}(t) = P_{1,1}(t)(- \delta_{P1} - \theta_{P1}) + a P_2(t) \sum_{i=1}^{n} H_{2,i}(t), \\
+\vdots \\
+\dot{P_{1,i}}(t) = \theta_{P1}(P_{1,i-1}(t) - P_{1,i}(t)) - \delta_{P1} P_{1,i}(t), \quad i \in (2, 3, \dots, m), \\
+\vdots \\
+\dot{P_{2}}(t) = \theta_{P1} P_{1,m}(t) - \delta_{P2} P_{2}(t). \\
+\end{dcases}
+\end{equation}
+
 Setting the right side of the model system equal to zero and solving for equilibrium yields the following non-trivial equilibrium densities:
  \begin{align}
-  H_1^* &= H_2^* * \frac{\theta_{H2}+\delta_{H2}+\Pi^*}{\theta_{H1}} \frac{\alpha_{H1}}{\alpha_{H2}} (f_{H1})^{1-n_1} \nonumber \\
-  H_2^* &= P_2^* * \frac{\delta_{P2}}{(f_{P1})^{m} \Pi^*} \nonumber \\
-  H_3^* &= H_4^* * \frac{\delta_{H4} \alpha_{H3}}{\theta_{H3}(f_{H3})^{n_3-1}}  \nonumber \\
-  H_4^* &= H_1^* * \frac{\theta_{H1}+\delta_{H1}}{r \alpha_{H1}}  \\
-  P_1^* &= H_2^* * \frac{\Pi^*}{\delta_{P1}}(1-(f_{P1})^{m}) \nonumber \\
-  P_2^* &= \frac{k}{a}exp(\frac{\Pi*}{k}-1) \nonumber 
+  H_1^* &= H_2^* * \frac{\theta_{H2}+\delta_{H2}+\Pi^*}{\theta_{H1}} \frac{\alpha_{H1}}{\alpha_{H2}} (f_{H1})^{1-n_1}, \nonumber \\
+  H_2^* &= P_2^* * \frac{\delta_{P2}}{(f_{P1})^{m} \, \Pi^*}, \nonumber \\
+  H_3^* &= H_4^* * \frac{\delta_{H4} \alpha_{H3}}{\theta_{H3}(f_{H3})^{n_3-1}},  \nonumber \\
+  H_4^* &= H_1^* * \frac{\theta_{H1}+\delta_{H1}}{r \, \alpha_{H1}},  \\
+  P_1^* &= H_2^* * \frac{\Pi^*}{\delta_{P1}}(1-(f_{P1})^{m}), \nonumber \\
+  P_2^* &= \frac{k}{a} \, \text{exp}(\frac{\Pi*}{k}-1), \nonumber 
 \end{align}
 
-With :
+with
  \begin{align}
-  f_X^* &:= \frac{\theta_X}{\theta_X + \delta_X}, \quad \text{$X$ equals H1,H3,P1} \nonumber \\
-  s_{H2}^* &:= \frac{\theta_{H2}}{\theta_{H2} + \delta_{H2} + \Pi^*} = [\frac{\delta_{H4}}{r}(f_{H1})^{-n1}(f_{H3})^{-n_3}]^{\frac{1}{n_2}}\nonumber \\
-  \alpha_X^* &:= \sum_{i=0}^{n_X-1} (f_X^*)^i,  \quad \text{$X$ equals H1, H3,P1} \\
-  \alpha_{H2}^* &:= \sum_{i=0}^{n_2-1} (s_{H2}^*)^i \nonumber \\
-  \Pi^* &:= k*ln(1+\frac{aP_2^*}{k}) = \frac{\theta_{H2}}{f_{H2}} ((\frac{r}{\delta_{H4}}(f_{H1})^{n1}(f_{H3})^{n3})^{\frac{1}{n2}}f_{H2} -1)\nonumber 
+  f_X^* &:= \frac{\theta_X}{\theta_X + \delta_X}, \quad \text{$X$ equals H1,H3,P1}, \nonumber \\
+  s_{H2}^* &:= \frac{\theta_{H2}}{\theta_{H2} + \delta_{H2} + \Pi^*} = [\frac{\delta_{H4}}{r}(f_{H1})^{-n1}(f_{H3})^{-n_3}]^{\frac{1}{n_2}}, \nonumber \\
+  \alpha_X^* &:= \sum_{i=0}^{n_X-1} (f_X^*)^i = \frac{1-(f_X)^{n_X}}{1-f_X} \quad \text{if} \quad f_X \neq 1,  \quad \text{$X$ equals H1, H3,P1}, \\
+  \alpha_{H2}^* &:= \sum_{i=0}^{n_2-1} (s_{H2}^*)^i = \frac{1-(s_{H2})^{n_2}}{1-s_{H2}} \quad \text{if} \quad s_{H2} \neq 1,\nonumber \\
+  \Pi^* &:= k*ln(1+\frac{aP_2^*}{k}) = \frac{\theta_{H2}}{f_{H2}} ((\frac{r}{\delta_{H4}}(f_{H1})^{n1}(f_{H3})^{n3})^{\frac{1}{n2}}f_{H2} -1), \nonumber 
  \end{align}
 
 \subsection{Equivalence between spatial and temporal risk heterogeneity}

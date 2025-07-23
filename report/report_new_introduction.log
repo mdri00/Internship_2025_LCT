@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.7.15)  21 JUL 2025 20:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.7.15)  23 JUL 2025 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1083,13 +1083,15 @@ ape/figs/gamma_distribution.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/survey_gamma_shape/figs/gamma_distribution.pdf  used on input line 203.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
-[7]
+[7] [8 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma
+_shape/figs/weibull_distribution.pdf> </home/mathisdr/Desktop/2024-2025/Stage/I
+nternship_2025_LCT/survey_gamma_shape/figs/gamma_distribution.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Murdoch_stability_diagram.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_stability
-_diagram.pdf, id=51, 462.52798pt x 346.89601pt>
+_diagram.pdf, id=112, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_stab
 ility_diagram.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_stabi
@@ -1103,7 +1105,7 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Jupyter_stage/Figures/Murdoch_bifurcation_diagram_Wearing-par.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_bifurcati
-on_diagram_Wearing-par.pdf, id=52, 462.52798pt x 346.89601pt>
+on_diagram_Wearing-par.pdf, id=113, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_bifu
 rcation_diagram_Wearing-par.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/Figures/Murdoch_bifur
@@ -1111,9 +1113,7 @@ cation_diagram_Wearing-par.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Jupyter_stage/F
 igures/Murdoch_bifurcation_diagram_Wearing-par.pdf  used on input line 232.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
-[8 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sha
-pe/figs/weibull_distribution.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Inter
-nship_2025_LCT/survey_gamma_shape/figs/gamma_distribution.pdf>]
+
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_equilibrium.pdf): PDF in
@@ -1181,17 +1181,13 @@ _LCT/model_host_parasitoid/figs/Murdoch_rhobifurcation_diagram_n20_m1.pdf  used
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 [10 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
 sitoid/figs/Murdoch_equilibrium.pdf> </home/mathisdr/Desktop/2024-2025/Stage/In
-ternship_2025_LCT/model_host_parasitoid/figs/Godfray_equilibrium.pdf> </home/ma
-thisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/M
-urdoch_rhobifurcation_diagram_n1_m1.pdf> </home/mathisdr/Desktop/2024-2025/Stag
-e/Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_rhobifurcation_diagram
-_n20_m1.pdf>]
+ternship_2025_LCT/model_host_parasitoid/figs/Godfray_equilibrium.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/model_host_parasitoid/figs/Godfray_stability_diagram.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
-id/figs/Godfray_stability_diagram.pdf, id=238, 462.52798pt x 346.89601pt>
+id/figs/Godfray_stability_diagram.pdf, id=194, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
 asitoid/figs/Godfray_stability_diagram.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
@@ -1206,7 +1202,7 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/model_host_parasitoid/figs/Godfray_effect-of-n1n3.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
-id/figs/Godfray_effect-of-n1n3.pdf, id=239, 462.52798pt x 346.89601pt>
+id/figs/Godfray_effect-of-n1n3.pdf, id=195, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
 asitoid/figs/Godfray_effect-of-n1n3.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
@@ -1221,7 +1217,7 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/model_host_parasitoid/figs/Godfray_effect-of-n2m.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
-id/figs/Godfray_effect-of-n2m.pdf, id=240, 462.52798pt x 346.89601pt>
+id/figs/Godfray_effect-of-n2m.pdf, id=196, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
 asitoid/figs/Godfray_effect-of-n2m.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
@@ -1235,7 +1231,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
-[11]
+[11 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
+sitoid/figs/Murdoch_rhobifurcation_diagram_n1_m1.pdf> </home/mathisdr/Desktop/2
+024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_rhobifurc
+ation_diagram_n20_m1.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/model_host_parasitoid/figs/Equivalence_k_n.pdf): PDF inclus
@@ -1327,40 +1326,50 @@ ey_gamma_shape/figs/n_survey_shape_according_to_weibull-shift.pdf> </home/mathi
 sdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/figs/n_surve
 y_relation_between_wdist_and_weibullshift.pdf>] [15] [16] [17] [18] [19]
 [20] [21] [22] [23] [24]
-Overfull \hbox (6.04381pt too wide) in paragraph at lines 516--516
+Overfull \hbox (6.04381pt too wide) in paragraph at lines 517--517
 |[]\T1/ptm/b/n/12 System con-struc-tion : ap-pli-ca-tion of the Lin-ear Chain T
 rick with a non-autonomous
  []
 
 [25]
-Overfull \hbox (22.12675pt too wide) detected at line 565
+Overfull \hbox (22.12675pt too wide) detected at line 566
 []
  []
 
 [26] [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 700--701
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--701
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
-[29] [30]
-Overfull \hbox (1.36816pt too wide) in paragraph at lines 736--737
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
+
+ []
+
+[30]
+Overfull \hbox (23.90546pt too wide) detected at line 760
+[][]
+ []
+
+[31]
+Overfull \hbox (1.36816pt too wide) in paragraph at lines 782--783
 \T1/ptm/m/n/12 In May (1978)'s model, the prob-a-bil-ity to es-cape par-a-sitis
 m $\OML/cmm/m/it/12 f$ \T1/ptm/m/n/12 was writ-ten as the zero-probability
  []
 
-
+[32]
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_bifurcation_diagram_Othe
 r-par.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
-id/figs/Murdoch_bifurcation_diagram_Other-par.pdf, id=425, 462.52798pt x 346.89
+id/figs/Murdoch_bifurcation_diagram_Other-par.pdf, id=431, 462.52798pt x 346.89
 601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
 asitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf Graphic file (type pdf)
@@ -1368,20 +1377,20 @@ asitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf Graphic file (type pdf)
 sitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf  used
- on input line 756.
+ on input line 802.
 (pdftex.def)             Requested size: 364.19667pt x 273.16087pt.
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
-id/figs/pbmtq_figure.png, id=426, 1687.30376pt x 788.9475pt>
+id/figs/pbmtq_figure.png, id=432, 1687.30376pt x 788.9475pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
 asitoid/figs/pbmtq_figure.png Graphic file (type png)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
 sitoid/figs/pbmtq_figure.png>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/model_host_parasitoid/figs/pbmtq_figure.png  used on input line 764.
+_LCT/model_host_parasitoid/figs/pbmtq_figure.png  used on input line 810.
 (pdftex.def)             Requested size: 364.19667pt x 170.2825pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 769.
+               Default added (so using `tbp') on input line 815.
 
 
 
@@ -1389,18 +1398,18 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/survey_gamma_shape/figs/n_survey_example_species.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/
-figs/n_survey_example_species.pdf, id=428, 718.89378pt x 442.05048pt>
+figs/n_survey_example_species.pdf, id=434, 718.89378pt x 442.05048pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_s
 hape/figs/n_survey_example_species.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sh
 ape/figs/n_survey_example_species.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/survey_gamma_shape/figs/n_survey_example_species.pdf  used on input line 7
-73.
+_LCT/survey_gamma_shape/figs/n_survey_example_species.pdf  used on input line 8
+19.
 (pdftex.def)             Requested size: 218.51521pt x 134.36314pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 783.
+               Default added (so using `tbp') on input line 829.
 
 
 
@@ -1408,18 +1417,18 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/mathisdr/Desktop/2024-2025/Stage/
 Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_stability_fecundity.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
-id/figs/Murdoch_stability_fecundity.pdf, id=429, 462.52798pt x 346.89601pt>
+id/figs/Murdoch_stability_fecundity.pdf, id=435, 462.52798pt x 346.89601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
 asitoid/figs/Murdoch_stability_fecundity.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
 sitoid/figs/Murdoch_stability_fecundity.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Murdoch_stability_fecundity.pdf  used on input 
-line 787.
+line 833.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 796.
+               Default added (so using `tbp') on input line 842.
 
 
 
@@ -1428,7 +1437,7 @@ Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_stability_fecundity_supp
 l_fig.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
-id/figs/Murdoch_stability_fecundity_suppl_fig.pdf, id=430, 462.52798pt x 346.89
+id/figs/Murdoch_stability_fecundity_suppl_fig.pdf, id=436, 462.52798pt x 346.89
 601pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
 asitoid/figs/Murdoch_stability_fecundity_suppl_fig.pdf Graphic file (type pdf)
@@ -1436,15 +1445,15 @@ asitoid/figs/Murdoch_stability_fecundity_suppl_fig.pdf Graphic file (type pdf)
 sitoid/figs/Murdoch_stability_fecundity_suppl_fig.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Murdoch_stability_fecundity_suppl_fig.pdf  used
- on input line 800.
+ on input line 846.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
-[31] [32 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host
-_parasitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf> </home/mathisdr/Des
+[33 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
+sitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf>] [34 </home/mathisdr/Des
 ktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/pbmtq_figur
-e.png>] [33 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_
-gamma_shape/figs/n_survey_example_species.pdf> </home/mathisdr/Desktop/2024-202
-5/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_stability_fecund
-ity.pdf> </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host
+e.png> </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma
+_shape/figs/n_survey_example_species.pdf> </home/mathisdr/Desktop/2024-2025/Sta
+ge/Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_stability_fecundity.p
+df>] [35 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host
 _parasitoid/figs/Murdoch_stability_fecundity_suppl_fig.pdf>]
 (./report_new_introduction.aux)
 
@@ -1454,11 +1463,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  27964 strings out of 480247
  700057 string characters out of 5896151
- 1094321 words of memory out of 5000000
+ 1093321 words of memory out of 5000000
  45423 multiletter control sequences out of 15000+600000
  506343 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,18n,103p,2703b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,14n,103p,2703b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -1477,10 +1486,10 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report_new_introduction.pdf (36 pages, 648426 bytes).
+Output written on report_new_introduction.pdf (38 pages, 654307 bytes).
 PDF statistics:
- 566 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
+ 575 PDF objects out of 1000 (max. 8388607)
+ 397 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.3}Survey of Erlang/Gamma distribution shape (n)}{7}{}%
 \contentsline {section}{\numberline {3}Results}{9}{}%
 \contentsline {subsection}{\numberline {3.1}Sensitivity to developmental variability in Murdoch's model}{9}{}%
-\contentsline {subsection}{\numberline {3.2}Sensitivity to developmental variability in Godfray and Hassel's model}{11}{}%
+\contentsline {subsection}{\numberline {3.2}Sensitivity to developmental variability in Godfray and Hassel's model}{10}{}%
 \contentsline {subsection}{\numberline {3.3}Comparing the effect of May's implementation of parasitism heterogeneity and the effect of developmental variability}{13}{}%
 \contentsline {subsection}{\numberline {3.4}Survey of Erlang/Gamma distribution shape (n)}{13}{}%
 \contentsline {section}{\numberline {4}Discussion}{16}{}%
@@ -21,6 +21,6 @@
 \contentsline {subsubsection}{\numberline {A.1.2}Equilibria}{28}{}%
 \contentsline {subsubsection}{\numberline {A.1.3}Parametrisation}{28}{}%
 \contentsline {subsubsection}{\numberline {A.1.4}Convergence to ODE and DDE models}{29}{}%
-\contentsline {subsection}{\numberline {A.2}Godfray 1989 system}{30}{}%
-\contentsline {subsection}{\numberline {A.3}Equivalence between spatial and temporal risk heterogeneity}{31}{}%
-\contentsline {subsection}{\numberline {A.4}Supplementary figures}{31}{}%
+\contentsline {subsection}{\numberline {A.2}Godfray 1989 system}{31}{}%
+\contentsline {subsection}{\numberline {A.3}Equivalence between spatial and temporal risk heterogeneity}{32}{}%
+\contentsline {subsection}{\numberline {A.4}Supplementary figures}{33}{}%
