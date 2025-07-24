@@ -1,0 +1,62 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{w_w_murdoch_invulnerable_1987}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2f8797b045d7f74c5a7ff4492097eac3}{%
+           family={W.\bibnamedelimi W.\bibnamedelimi Murdoch},
+           familyi={W\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={J.\bibnamedelimi D.\bibnamedelimi Reeve},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2f8797b045d7f74c5a7ff4492097eac3}
+      \strng{fullhash}{2f8797b045d7f74c5a7ff4492097eac3}
+      \strng{fullhashraw}{2f8797b045d7f74c5a7ff4492097eac3}
+      \strng{bibnamehash}{2f8797b045d7f74c5a7ff4492097eac3}
+      \strng{authorbibnamehash}{2f8797b045d7f74c5a7ff4492097eac3}
+      \strng{authornamehash}{2f8797b045d7f74c5a7ff4492097eac3}
+      \strng{authorfullhash}{2f8797b045d7f74c5a7ff4492097eac3}
+      \strng{authorfullhashraw}{2f8797b045d7f74c5a7ff4492097eac3}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{No. 2.}
+      \field{journaltitle}{The American Naturalist}
+      \field{month}{2}
+      \field{title}{An Invulnerable Age Class and Stability in Delay-Differential Parasitoid-Host Models}
+      \field{volume}{Vol. 129}
+      \field{year}{1987}
+      \field{dateera}{ce}
+      \field{pages}{pp. 263\bibrangedash 282}
+      \range{pages}{-1}
+      \verb{file}
+      \verb PDF:/home/mathisdr/Zotero/storage/XIYLKEQZ/W. W. Murdoch - 1987 - An Invulnerable Age Class and Stability in Delay-Differential Parasitoid-Host Models.pdf:application/pdf
+      \endverb
+      \keyw{Fixed delay,Ecology approach,Parasitism - simple}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

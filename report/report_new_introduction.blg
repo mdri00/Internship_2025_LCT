@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'report_new_introduction.blg'
+[76] biber:342> INFO - === jeu. juil. 24, 2025, 15:08:46
+[90] Biber.pm:421> INFO - Reading 'report_new_introduction.bcf'
+[147] Biber.pm:1002> INFO - Found 1 citekeys in bib section 0
+[158] Biber.pm:4487> INFO - Processing section 0
+[166] Biber.pm:4678> INFO - Looking for bibtex file 'ref.bib' for section 0
+[168] bibtex.pm:1713> INFO - LaTeX decoding ...
+[192] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[226] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[227] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[227] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[227] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[229] bbl.pm:676> INFO - Writing 'report_new_introduction.bbl' with encoding 'UTF-8'
+[229] bbl.pm:779> INFO - Output to report_new_introduction.bbl

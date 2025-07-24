@@ -65,6 +65,10 @@
 % Mathematics
 \usepackage{amsmath,mathtools,amssymb} 
 
+% References
+\usepackage[backend=biber, style=authoryear]{biblatex}
+\addbibresource{ref.bib}
+
 \begin{document}
  %% textwidth in cm: \printinunitsof{in}\prntlen{\textwidth}
 
@@ -85,21 +89,8 @@ February-June 2025
 % Abstract (no page number)
 \noPageNumber
 \begin{abstract}
-xxx
-\\
-xxx
-\\
-\\
-xxx
-\\ 
 
-à faire
--Harmoniser developmental/maturation
--Suppl figures : en cours ça arrive 
--Discussion 4.1 ; 4.2
--Voir ce que je fais avec la partie k-n : si besoin tout part en supplementary
--Perspectives
--Funding
+Insect host–parasitoid models are increasingly studied as biocontrol tools to manage pest populations with minimal environmental impact. These models often assume either fixed (no developmental variability) or exponentially distributed maturation times (high developmental variability). Here, we investigate intermediate cases using Erlang-distributed delays via the linear chain trick, applied to classical host–parasitoid systems with diverse dynamics. We find that while developmental variability generally stabilizes population dynamics, model sensitivity varies, and abrupt changes in behavior can occur at both low and high variability levels. We conduct a review of empirical data from laboratory-reared agricultural insects, fitting Erlang parameters to quantify developmental variability. This analysis reveals substantial heterogeneity across species and suggests that exponential assumptions might often be unrealistic. We also examine the effect of maturation-time shifts, accounting for periods during which no maturation can occur, showing that omitting such shifts during fitting systematically lowers estimated variability. Taken together, our results support interpreting developmental variability as a form of parasitism risk heterogeneity, with stabilizing effects comparable to those of spatial heterogeneity, such as patchiness. We argue that developmental variability deserves comparable attention, particularly given its tractable mathematical implementation via the linear chain trick and, more broadly, through phase-type distributions.
 
 \end{abstract}
 
@@ -107,14 +98,17 @@ xxx
 \noPageNumber
 \tableofcontents
 
-
-% \listoffigures % If needed
-% \listoftables  % If needed
-
 % List of abbreviations
 \section*{List of Abbreviations}
 \noPageNumber
-% Your content
+CV : Coefficient of Variation ; 
+DDE : Delay Differential Equation ; 
+DV : Developmental Variability ; 
+IDE : Integro-Differential Equation ; 
+LCT : Linear Chain Trick ; 
+ODE : Ordinary Differential Equation ; 
+OFB : Office Français de la Biodiversité ; 
+ratioT : Ratio between parasitoid and host generation time
 
 % Main content starts here (with page numbers from 1)
 \newpage
@@ -464,7 +458,7 @@ If $P_2(t)$ and the recruitment rates are constant over a generation which mean 
 
 \tabto{1 cm} Here, we showed that Weibull and Gamma distributions generally look closely similar (Figure 1) and the fitting method allows to find Gamma distributions that look closely like the corresponding Weibull distribution. However, let us explore the consequences of allowing, or not, a shift in our fitted Gamma distribution.
 
-\tabto{1 cm} The constraint consisting in setting the same shift as the Weibull shift [reformuler plus simplement?] ("$\tau$ copied") does entail low (mostly in [1;20]) values of Gamma shapes consistent with those found in Xu et al. (2010). We also show that the early phase with no maturation is either taken into account through a large Gamma shift or a large Gamma shape. Thus, the high Weibull shifts allow the Gamma shapes to be lower with this constraint. When the Gamma shift is either allowed in [0;1] or forced to 0, the fitted shifts decrease, and, mechanically, the fitted shapes increase. Since However, the use of the Wasserstein distance to quantitatively estimate the goodness-of-fit suggests that high Weibull shifts and null Gamma shits are not associated with poorer fits. Together, these results indicate two things. First, since the LCT framework does not allow shifts, the Erlang/Gamma shapes (or number of subcompartments) that allow realistic maturation distributions are generally relatively large (median shape of the survey : 57.9, Table 1) and diverse (range in the survey : 4.5 to 782.2, Table 1, Figure 7b). Second, the LCT models' assumptions about developmental variability are not less realistic than the assumptions of models that allow shifts. Thus, the mathematical and computational advantages of LCT models are not necessarily produced [do not necessarily come?] at the cost of their realism. 
+\tabto{1 cm} The constraint consisting in setting the same shift as the Weibull shift [reformuler plus simplement?] ("$\tau$ copied") does entail low (mostly in [1;20]) values of Gamma shapes consistent with those found in Xu et al. (2010). We also show that the early phase with no maturation is either taken into account through a large Gamma shift or a large Gamma shape. Thus, the high Weibull shifts allow the Gamma shapes to be lower with this constraint. When the Gamma shift is either allowed in [0;1] or forced to 0, the fitted shifts decrease, and, mechanically, the fitted shapes increase. However, the use of the Wasserstein distance to quantitatively estimate the goodness-of-fit suggests that high Weibull shifts and null Gamma shits are not associated with poorer fits. Together, these results indicate two things. First, since the LCT framework does not allow shifts, the Erlang/Gamma shapes (or number of subcompartments) that allow realistic maturation distributions are generally relatively large (median shape of the survey : 57.9, Table 1) and diverse (range in the survey : 4.5 to 782.2, Table 1, Figure 7b). Second, the LCT models' assumptions about developmental variability are not less realistic than the assumptions of models that allow shifts. Thus, the mathematical and computational advantages of LCT models are not necessarily produced [do not necessarily come?] at the cost of their realism. 
 
 \tabto{1 cm} Gurney's (1980, 1983) and Murdoch's (1987) models properties (local stability, oscillations) show a maximal sensitivity to developmental variability when the latter is high, specifically in the Erlang shape range 1-30.  The survey with the null shift constraint yields Gamma shapes not lower than 5, and rarely below 10 (Figure 7b). This suggests that host-parasitoid models that use a simple ODE approach while not allowing shifts are less realistic. The simplified assumption of an exponentially-distributed maturation time should indeed introduced biases in these models' predictions, both quantitatively (equilibrium densities, oscillation amplitude) and qualitatively (type of dynamics) so. Besides, the absence of shift in LCT models implies that the number of LCT subcompartments that maximize realism to empirical maturation time distributions will generally be high (Figure 7c). The DDE approach might thus be the "least bad" of options in most models as a first approximation. Yet, the sensitivity of the Godfray and Hassel (1989) model to perfectly fixed delays suggests that the DDE approach is not necessarily more acceptable for every model. 
 
@@ -498,10 +492,9 @@ The internship is funded by the Cacolac project (OFB, Ecophyto...), which object
 % References (excluded from page count)
 \newpage
 \noPageNumber
-\begin{thebibliography}{99}
-\bibitem{example} Author, \emph{Title}, Journal, Year.
-\end{thebibliography}
+See \textcite{w_w_murdoch_invulnerable_1987} for more.
 
+\printbibliography
 
 
 
@@ -804,52 +797,26 @@ With $\varphi_n(s)$ the PDF of the Erlang distribution with shape n and rate $\t
 \label{fig:bifurc_suppl}
 \end{figure}
 
-\setcounter{figure}{-1}
-\begin{figure}[!ht]
+
+\begin{figure}[]
 \centering	
-\includegraphics[width=0.8\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/pbmtq_figure.png}
-\caption{Exploring the effect of developmental (time) variability on host-parasitoid models using the linear chain trick.}
-\label{fig:intro}
-\end{figure}
-
-\begin{figure}[]
-\centering
-	\begin{subfigure}[t]{0.48\textwidth}
-	  \centering
-	  \includegraphics[width=\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/figs/n_survey_example_species.pdf}
-	  \caption{}
-	  \label{fig:a}
-	\end{subfigure}
-	
-\caption{SFIGsurvey : \textbf{(a)} : FFitted n for stages or whole juvenile development of a few insects involved in agroecosystems. Ips avulsus and Feltiella acarisuga have only 1 nymphal stage. Grey bars indicate that the Gamma distribution of the corresponding stage was not fitted due to a negative shift in the Weibull law estimates given in the original paper.}
-\label{fig:Survey}
+\includegraphics[width=0.8\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_stability_n_m_different.pdf}
+\caption{Local stability diagram of the system around the non-trivial equilibrium for the Murdoch model, with varying  developmental variabilities for host ($n$) and parasitoid ($m$). The system is unstable to the left of the curves, and stable to their right. Blue lines indicate stability boundaries for fixed delays. Black lines indicate stability boundaries for the number of LCT subcompartments $n$ and $m$ given by the grid. Parameters are $\delta_{H1} = 0, \delta_{P1} = 1, \delta_{P2} = 8, \rho = 33, T_{H1} = 1/m_H = 1$.}
+\label{fig:murdoch_stab_n_diff_m}
 \end{figure}
 
 
 \begin{figure}[]
 \centering
-	\begin{subfigure}[t]{0.48\textwidth}
-	  \centering
-	  \includegraphics[width=\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_stability_fecundity.pdf}
-	  \caption{}
-	  \label{fig rho}
-	\end{subfigure}
-	
-\caption{SFIG murdoch :  Local stability diagram of the system around the non-trivial equilibrium showing the effect of the average number of offspring of an adult host $\rho$}
-\label{fig:Survey}
-\end{figure}
-
-\begin{figure}[]
-\centering
-	\begin{subfigure}[t]{0.48\textwidth}
+	\begin{subfigure}[t]{0.8\textwidth}
 	  \centering
 	  \includegraphics[width=\textwidth]{/home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_stability_fecundity_suppl_fig.pdf}
 	  \caption{}
 	  \label{fig rho}
 	\end{subfigure}
 	
-\caption{SFIG murdochBIS :  Local stability diagram of the system around the non-trivial equilibrium showing the effect of the average number of offspring of an adult host $\rho$}
-\label{fig:Survey}
+\caption{Local stability diagram of the system around the non-trivial equilibrium showing the effect of the average number of offspring of an adult host $\rho$. Parameters are $\delta_{H1} = 0, \delta_{P1} = 1, \delta_{P2} = 8, \rho = 33, T_{H1} = 1/m_H = 1, m_P = 2$.}
+\label{fig:murdoch_rho_suppl}
 \end{figure}
 
 
