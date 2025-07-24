@@ -79,7 +79,8 @@
       <file>report_new_introduction.bcf</file>
     </requires>
     <requires type="editable">
-      <file>ref.bib</file>
+      <file>Bibliography.bib</file>
+      <file>Survey.bib</file>
     </requires>
   </external>
 </requests>

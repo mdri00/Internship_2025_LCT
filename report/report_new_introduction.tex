@@ -67,7 +67,12 @@
 
 % References
 \usepackage[backend=biber, style=authoryear]{biblatex}
-\addbibresource{ref.bib}
+\addbibresource{Bibliography.bib}
+\DeclareBibliographyCategory{main}
+ \nocite{*}
+\addbibresource{Survey.bib}
+\DeclareBibliographyCategory{survey}
+ \nocite{*}
 
 \begin{document}
  %% textwidth in cm: \printinunitsof{in}\prntlen{\textwidth}
@@ -489,12 +494,14 @@ On prend mieux en compte le côté temporel mais on oublie un peu le coté spati
 The internship is funded by the Cacolac project (OFB, Ecophyto...), which objective is to integratively develop agroecological methods of pest control. It aims to better understand the complementarity or antagonism between different operational levers used to control bio-aggressors in perennial crops and to optimize their combination according to the local context and landscape.
 
 
-% References (excluded from page count)
-\newpage
-\noPageNumber
-See \textcite{w_w_murdoch_invulnerable_1987} for more.
 
-\printbibliography
+
+
+
+% References (excluded from page count) \textcite{w_w_murdoch_invulnerable_1987}
+\printbibliography[heading=bibintoc, keyword={main},title={References}]
+
+\printbibliography[heading=bibintoc, notkeyword={main},title={Survey of Erlang/Gamma distribution shape references}]
 
 
 
