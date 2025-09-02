@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.24)  27 AUG 2025 10:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.24)  2 SEP 2025 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1494,7 +1494,7 @@ asitoid/figs/Godfray_stability_diagram.pdf Graphic file (type pdf)
 sitoid/figs/Godfray_stability_diagram.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Godfray_stability_diagram.pdf  used on input li
-ne 322.
+ne 326.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
 id/figs/Godfray_effect-of-n1n3.pdf, id=200, 462.52798pt x 346.89601pt>
@@ -1504,7 +1504,7 @@ asitoid/figs/Godfray_effect-of-n1n3.pdf Graphic file (type pdf)
 sitoid/figs/Godfray_effect-of-n1n3.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Godfray_effect-of-n1n3.pdf  used on input line 
-330.
+334.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
 id/figs/Godfray_effect-of-n2m.pdf, id=201, 462.52798pt x 346.89601pt>
@@ -1514,10 +1514,10 @@ asitoid/figs/Godfray_effect-of-n2m.pdf Graphic file (type pdf)
 sitoid/figs/Godfray_effect-of-n2m.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Godfray_effect-of-n2m.pdf  used on input line 3
-37.
+41.
 (pdftex.def)             Requested size: 218.51521pt x 163.88805pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
@@ -1527,22 +1527,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--351
 sitoid/figs/Murdoch_rhobifurcation_diagram_n1_m1.pdf> </home/mathisdr/Desktop/2
 024-2025/Stage/Internship_2025_LCT/model_host_parasitoid/figs/Murdoch_rhobifurc
 ation_diagram_n20_m1.pdf>]
-</home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
-id/figs/Equivalence_k_n.pdf, id=249, 462.52798pt x 346.89601pt>
-File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
-asitoid/figs/Equivalence_k_n.pdf Graphic file (type pdf)
-<use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
-sitoid/figs/Equivalence_k_n.pdf>
-Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/model_host_parasitoid/figs/Equivalence_k_n.pdf  used on input line 358.
-(pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
-
 
 [12 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
 sitoid/figs/Godfray_stability_diagram.pdf> </home/mathisdr/Desktop/2024-2025/St
 age/Internship_2025_LCT/model_host_parasitoid/figs/Godfray_effect-of-n1n3.pdf> 
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
 id/figs/Godfray_effect-of-n2m.pdf>]
+</home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
+id/figs/Equivalence_k_n.pdf, id=287, 462.52798pt x 346.89601pt>
+File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_par
+asitoid/figs/Equivalence_k_n.pdf Graphic file (type pdf)
+<use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_para
+sitoid/figs/Equivalence_k_n.pdf>
+Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
+_LCT/model_host_parasitoid/figs/Equivalence_k_n.pdf  used on input line 362.
+(pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/
 figs/n_survey_3lines_w_dist.pdf, id=288, 441.95314pt x 327.29678pt>
 File: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_s
@@ -1550,7 +1549,7 @@ hape/figs/n_survey_3lines_w_dist.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sh
 ape/figs/n_survey_3lines_w_dist.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/survey_gamma_shape/figs/n_survey_3lines_w_dist.pdf  used on input line 372
+_LCT/survey_gamma_shape/figs/n_survey_3lines_w_dist.pdf  used on input line 376
 .
 (pdftex.def)             Requested size: 218.51521pt x 161.83011pt.
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/
@@ -1560,7 +1559,7 @@ hape/figs/n_survey_log.pdf Graphic file (type pdf)
 <use /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_sh
 ape/figs/n_survey_log.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
-_LCT/survey_gamma_shape/figs/n_survey_log.pdf  used on input line 380.
+_LCT/survey_gamma_shape/figs/n_survey_log.pdf  used on input line 384.
 (pdftex.def)             Requested size: 218.51521pt x 161.99783pt.
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/
 figs/n_survey_shape_according_to_weibull-shift.pdf, id=290, 442.77019pt x 327.6
@@ -1572,7 +1571,7 @@ hape/figs/n_survey_shape_according_to_weibull-shift.pdf Graphic file (type pdf)
 ape/figs/n_survey_shape_according_to_weibull-shift.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/survey_gamma_shape/figs/n_survey_shape_according_to_weibull-shift.pdf  use
-d on input line 387.
+d on input line 391.
 (pdftex.def)             Requested size: 218.51521pt x 161.70876pt.
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/survey_gamma_shape/
 figs/n_survey_relation_between_wdist_and_weibullshift.pdf, id=291, 442.12177pt 
@@ -1584,7 +1583,7 @@ pe pdf)
 ape/figs/n_survey_relation_between_wdist_and_weibullshift.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/survey_gamma_shape/figs/n_survey_relation_between_wdist_and_weibullshift.p
-df  used on input line 395.
+df  used on input line 399.
 (pdftex.def)             Requested size: 218.51521pt x 161.94875pt.
 
 
@@ -1613,17 +1612,19 @@ llshift.pdf>]
 
 [21]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 50
-1.
+5.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (29.498pt too wide) in paragraph at lines 501--501
+Overfull \hbox (29.498pt too wide) in paragraph at lines 505--505
 \T1/ptm/m/sc/12 url\T1/ptm/m/n/12 : $\T1/pcr/m/n/12 https : / / linkinghub . el
 sevier . com / retrieve / pii / S0040580905000663$
  []
 
 
-Overfull \hbox (17.04149pt too wide) in paragraph at lines 501--501
+
+[22]
+Overfull \hbox (17.04149pt too wide) in paragraph at lines 505--505
 \T1/ptm/m/sc/12 doi\T1/ptm/m/n/12 : $\T1/pcr/m/n/12 10 . 1016 / 0025 -[] 5564(9
 0 ) 90019 -[] U$\T1/ptm/m/n/12 . \T1/ptm/m/sc/12 url\T1/ptm/m/n/12 : $\T1/pcr/m
 /n/12 https : / / linkinghub . elsevier .
@@ -1631,25 +1632,25 @@ Overfull \hbox (17.04149pt too wide) in paragraph at lines 501--501
 
 
 
-[22]
-
 [23]
-Overfull \hbox (7.75963pt too wide) in paragraph at lines 501--501
+
+[24]
+Overfull \hbox (7.75963pt too wide) in paragraph at lines 505--505
 \T1/ptm/m/n/12 309.5734, pp. 610^^U613. \T1/ptm/m/sc/12 issn\T1/ptm/m/n/12 : 00
 36-8075, 1095-9203. \T1/ptm/m/sc/12 doi\T1/ptm/m/n/12 : $\T1/pcr/m/n/12 10 . 11
 26 / science . 1114426$\T1/ptm/m/n/12 .
  []
 
 
-
-[24]
-Overfull \hbox (25.10005pt too wide) in paragraph at lines 501--501
+Overfull \hbox (25.10005pt too wide) in paragraph at lines 505--505
 [][]\T1/ptm/m/n/12 Nakamichi, Ya-su-fumi, Yuk-i-hiko To-que-naga, and Koichi Fu
 -jii (Apr. 2008). ``Per-sis-tent host^^Uparasitoid
  []
 
 
-Overfull \hbox (85.18231pt too wide) in paragraph at lines 503--503
+
+[25]
+Overfull \hbox (85.18231pt too wide) in paragraph at lines 507--507
 \T1/pcr/m/n/12 5$\T1/ptm/m/n/12 . \T1/ptm/m/sc/12 url\T1/ptm/m/n/12 : $\T1/pcr/
 m/n/12 https : / / www . cambridge . org / core / product / identifier / S00083
 47X00024457 /
@@ -1657,16 +1658,14 @@ m/n/12 https : / / www . cambridge . org / core / product / identifier / S00083
 
 
 
-[25]
-
 [26]
-Overfull \hbox (8.09871pt too wide) in paragraph at lines 503--503
+Overfull \hbox (8.09871pt too wide) in paragraph at lines 507--507
 \T1/ptm/m/n/12 THE SPECK-LED GREEN FRUIT-WORM, \T1/ptm/m/it/12 OR-THOSIA HI-BIS
 CI \T1/ptm/m/n/12 GUENÉE (LEP-I-DOPTERA:
  []
 
 
-Overfull \hbox (5.98654pt too wide) in paragraph at lines 503--503
+Overfull \hbox (5.98654pt too wide) in paragraph at lines 507--507
 [][]\T1/ptm/m/n/12 Kim, Dong-Soon, Joon-Ho Lee, and Myong-Soon Yiem (Apr. 1, 20
 01). ``Temperature-Dependent
  []
@@ -1674,13 +1673,13 @@ Overfull \hbox (5.98654pt too wide) in paragraph at lines 503--503
 
 
 [27]
-Overfull \hbox (16.72174pt too wide) in paragraph at lines 503--503
+Overfull \hbox (16.72174pt too wide) in paragraph at lines 507--507
 [][]\T1/ptm/m/n/12 Lerin, J. (Apr. 1, 2004). ``Mod-el-ing Em-bry-onic De-vel-op
 -ment in <I>Sitona lin-ea-tus</I> (Coleoptera:
  []
 
 
-Overfull \hbox (25.81006pt too wide) in paragraph at lines 503--503
+Overfull \hbox (25.81006pt too wide) in paragraph at lines 507--507
 \T1/pcr/m/n/12 identifier / S0007485300000468 / type / journal _ article$ \T1/p
 tm/m/n/12 (vis-ited on 06/10/2025). 
  []
@@ -1688,13 +1687,13 @@ tm/m/n/12 (vis-ited on 06/10/2025).
 
 
 [28]
-Overfull \hbox (13.36682pt too wide) in paragraph at lines 503--503
+Overfull \hbox (13.36682pt too wide) in paragraph at lines 507--507
 [][]\T1/ptm/m/n/12 Park, Chang-Gyu, Hong Hyun Park, and Kwang Ho Kim (Dec. 30, 
 2011). ``Temperature-dependent
  []
 
 
-Overfull \hbox (1.6062pt too wide) in paragraph at lines 503--503
+Overfull \hbox (1.6062pt too wide) in paragraph at lines 507--507
 [][]\T1/ptm/m/n/12 Pollard, Cia-rán P. et al. (Jan. 2020). ``phen-Model: A temp
 erature-dependent phe-nol-ogy/voltinism
  []
@@ -1702,19 +1701,19 @@ erature-dependent phe-nol-ogy/voltinism
 
 
 [29]
-Overfull \hbox (4.71007pt too wide) in paragraph at lines 503--503
+Overfull \hbox (4.71007pt too wide) in paragraph at lines 507--507
 \T1/pcr/m/n/12 wiley . com / doi / 10 . 1111 / j . 1461 -[] 9555 . 2005 . 00260
  . x$ \T1/ptm/m/n/12 (vis-ited on 06/05/2025). 
  []
 
 
-Overfull \hbox (8.3161pt too wide) in paragraph at lines 503--503
+Overfull \hbox (8.3161pt too wide) in paragraph at lines 507--507
 [][]\T1/ptm/m/n/12 W.D., Wood-son, J.J. Jack-son, and M. M. Ells-bury (1996). `
 `North-ern Corn Root-worm (Coleoptera:
  []
 
 
-Overfull \hbox (0.73126pt too wide) in paragraph at lines 503--503
+Overfull \hbox (0.73126pt too wide) in paragraph at lines 507--507
 [][]\T1/ptm/m/n/12 Wagner, Ter-ence L. (Oct. 1, 1995). ``Temperature-Dependent 
 De-vel-op-ment, Mor-tal-ity, and Adult
  []
@@ -1722,7 +1721,7 @@ De-vel-op-ment, Mor-tal-ity, and Adult
 
 
 [30]
-Overfull \hbox (25.81006pt too wide) in paragraph at lines 503--503
+Overfull \hbox (25.81006pt too wide) in paragraph at lines 507--507
 \T1/pcr/m/n/12 identifier / S0007485301000530 / type / journal _ article$ \T1/p
 tm/m/n/12 (vis-ited on 06/06/2025). 
  []
@@ -1730,7 +1729,7 @@ tm/m/n/12 (vis-ited on 06/06/2025).
 
 
 [31]
-Overfull \hbox (6.04381pt too wide) in paragraph at lines 516--516
+Overfull \hbox (6.04381pt too wide) in paragraph at lines 520--520
 |[]\T1/ptm/b/n/12 System con-struc-tion : ap-pli-ca-tion of the Lin-ear Chain T
 rick with a non-autonomous
  []
@@ -1738,7 +1737,7 @@ rick with a non-autonomous
 
 
 [32]
-Overfull \hbox (22.12675pt too wide) detected at line 565
+Overfull \hbox (22.12675pt too wide) detected at line 569
 []
  []
 
@@ -1749,33 +1748,33 @@ Overfull \hbox (22.12675pt too wide) detected at line 565
 [34]
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 
  []
 
 
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
 
  []
 
 
 
 [37]
-Overfull \hbox (23.90546pt too wide) detected at line 758
+Overfull \hbox (23.90546pt too wide) detected at line 762
 [][]
  []
 
 
 
 [38]
-Overfull \hbox (1.36816pt too wide) in paragraph at lines 780--781
+Overfull \hbox (1.36816pt too wide) in paragraph at lines 784--785
 \T1/ptm/m/n/12 In May (1978)'s model, the prob-a-bil-ity to es-cape par-a-sitis
 m $\OML/cmm/m/it/12 f$ \T1/ptm/m/n/12 was writ-ten as the zero-probability
  []
@@ -1792,12 +1791,12 @@ asitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf Graphic file (type pdf)
 sitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Murdoch_bifurcation_diagram_Other-par.pdf  used
- on input line 800.
+ on input line 804.
 (pdftex.def)             Requested size: 364.19667pt x 273.16087pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 809.
+               Default added (so using `tbp') on input line 813.
 
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
 id/figs/Murdoch_stability_n_m_different.pdf, id=460, 462.52798pt x 346.89601pt>
@@ -1808,11 +1807,11 @@ asitoid/figs/Murdoch_stability_n_m_different.pdf Graphic file (type pdf)
 sitoid/figs/Murdoch_stability_n_m_different.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Murdoch_stability_n_m_different.pdf  used on in
-put line 811.
+put line 815.
 (pdftex.def)             Requested size: 364.19667pt x 273.16087pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 819.
+               Default added (so using `tbp') on input line 823.
 
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
 id/figs/Murdoch_stability_fecundity_suppl_fig.pdf, id=461, 578.16pt x 433.62pt>
@@ -1823,11 +1822,11 @@ asitoid/figs/Murdoch_stability_fecundity_suppl_fig.pdf Graphic file (type pdf)
 sitoid/figs/Murdoch_stability_fecundity_suppl_fig.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Murdoch_stability_fecundity_suppl_fig.pdf  used
- on input line 823.
+ on input line 827.
 (pdftex.def)             Requested size: 364.19667pt x 273.14235pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 835.
+               Default added (so using `tbp') on input line 839.
 
 </home/mathisdr/Desktop/2024-2025/Stage/Internship_2025_LCT/model_host_parasito
 id/figs/Godfray_bifurcation_diagram_Wearing-par.pdf, id=462, 462.52798pt x 346.
@@ -1839,7 +1838,7 @@ asitoid/figs/Godfray_bifurcation_diagram_Wearing-par.pdf Graphic file (type pdf
 sitoid/figs/Godfray_bifurcation_diagram_Wearing-par.pdf>
 Package pdftex.def Info: /home/mathisdr/Desktop/2024-2025/Stage/Internship_2025
 _LCT/model_host_parasitoid/figs/Godfray_bifurcation_diagram_Wearing-par.pdf  us
-ed on input line 837.
+ed on input line 841.
 (pdftex.def)             Requested size: 364.19667pt x 273.16087pt.
 
 
@@ -1861,6 +1860,10 @@ L3 programming layer <2025-07-19>
 
 
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'report_new_introduction.run.xml'.
 \openout1 = `report_new_introduction.run.xml'.
@@ -1895,7 +1898,7 @@ dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts
 /type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on report_new_introduction.pdf (45 pages, 764082 bytes).
+Output written on report_new_introduction.pdf (45 pages, 764745 bytes).
 PDF statistics:
  621 PDF objects out of 1000 (max. 8388607)
  427 compressed objects within 5 object streams

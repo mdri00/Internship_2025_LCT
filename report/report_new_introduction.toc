@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {3}Results}{9}{}%
 \contentsline {subsection}{\numberline {3.1}Sensitivity to developmental variability in Murdoch's model}{9}{}%
 \contentsline {subsection}{\numberline {3.2}Sensitivity to developmental variability in Godfray and Hassel's model}{10}{}%
-\contentsline {subsection}{\numberline {3.3}Comparing the effect of May's implementation of parasitism heterogeneity and the effect of developmental variability}{12}{}%
+\contentsline {subsection}{\numberline {3.3}Comparing the effect of May's implementation of parasitism heterogeneity and the effect of developmental variability}{13}{}%
 \contentsline {subsection}{\numberline {3.4}Survey of Erlang/Gamma distribution shape (n)}{13}{}%
 \contentsline {section}{\numberline {4}Discussion}{16}{}%
 \contentsline {subsection}{\numberline {4.1}Differential sensitivity of models to developmental variability}{16}{}%
@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {4.3}Developmental variability in laboratory}{19}{}%
 \contentsline {section}{\numberline {5}Perspectives}{21}{}%
 \contentsline {section}{\numberline {6}Funding}{22}{}%
-\contentsline {section}{References}{22}{}%
+\contentsline {section}{References}{23}{}%
 \contentsline {section}{Survey of Erlang/Gamma distribution shape references}{26}{}%
 \contentsline {section}{\numberline {A}Appendix}{32}{}%
 \contentsline {subsection}{\numberline {A.1}Murdoch 1987 system}{32}{}%
