@@ -1,20 +1,18 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'report_new_introduction.blg'
-[67] biber:342> INFO - === jeu. juil. 24, 2025, 16:01:20
-[80] Biber.pm:421> INFO - Reading 'report_new_introduction.bcf'
-[137] Biber.pm:999> INFO - Using all citekeys in bib section 0
-[148] Biber.pm:4487> INFO - Processing section 0
-[157] Biber.pm:4678> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
-[159] bibtex.pm:1713> INFO - LaTeX decoding ...
-[198] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
-[386] Biber.pm:4678> INFO - Looking for bibtex file 'Survey.bib' for section 0
-[388] bibtex.pm:1713> INFO - LaTeX decoding ...
-[440] bibtex.pm:1519> INFO - Found BibTeX data source 'Survey.bib'
-[766] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[766] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[767] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[767] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[854] bbl.pm:676> INFO - Writing 'report_new_introduction.bbl' with encoding 'UTF-8'
-[885] bbl.pm:779> INFO - Output to report_new_introduction.bbl
-[885] Biber.pm:132> WARN - ISBN '978-1-4008-4725-9 978-0-691-00657-4' in entry 'murdoch_consumer-resource_2003' is invalid - run biber with '--validate_datamodel' for details.
-[885] Biber.pm:134> INFO - WARNINGS: 1
+[49] biber:342> INFO - === mar. août 26, 2025, 18:48:14
+[69] Biber.pm:421> INFO - Reading 'report_new_introduction.bcf'
+[126] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[136] Biber.pm:4487> INFO - Processing section 0
+[143] Biber.pm:4678> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[145] bibtex.pm:1713> INFO - LaTeX decoding ...
+[184] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography.bib'
+[362] Biber.pm:4678> INFO - Looking for bibtex file 'Survey.bib' for section 0
+[365] bibtex.pm:1713> INFO - LaTeX decoding ...
+[424] bibtex.pm:1519> INFO - Found BibTeX data source 'Survey.bib'
+[776] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[776] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[776] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[776] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[867] bbl.pm:676> INFO - Writing 'report_new_introduction.bbl' with encoding 'UTF-8'
+[902] bbl.pm:779> INFO - Output to report_new_introduction.bbl
