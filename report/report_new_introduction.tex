@@ -568,7 +568,7 @@ The first term, with an integration by part in s and using $S(0,t) = 1$, gives
 &\quad + \int_0^{+\infty} B(t-s)\varphi_n(s) \partial_s S(s,t) \, ds.
 \end{align*}
 
-By $(4)$, we get :
+By [CHANGE : see just 4 equations before], we get :
 \begin{align*}
 &\int_0^{+\infty} B(t-s)\varphi_n(s) \partial_s S(s,t) \, ds  + \int_0^{+\infty} B(t-s)\varphi_n(s) \partial_t S(s,t) \, ds \\
 &\quad = - \delta(t) \int_0^{+\infty} B(t-s)\varphi_n(s) S(s,t)  \, ds \\
@@ -783,15 +783,15 @@ with
 \subsection{Equivalence between spatial and temporal risk heterogeneity}
 In May (1978)'s model, the probability to escape parasitism $f$ was written as the zero-probability of a negative binomial distribution: 
 \[ f = \left(1 + \frac{a P_2}{k} \right)^{-k}.\]
-Thus, with the fixed maturation delay $\tau$, the maturation term $M_{Hx}$ would be, with $R(t)$ the number of individuals entering the stage at time t (the recruitment term) and $\delta_{Hx}$ an intrinsic mortality term:
-\[ M_{Hx}(t)  = R(t-\tau)  \exp\left( -\int_{t-\tau}^{t} (k \, ln\left(1+\frac{a P_2(t)}{k}\right) + \delta_{Hx}) \, du \right).\]
+Thus, with the fixed maturation delay $\hat \tau$, the maturation term $M_{Hx}$ would be, with $R(t)$ the number of individuals entering the stage at time t (the recruitment term) and $\delta_{Hx}$ an intrinsic mortality term:
+\[ M_{Hx}(t)  = R(t-\hat \tau)  \exp\left( -\int_{t- \hat \tau}^{t} (k \, ln\left(1+\frac{a P_2(t)}{k}\right) + \delta_{Hx}) \, du \right).\]
 If $P_2(t) = P_2$ and $R(t)=R$ are constant over one generation and $\delta_{Hx}$ is set to 0, this becomes
-\[ M_{Hx}  = R \times \left(1+\frac{a P_2}{k}\right)^{-\tau k}.\]
+\[ M_{Hx}  = R \times \left(1+\frac{a P_2}{k}\right)^{-\hat \tau k}.\]
 
 In an Erlang-distributed delay model with homogeneous parasitoid attacks, $M_{Hx}$ can be written as
 \[ M_{Hx}(t)  = \int_0^{+\infty} R(t-s)\varphi_n(s) \exp\left( -\int_{t-s}^{t} (a P_2(u) + \delta_{Hx}) \, du \right) ds. \]
-With $\varphi_n(s)$ the PDF of the Erlang distribution with shape n and rate $\theta = n/\tau$. If $P_2(t) = P_2$ and $R(t)=R$ are constant over one generation and $\delta_{Hx}$ is set to 0, this becomes, using the definition of the Gamma function:
-\[ M_{Hx}  = R \times \left(1+\frac{a P_2}{n/\tau}\right)^{-n}.\]
+With $\varphi_n(s)$ the PDF of the Erlang distribution with shape n and rate $\theta = n/\hat \tau$. If $P_2(t) = P_2$ and $R(t)=R$ are constant over one generation and $\delta_{Hx}$ is set to 0, this becomes, using the definition of the Gamma function:
+\[ M_{Hx}  = R \times \left(1+\frac{a P_2}{n/ \hat \tau}\right)^{-n}.\]
 
 
 \subsection{Supplementary figures}
