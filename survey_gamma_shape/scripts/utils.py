@@ -46,7 +46,7 @@ def fit_gamma(weibull_par : np.ndarray,
               info : str,
               fig_dir : PosixPath,
               type_of_stage_and_shift : str, 
-              seed : int = 0):
+              bootstrap_n : int):
     """
     From input Weibull parameters, draws 5000 sample time variates and fits a (shifted)Gamma distribution with ML method.
 
@@ -55,61 +55,88 @@ def fit_gamma(weibull_par : np.ndarray,
     tau_forced is a string taking the values : zero (-> shift forced to 0) ; copy (-> shift taken from weibull law) ; positive (-> shift taken in [0;1])
     info is under the form "species_stage" and will be append to saved figure names.
     type_of_stage_and_shift is used to generate another layer of folders inside the fig_dir folder
+    bootstrap_n : if 0 then no bootstrap method (just one fit), if > 0 then multiple sampling (i.e 5000 weibull time generation) is made which results in multiple fitted parameters.
     
     OUTPUT:
     Generates a goodness-of-fit visualisation plot in figs folder only if argument save is True.
-    Returns fitted Gamma parameters via a numpy array giving shape,rate,shift.
-    Returns Wasserstein distance between the input Weibull law and the output Gamma law.
+    Returns average fitted Gamma parameters via a numpy array giving shape,rate,shift.
+    Returns standard errors computed from the bootstrapping method.
+    Returns average Wasserstein distance between the input Weibull law and the output Gamma law.
     """
-    np.random.seed(seed)
-    samples = weibull_min.rvs(c=weibull_par[1], scale=weibull_par[0], loc = weibull_par[2], size=5000)
 
-    if tau_forced == "zero" : 
-        bounds = [
-            (1e-5, None),   # shape > 0
-            (0, 0),         # loc = 0
-            (1e-5, None)    # scale > 0
-        ]
-        constraint = "Shift = 0"
-        initial_guess = [1.0, 0.0, 1.0]
-    elif tau_forced == "positive" :
-        bounds = [
-            (1e-5, None),   # shape > 0
-            (0, 1),        # loc in [0, 1]
-            (1e-5, None)    # scale > 0
-        ]
-        constraint = r"Shift $\in [0;1]$"
-        initial_guess = [1.0, 0.0, 1.0]
-    elif tau_forced == "copy" :
-        bounds = [
-            (1e-5, None),   # shape > 0
-            (weibull_par[2], weibull_par[2]), # loc copied from Weibull
-            (1e-5, None)    # scale > 0
-        ]
-        constraint = r"Shift copied from Weibull law"
-        initial_guess = [1.0, weibull_par[2], 1.0]
-    else:
-        raise RuntimeError("Tau forced argument not in [zero, unconstrained, copy]")
-
-    result = minimize(
-        gamma_nll,
-        initial_guess,
-        args=(samples,),
-        method='Nelder-Mead',
-        bounds=bounds,
-        tol = 1e-3, # I tested several possibilites and eventually these tol and maximum iterations work well.
-        options = {'maxiter': 20000} # Same
-    )
+    # Bootstrapped estimation of Gamma parameters from 5000 random samples taken from given Weibull law
+    Shape_fits = np.zeros(bootstrap_n)
+    Scale_fits = np.zeros(bootstrap_n)
+    Loc_fits = np.zeros(bootstrap_n)
     
-    if not result.success:
-        raise RuntimeError("Optimization failed:", result.message)
-    shape_fit, loc_fit, scale_fit = result.x
+    for bootstrap_i in range(bootstrap_n):
+        samples = weibull_min.rvs(c=weibull_par[1], scale=weibull_par[0], loc = weibull_par[2], size=5000)
+    
+        if tau_forced == "zero" : 
+            bounds = [
+                (1e-5, None),   # shape > 0
+                (0, 0),         # loc = 0
+                (1e-5, None)    # scale > 0
+            ]
+            constraint = "Shift = 0"
+            initial_guess = [1.0, 0.0, 1.0]
+        elif tau_forced == "positive" :
+            bounds = [
+                (1e-5, None),   # shape > 0
+                (0, 1),        # loc in [0, 1]
+                (1e-5, None)    # scale > 0
+            ]
+            constraint = r"Shift $\in [0;1]$"
+            initial_guess = [1.0, 0.0, 1.0]
+        elif tau_forced == "copy" :
+            bounds = [
+                (1e-5, None),   # shape > 0
+                (weibull_par[2], weibull_par[2]), # loc copied from Weibull
+                (1e-5, None)    # scale > 0
+            ]
+            constraint = r"Shift copied from Weibull law"
+            initial_guess = [1.0, weibull_par[2], 1.0]
+        else:
+            raise RuntimeError("Tau forced argument not in [zero, unconstrained, copy]")
+    
+        result = minimize(
+            gamma_nll,
+            initial_guess,
+            args=(samples,),
+            method='Nelder-Mead',
+            bounds=bounds,
+            tol = 1e-3, # I tested several possibilites and eventually these tol and maximum iterations work well.
+            options = {'maxiter': 20000} # Same
+        )
+        
+        if not result.success:
+            raise RuntimeError("Optimization failed:", result.message)
+        shape_fit, loc_fit, scale_fit = result.x
+        
+        Shape_fits[bootstrap_i] = shape_fit
+        Scale_fits[bootstrap_i] = scale_fit
+        Loc_fits[bootstrap_i] = loc_fit
 
+    print(Shape_fits)
+    print(Loc_fits)
+
+    scale_fit_average = np.mean(Scale_fits)
+    shape_fit_average = np.mean(Shape_fits)
+    loc_fit_average = np.mean(Loc_fits)
+
+    scale_fit_se = np.std(Scale_fits)/np.sqrt(bootstrap_n)
+    shape_fit_se = np.std(Shape_fits)/np.sqrt(bootstrap_n)
+    loc_fit_se = np.std(Loc_fits)/np.sqrt(bootstrap_n)
+
+    print(shape_fit_se)
+    print(loc_fit_se)
+
+    # Wasserstein distance computation from average parameters 
     support = np.linspace(1e-5,100,1000)
     w_dist = wasserstein_distance(u_values = support, 
                                   v_values = support,
                                   u_weights = weibull_min.pdf(support, c=weibull_par[1], scale=weibull_par[0], loc = weibull_par[2]),
-                                  v_weights = gamma.pdf(support, a=shape_fit, loc=loc_fit, scale=scale_fit)
+                                  v_weights = gamma.pdf(support, a=shape_fit_average, loc=loc_fit_average, scale=scale_fit_average)
                                  )
 
     if save:
@@ -120,13 +147,13 @@ def fit_gamma(weibull_par : np.ndarray,
         
         # Generation of fit figure for visual validation of goodness-of-fit
         x = np.linspace(0, max(samples), 1000)
-        pdf_fit = gamma.pdf(x, a=shape_fit, loc=loc_fit, scale=scale_fit)
+        pdf_fit = gamma.pdf(x, a=shape_fit_average, loc=loc_fit_average, scale=scale_fit_average)
     
         fig = plt.figure() #figsize=(6.3, 3.5))
-        plt.text(.9,0.2,f"  Shape: {shape_fit:.4f}")
-        plt.text(.9,0.5,f"  Loc: {loc_fit:.4f}")
+        plt.text(.9,0.2,f"  Shape: {shape_fit_average:.4f}")
+        plt.text(.9,0.5,f"  Loc: {loc_fit_average:.4f}")
         plt.text(.1,0.4,f" W-distance : {w_dist:.4f}")
-        plt.text(.9,0.8,f"  Scale: {scale_fit:.4f}")
+        plt.text(.9,0.8,f"  Scale: {scale_fit_average:.4f}")
         plt.hist(samples, bins=50, density=True, alpha=0.5, label="Samples from Weibull parameters")
         plt.plot(x, pdf_fit, 'r-', lw=2, label="Fitted Gamma (" + constraint + ")")
         plt.xlim(0,2)
@@ -137,7 +164,7 @@ def fit_gamma(weibull_par : np.ndarray,
         plt.savefig(output_path)
         plt.close()
         
-    return (np.array([scale_fit, shape_fit, loc_fit]), w_dist)
+    return (np.array([scale_fit_average, shape_fit_average, loc_fit_average]), np.array([scale_fit_se, shape_fit_se, loc_fit_se]), w_dist)
 
 
 
@@ -150,7 +177,7 @@ def fit_all_weibulls(
     processed_data_dir: PosixPath,
     fig_dir: PosixPath,
     type_of_stage: str,
-    seed: int = 0):
+    bootstrap_n_global):
     """
     Reads csv file containing weibull parameters. Calls fit_gamma to generate the corresponding Gamma distributions with two constraints on tau_forced.
 
@@ -181,122 +208,119 @@ def fit_all_weibulls(
     weibull_pars = np.array(weibull_pars)
     info_array = np.array(info_array)
 
-    shape1 = weibull_pars.shape[0] # shape of numpy array that will be generated and saved an given in output
-    shape2 = weibull_pars.shape[1] + 1 # Adding Wesserstein distance column 
+    shape1 = weibull_pars.shape[0] # shape of numpy arrays that will be generated and saved an given in output
+    shape2 = weibull_pars.shape[1] 
     
     ### Fit of non-shifted gamma distributions
-    gamma_results_zero = np.zeros((shape1, shape2))
+    gamma_av_zero = np.zeros((shape1, shape2))
+    gamma_se_zero = np.zeros((shape1, shape2))
+    gamma_wd_zero = np.zeros(shape1)
     print("Beginning non shifted analysis")
     for i,pars in enumerate(weibull_pars):
         print((i,weibull_pars.shape[0]))
         info_temp = f"{info_array[i,0]}_{info_array[i,1]}"
 
-        gamma_pars_temp, w_dist_temp = fit_gamma(
+        gamma_avs_temp, gamma_ses_temp, w_dist_temp = fit_gamma(
             weibull_par = pars,
             tau_forced = "zero",
             save = True,
             info = info_temp,
             fig_dir = fig_dir,
-            type_of_stage_and_shift = type_of_stage + "_zero")   
+            type_of_stage_and_shift = type_of_stage + "_zero",
+            bootstrap_n = bootstrap_n_global)   
         
-        gamma_results_zero[i,:-1] = gamma_pars_temp
-        gamma_results_zero[i,-1] = w_dist_temp
+        gamma_av_zero[i,:] = gamma_avs_temp
+        gamma_se_zero[i,:] = gamma_ses_temp
+        gamma_wd_zero[i] = w_dist_temp
 
-    ### Fit of shifted gamma distributions : first allow shift in [-1;1]
-    gamma_results_pos = np.zeros((shape1, shape2))
+
+    
+    ### Fit of non-shifted gamma distributions
+    gamma_av_pos = np.zeros((shape1, shape2))
+    gamma_se_pos = np.zeros((shape1, shape2))
+    gamma_wd_pos = np.zeros(shape1)
     print("Beginning positive shift analysis")
     for i,pars in enumerate(weibull_pars):
         print((i,weibull_pars.shape[0]))
         info_temp = f"{info_array[i,0]}_{info_array[i,1]}"
-        
-        gamma_pars_pos_temp, w_dist_temp = fit_gamma(
+
+        gamma_avs_temp, gamma_ses_temp, w_dist_temp = fit_gamma(
             weibull_par = pars,
             tau_forced = "positive",
             save = True,
             info = info_temp,
             fig_dir = fig_dir,
-            type_of_stage_and_shift = type_of_stage + "_positive") 
+            type_of_stage_and_shift = type_of_stage + "_positive",
+            bootstrap_n = bootstrap_n_global)   
         
-        gamma_results_pos[i,:-1] = gamma_pars_pos_temp
-        gamma_results_pos[i,-1] = w_dist_temp
-        
-        
+        gamma_av_pos[i,:] = gamma_avs_temp
+        gamma_se_pos[i,:] = gamma_ses_temp
+        gamma_wd_pos[i] = w_dist_temp
 
-    ### Fit of shifted gamma distributions : second copy shift from weibull
-    gamma_results_copy = np.zeros((shape1, shape2))
-    w_dists_copy = np.zeros(weibull_pars.shape[0])
-    print("Beginning copy shift analysis")
+        
+        
+    ### Fit of non-shifted gamma distributions
+    gamma_av_copy = np.zeros((shape1, shape2))
+    gamma_se_copy = np.zeros((shape1, shape2))
+    gamma_wd_copy = np.zeros(shape1)
+    print("Beginning non shifted analysis")
     for i,pars in enumerate(weibull_pars):
         print((i,weibull_pars.shape[0]))
         info_temp = f"{info_array[i,0]}_{info_array[i,1]}"
-        
-        gamma_pars_copy_temp, w_dist_temp = fit_gamma(
+
+        gamma_avs_temp, gamma_ses_temp, w_dist_temp = fit_gamma(
             weibull_par = pars,
             tau_forced = "copy",
             save = True,
             info = info_temp,
             fig_dir = fig_dir,
-            type_of_stage_and_shift = type_of_stage + "_copy")   
+            type_of_stage_and_shift = type_of_stage + "_copy",
+            bootstrap_n = bootstrap_n_global)   
         
-        gamma_results_copy[i,:-1] = gamma_pars_copy_temp
-        gamma_results_copy[i,-1] = w_dist_temp
+        gamma_av_copy[i,:] = gamma_avs_temp
+        gamma_se_copy[i,:] = gamma_ses_temp
+        gamma_wd_copy[i] = w_dist_temp
 
 
-    ### Save parameters results
-    np.save(processed_data_dir / f"{output}_zero.npy", gamma_results_zero)
-    np.save(processed_data_dir / f"{output}_pos.npy", gamma_results_pos)
-    np.save(processed_data_dir / f"{output}_copy.npy", gamma_results_copy)
+    # Concatenate all output in just one table
+    fit_results = np.concatenate((gamma_av_zero, gamma_se_zero, gamma_wd_zero[:,np.newaxis], 
+                                 gamma_av_pos, gamma_se_pos, gamma_wd_pos[:,np.newaxis], 
+                                 gamma_av_copy, gamma_se_copy, gamma_wd_copy[:,np.newaxis]), 
+                                 axis = 1)
+    
+    ### Save fitting outputs 
+    #### numpy table
+    np.save(processed_data_dir / f"{output}.npy", fit_results)
 
-    csv_file_path1 = processed_data_dir / f"{output}_zero.csv"
-    csv_file_path2 = processed_data_dir / f"{output}_pos.csv"
-    csv_file_path3 = processed_data_dir / f"{output}_copy.csv"
-    np.savetxt(csv_file_path1, gamma_results_zero, fmt="%10.4f",delimiter=",")
-    np.savetxt(csv_file_path2, gamma_results_pos, fmt="%10.4f",delimiter=",")
-    np.savetxt(csv_file_path3, gamma_results_copy, fmt="%10.4f",delimiter=",")
+    #### csv table
+    csv_file_path1 = processed_data_dir / f"{output}.csv"
+    np.savetxt(csv_file_path1, fit_results, fmt="%10.4f",delimiter=",")
 
     # Add header, add two columns giving species and stage
     with open(csv_file_path1, 'r') as file: # non shifted file
         reader = csv.reader(file)
         data = list(reader)
+    newdatalist = []
     for i in range(0, len(data)):
-        data[i].append(info_array[i,0])
-        data[i].append(info_array[i,1])
+        newdatalist.append(
+            [info_array[i,0], info_array[i,1]]
+            + list(weibull_pars[i])
+            + list(data[i])
+        )
     with open(csv_file_path1, 'w', newline='') as file:
         ### header
-        writer = csv.DictWriter(file, fieldnames = ["shape", "scale", "shift", "w-dist", "species", "stage"])
+        writer = csv.DictWriter(file, fieldnames = ["species", "stage", 
+                                                    "weibull_shape", "weibull_scale", "weibull_shift",
+                                                    "scale_av_zero", "shape_av_zero", "shift_av_zero", "scale_se_zero", "shape_se_zero", "shift_se_zero", "w-dist_zero", 
+                                                    "scale_av_pos", "shape_av_pos", "shift_av_pos", "scale_se_pos", "shape_se_pos", "shift_se_pos", "w-dist_pos",
+                                                    "scale_av_copy", "shape_av_copy", "shift_av_copy", "scale_se_copy", "shape_se_copy", "shift_se_copy", "w-dist_copy"
+                                                    ])
         writer.writeheader()
         ### data
         writer = csv.writer(file)
-        writer.writerows(data)
-    
-    with open(csv_file_path2, 'r') as file: # shifted file
-        reader = csv.reader(file)
-        data = list(reader)
-    for i in range(0, len(data)):
-        data[i].append(info_array[i,0])
-        data[i].append(info_array[i,1])
-    with open(csv_file_path2, 'w', newline='') as file:
-        ### header
-        writer = csv.DictWriter(file, fieldnames = ["shape", "scale", "shift", "w-dist", "species", "stage"])
-        writer.writeheader()
-        ### data
-        writer = csv.writer(file)
-        writer.writerows(data)
+        writer.writerows(newdatalist)
 
-    with open(csv_file_path3, 'r') as file: # shifted file
-        reader = csv.reader(file)
-        data = list(reader)
-    for i in range(0, len(data)):
-        data[i].append(info_array[i,0])
-        data[i].append(info_array[i,1])
-    with open(csv_file_path3, 'w', newline='') as file:
-        ### header
-        writer = csv.DictWriter(file, fieldnames = ["shape", "scale", "shift", "w-dist", "species", "stage"])
-        writer.writeheader()
-        ### data
-        writer = csv.writer(file)
-        writer.writerows(data)
 
-    return (gamma_results_zero, gamma_results_pos, gamma_results_copy)
+    return (fit_results)
    
 
