@@ -1,0 +1,237 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+
+\geometry{margin=2.5cm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\title{\textbf{Les deux approches du LCT}
+\author{Mathis Drieu}
+\date{12/04/2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{table}[htb]
+\centering
+\footnotesize
+\begin{tabularx}{\linewidth}{c c}
+\toprule
+Parameter & Value \\
+
+\midrule
+$c_S$ & 5 \\
+$c_T$ & 1 \\
+$c_{S,T}$ & cS \\
+$c_{T,S}$ & cT \\
+
+$g_1$ & 0.2  \\
+$g_{1,S}$ & $g_1$ \\
+$m_{T2}$ & 0.02  \\
+
+$a_G$ & 1 \\
+$a_S$ & 0.1 \\
+$a_T$ & 2 \\
+
+$e_G$ & 1 \\
+$e_S$ & 0.2 \\
+$e_T$ & 0.2 \\
+
+$r$ & 1 \\
+
+\bottomrule
+\end{tabularx}
+\caption{Vera application model parameters}
+\end{table}
+
+\section{Ando 2020}
+
+Soit la fonction mémoire $M(t)$ :
+
+\begin{equation}
+    M(t) := \int_0^{+\infty} g\!\left(S(t-\theta),\, I(t-\theta)\right) K(\theta)\, d\theta,
+    \tag{2.1}
+\end{equation}
+
+where $K : [0,+\infty) \to \mathbb{R}$ is a non-negative, normalized memory kernel:
+\[
+    \int_0^{+\infty} K(\theta)\, d\theta = 1.
+\]
+
+The \textbf{Erlang kernel} of order $n$ and rate $a > 0$ is defined as:
+
+\begin{equation}
+    \mathrm{Erl}_{n,a}(\theta) := \frac{a^n\, \theta^{n-1}}{(n-1)!}\, e^{-a\theta}, \quad \theta \geq 0.
+    \label{eq:erlang}
+\end{equation}
+
+We take $K(\theta) = \mathrm{Erl}_{n,a}(\theta)$, so that:
+\[
+    M(t) = \int_0^{+\infty} g\!\left(S(t-\theta),\, I(t-\theta)\right) \mathrm{Erl}_{n,a}(\theta)\, d\theta.
+\]
+
+\begin{definition}[Auxiliary chain variables]
+For $i = 1, \ldots, n$, define:
+\begin{equation}
+    Z_i(t) := \int_0^{+\infty} g\!\left(S(t-\theta),\, I(t-\theta)\right) \mathrm{Erl}_{i,a}(\theta)\, d\theta.
+    \label{eq:Zi}
+\end{equation}
+\end{definition}
+
+\begin{remark}
+By definition, $Z_n(t) = M(t)$ for all $t$.
+\end{remark}
+
+\section{Key Lemmas}
+
+\begin{lemma}[Boundary values of the Erlang kernel]
+\label{lem:boundary}
+\[
+    \mathrm{Erl}_{i,a}(0) =
+    \begin{cases}
+        a & \text{if } i = 1, \\
+        0 & \text{if } i \geq 2.
+    \end{cases}
+\]
+\end{lemma}
+
+\begin{proof}
+From \eqref{eq:erlang}:
+\[
+    \mathrm{Erl}_{i,a}(0) = \frac{a^i \cdot 0^{i-1}}{(i-1)!} e^0.
+\]
+For $i = 1$: $\mathrm{Erl}_{1,a}(0) = a^1 \cdot 0^0 / 0! = a$.
+For $i \geq 2$: $0^{i-1} = 0$, so $\mathrm{Erl}_{i,a}(0) = 0$.
+\end{proof}
+
+\begin{lemma}[Recurrence relation for the Erlang kernel]
+\label{lem:recurrence}
+For $i \geq 2$:
+\[
+    \frac{d}{d\theta}\mathrm{Erl}_{i,a}(\theta) = a\,\mathrm{Erl}_{i-1,a}(\theta) - a\,\mathrm{Erl}_{i,a}(\theta).
+\]
+For $i = 1$:
+\[
+    \frac{d}{d\theta}\mathrm{Erl}_{1,a}(\theta) = -a\,\mathrm{Erl}_{1,a}(\theta).
+\]
+\end{lemma}
+
+\begin{proof}
+Differentiating \eqref{eq:erlang} directly:
+\begin{align*}
+    \frac{d}{d\theta}\mathrm{Erl}_{i,a}(\theta)
+    &= \frac{a^i}{(i-1)!}\left[(i-1)\theta^{i-2} - a\theta^{i-1}\right]e^{-a\theta} \\
+    &= \frac{a^i(i-1)\theta^{i-2}}{(i-1)!}e^{-a\theta} - \frac{a^{i+1}\theta^{i-1}}{(i-1)!}e^{-a\theta} \\
+    &= a\cdot\frac{a^{i-1}\theta^{i-2}}{(i-2)!}e^{-a\theta} - a\cdot\frac{a^i\theta^{i-1}}{(i-1)!}e^{-a\theta} \\
+    &= a\,\mathrm{Erl}_{i-1,a}(\theta) - a\,\mathrm{Erl}_{i,a}(\theta), \quad i \geq 2.
+\end{align*}
+For $i=1$: $\mathrm{Erl}_{1,a}(\theta) = ae^{-a\theta}$, so $\frac{d}{d\theta}\mathrm{Erl}_{1,a}(\theta) = -a^2 e^{-a\theta} = -a\,\mathrm{Erl}_{1,a}(\theta)$.
+\end{proof}
+
+\section{Main Theorem: The Linear Chain Trick}
+
+\begin{theorem}[Linear Chain Trick]
+\label{thm:LCT}
+Let $Z_i(t)$ be defined as in \eqref{eq:Zi}. Then the $Z_i$ satisfy the following
+system of ODEs:
+\begin{equation}
+    \begin{cases}
+        Z_1'(t) = a\, g(S(t), I(t)) - a\, Z_1(t), \\[6pt]
+        Z_i'(t) = a\, Z_{i-1}(t) - a\, Z_i(t), \quad i = 2, \ldots, n,
+    \end{cases}
+    \label{eq:chain}
+\end{equation}
+with $Z_n(t) = M(t)$.
+\end{theorem}
+
+\begin{proof}
+We differentiate $Z_i(t)$ using the substitution $u = t - \theta$ (so $\theta = t - u$,
+$d\theta = -du$), which rewrites \eqref{eq:Zi} as:
+\[
+    Z_i(t) = \int_{-\infty}^{t} g(S(u), I(u))\, \mathrm{Erl}_{i,a}(t - u)\, du.
+\]
+
+Applying the Leibniz differentiation rule:
+\begin{equation}
+    Z_i'(t) = g(S(t), I(t))\cdot \mathrm{Erl}_{i,a}(0)
+    + \int_{-\infty}^{t} g(S(u), I(u))\, \frac{\partial}{\partial t}\mathrm{Erl}_{i,a}(t-u)\, du.
+    \label{eq:leibniz}
+\end{equation}
+
+\medskip
+\noindent\textbf{Case $i \geq 2$.}
+
+By Lemma~\ref{lem:boundary}, $\mathrm{Erl}_{i,a}(0) = 0$, so the boundary term vanishes.
+Since $\frac{\partial}{\partial t}\mathrm{Erl}_{i,a}(t-u) = \frac{d}{d\theta}\mathrm{Erl}_{i,a}(\theta)\big|_{\theta=t-u}$,
+applying Lemma~\ref{lem:recurrence}:
+
+\begin{align*}
+    Z_i'(t) &= \int_{-\infty}^{t} g(S(u), I(u))
+    \left[a\,\mathrm{Erl}_{i-1,a}(t-u) - a\,\mathrm{Erl}_{i,a}(t-u)\right] du \\
+    &= a\int_{-\infty}^{t} g(S(u), I(u))\,\mathrm{Erl}_{i-1,a}(t-u)\,du
+    - a\int_{-\infty}^{t} g(S(u), I(u))\,\mathrm{Erl}_{i,a}(t-u)\,du \\
+    &= a\, Z_{i-1}(t) - a\, Z_i(t).
+\end{align*}
+
+\medskip
+\noindent\textbf{Case $i = 1$.}
+
+By Lemma~\ref{lem:boundary}, $\mathrm{Erl}_{1,a}(0) = a$, so the boundary term contributes
+$a\, g(S(t), I(t))$. Applying Lemma~\ref{lem:recurrence} for $i=1$:
+
+\begin{align*}
+    Z_1'(t) &= a\, g(S(t), I(t))
+    + \int_{-\infty}^{t} g(S(u), I(u))\left[-a\,\mathrm{Erl}_{1,a}(t-u)\right] du \\
+    &= a\, g(S(t), I(t)) - a\, Z_1(t).
+\end{align*}
+
+\medskip
+Finally, $Z_n(t) = M(t)$ by definition, which completes the proof.
+\end{proof}
+
+\section{Interpretation}
+
+The chain \eqref{eq:chain} has a clear structure:
+
+\begin{itemize}
+    \item \textbf{$Z_1$} is pulled directly toward the current nonlinear input $g(S(t), I(t))$
+          with rate $a$. It is the least smoothed variable.
+    \item \textbf{$Z_i$} ($i \geq 2$) is pulled toward the previous link $Z_{i-1}$, adding
+          one further layer of smoothing at each step.
+    \item \textbf{$Z_n = M(t)$} is the most smoothed and most delayed variable, representing
+          the full distributed memory, and is the quantity that feeds back into the main
+          dynamical equations.
+\end{itemize}
+
+The information flow is therefore:
+\[
+    g(S,I) \;\longrightarrow\; Z_1 \;\longrightarrow\; Z_2 \;\longrightarrow\; \cdots
+    \;\longrightarrow\; Z_n = M(t).
+\]
+
+\begin{remark}[Mean delay]
+The Erlang kernel $\mathrm{Erl}_{n,a}$ has mean $n/a$ and variance $n/a^2$. As $n \to \infty$
+with $n/a$ fixed, it converges to a Dirac mass at the mean delay, recovering a discrete
+time lag. The chain thus interpolates continuously between a pure exponential memory
+($n=1$) and a discrete delay ($n \to \infty$).
+\end{remark}
+
+\begin{remark}[Linearity of the chain]
+All equations in \eqref{eq:chain} except the first are \emph{linear} ODEs. The nonlinearity
+of $g(S,I)$ enters only through the forcing term of $Z_1'$. This is precisely what
+McDonald (1978) calls the ``non-linear'' total lag case, in contrast to diagonal or
+off-diagonal lags where only one variable is convolved and the chain is entirely linear.
+\end{remark}
+
+\end{document}

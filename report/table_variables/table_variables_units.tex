@@ -1,0 +1,156 @@
+\documentclass[12pt,a4paper,onecolumn]{article}
+
+% Encoding and language
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+% Font
+\usepackage{times}
+
+% Set margins
+\usepackage[a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+
+% Tabulation
+\usepackage{tabto}
+
+% Line spacing
+\usepackage{setspace}
+\onehalfspacing
+
+% Page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Clear default header/footer
+\rfoot{\thepage} % Right-aligned page numbers in footer
+
+% Remove page number from cover/abstract/etc
+\usepackage{titlesec}
+\newcommand{\noPageNumber}{\thispagestyle{empty}}
+
+% Prevent indentation
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+% Figure management
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Table
+\usepackage{booktabs, tabularx}
+\renewcommand\tabularxcolumn[1]{m{#1}}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\def\mathdefault#1{#1}
+\everymath=\expandafter{\the\everymath\displaystyle}
+
+% Subfigure management
+\usepackage{layouts}
+%\usepackage{floatrow}
+%\usepackage[label font=bf,labelformat=simple]{subfig}% <-- changed
+%\floatsetup[figure]{style=plain,subcapbesideposition=top}
+
+
+% Optional: headings formatting
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% Optional: remove widow/orphan lines
+\widowpenalty=10000
+\clubpenalty=10000
+
+% Mathematics
+\usepackage{amsmath,mathtools,amssymb} 
+
+\begin{document}
+ %% textwidth in cm: \printinunitsof{in}\prntlen{\textwidth}
+
+\begin{table}[htb]
+\centering
+\footnotesize
+\begin{tabularx}{\linewidth}{c >{\raggedright\arraybackslash}X c c c}
+\toprule
+Parameter & Definition & Unit & Par A & Par B \\
+
+\midrule
+\textit{n} & Number of host LCT subcompartments. Equals to $1/CV_H^2$ with $CV_H$ the
+coefficient of variation of host maturation time & unit-less & \textit{varies} & \textit{varies} \\
+
+\textit{m} & Number of parasitoid LCT subcompartments. Equals to $1/CV_P^2$ with $CV_P$ the
+coefficient of variation of parasitoid maturation time & unit-less & \textit{varies} & \textit{varies} \\
+
+$m_{H1}$ & Maturation rate of H1. Average maturation time  $T_{H1}$, can be defined as $1/m_{H1}$ & $t^{-1}$ & 1  & 1 \\
+
+$\delta_{H1}$ & Background mortality of H1 & $t^{-1}$ & 0 & 0.00425 \\
+$\delta_{H2}$ & Background mortality of H2. Host adult longevity, $T_{H2}$ can be defined as $1/\delta_{H2}$ & $t^{-1}$ &  0.2 & 0.2  \\
+$^\rho$ & Average number of offspring of one adult during its lifetime. Equals to $r/\delta_{H2}$ with r the adult fecundity rate. & unit-less & 33 & 105 \\
+
+$m_{P1}$ & Maturation rate of P1. Average maturation time  $T_{P1}$, can be defined as $1/m_{P1}$ & $t^{-1}$ & 1 & 0.05 \\
+$\delta_{P1}$ & Background mortality of P1 & $t^{-1}$ & 1 & 0.1  \\
+$\delta_{P2}$ & Background mortality of P2 & $t^{-1}$ & 8 & 0.5  \\
+$a$ & Rate of host discovery by a single parasitoid & $t^{-1}$ & 1 & 0.03  \\
+
+$\theta_H$ & Rate parameter of Erlang maturation time distribution. Set equal to $n \cdot m_{H1}$ (Appendix A.1.3) & $t^{-1}$ & \textit{varies}  & \textit{varies}   \\
+
+
+
+
+\bottomrule
+\end{tabularx}
+\caption{Parameters and values of Model I (Murdoch 1987). Par A : parameter set inspired from those in Murdoch (1987). Par B : parameter set inspired from measurements in Sait et al. (1994) and Harvey et al. (1994) on the \textit{Plodia-Venturia} host-parasitoid system.}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htb]
+\centering
+\footnotesize
+\begin{tabularx}{\linewidth}{c >{\raggedright\arraybackslash}X c c c}
+\toprule
+Parameter & Definition & Unit & Exploratory value \\
+
+\midrule
+$c_S$ & Colonization-Establishment-Growth-through-adulthood rate of shrubs (herbivore-indep). If CC=1, shrubs colonize up to $c_S$ times their initial (low) cover in 1 time step (year). & per shrub occupation, per open space, $t^{-1}$ & 1 \\
+$c_T$ & Colonization-Establishment of tree seedling-sapling (herbivore-indep)  & per adult tree occupation, per open space, $t^{-1}$ & 0.2 \\
+$c_{S,T}$ & Colonization-Establishment-Growth-through-adulthood rate of shrubs in a sapling-occupied locality (herbivore-indep) & per adult tree occupation, per open space, $t^{-1}$ & $c_S$ or 0 (no T1-N link) \\
+$c_{T,S}$ & Colonization-Establishment of tree seedling-sapling in a shrub-occupied locality (herbivore-indep) & per adult tree occupation, per open space, $t^{-1}$ & $c_T$ \\
+
+$g_1$ & Proportion of T1 patch that become invulnerable to herbivory per time step & $t^{-1}$ per T1 occupation & 0.2  \\
+$g_{1,S}$ & Proportion of (sapling co-occuring with shrubs) patch that become invulnerable to herbivory per time step  & $t^{-1}$ per N=(T1,S) occupation & $g_1$ (no competition) \\
+$m_{T2}$ & Extinction (proportion of patch) rate of T2 & $t^{-1}$ per T1 occupation & 0.02  \\
+
+$a_S$ & Proportion of shrub patches that are cleared by a herbivory pressure of 1 each time step & per shrub occupation, per herbivore density, $t^{-1}$ & 0.1 \\
+$a_T$ & Proportion of seedling-sapling patches that are cleared by a herbivory pressure of 1 each time step  & per sapling occupation, per herbivore density, $t^{-1}$ & 1 \\
+$a_{S,T}$ & Per capita attack (= perturbation that causes extinction) rate of shrubs co-occurying with tree saplings & per sapling occupation, per herbivore density, $t^{-1}$ & $a_S$ or 0 (no T1-N link) \\
+$a_{T,S}$ & Per capita attack (= perturbation that causes extinction) rate of saplings co-occurying with shrubs & per sapling occupation, per herbivore density, $t^{-1}$ & $a_T$ (no AR) or $a_S$ (AR) \\
+
+$CC$ & Total occupation of all vegetation patches caused by finite space & patch proportion & 1 \\
+
+\bottomrule
+\end{tabularx}
+\caption{Parameters, meaning and values of first Vera model}
+\end{table}
+
+
+
+\end{document}

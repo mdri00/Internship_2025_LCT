@@ -1,0 +1,15 @@
+---
+title: "LCT 2 approches"
+format:
+  pdf:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    mainfont: Carlito
+    mathfont: Carlito
+    colorlinks: true
+---
+
+# McDonald 1978
+
+Formulation très peu claire et rigoureuse, sans démonstration, mais généralement : 

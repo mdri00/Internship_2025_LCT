@@ -1,0 +1,99 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{robertson_matter_2018}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3e203cd832aa79453c220b860d23a6dd}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Suzanne\bibnamedelima L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1327742b084f3c9417c7124fd18675c7}{%
+           family={Henson},
+           familyi={H\bibinitperiod},
+           given={Shandelle\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c84f19214f2bd5a10d886e234e4439c}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9960636b4fb18ff771195117eddf8314}{%
+           family={Cushing},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1288537318bd372f930b63e9546bbd30}
+      \strng{fullhash}{503d0018f72f7d7159da0ee8927abdbe}
+      \strng{fullhashraw}{503d0018f72f7d7159da0ee8927abdbe}
+      \strng{bibnamehash}{1288537318bd372f930b63e9546bbd30}
+      \strng{authorbibnamehash}{1288537318bd372f930b63e9546bbd30}
+      \strng{authornamehash}{1288537318bd372f930b63e9546bbd30}
+      \strng{authorfullhash}{503d0018f72f7d7159da0ee8927abdbe}
+      \strng{authorfullhashraw}{503d0018f72f7d7159da0ee8927abdbe}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Abstract Structured compartmental models in mathematical biology track age classes, stage classes, or size classes of a population. Structured modeling becomes important when mechanistic formulations or intraspecific interactions are class‐dependent. The classic derivation of such models from partial differential equations produces time delays in the transition rates between classes. In particular, the transition from juvenile to adult has a delay equal to the maturation period of the organism. In the literature, many structured compartmental models, posed as ordinary differential equations, omit this delay. We reviewed occurrences of continuous‐time compartmental models for age‐ and stage‐structured populations in the recent literature (2000–2016) to discover which papers did so. About half of the 249 papers we reviewed used a maturation delay. Papers with ecological models were more likely to have the delay than papers with disease models, and mathematically focused papers were more likely to have the delay than biologically focused papers. Recommendations for Resource Managers Interacting populations often are modeled with systems of ordinary differential equations in which the state variables are numbers of individuals of each species and interaction terms depend only on the current state of the system. Single‐population continuous‐time models with age‐ or stage‐structure, in which state variables represent numbers of individuals in classes such as juveniles and adults, often but not always contain maturation time delays in the transition rates between classes. The exclusion of the delay typically changes the model dynamics. Managers should be aware of the maturation delay issue when considering the results of continuous‐time models of structured populations. Discrete‐time models have an inherent time delay, set by the census time step chosen by the modeler, and for that reason are convenient for modeling maturation and other biological delays.}
+      \field{annotation}{Methodo : We reviewed occurrences of continuous-time compartmental models for age and stage-structured populations in the recent literature (2000–2016) -{>} About half of the 249 papers we reviewed used a maturation delay. Papers with ecological models were more likely to have the delay than papers with disease models, and mathematically focused papers were more likely to have the delay than biologically focused papers.” Pas mal d’articles relatés qui parle de l’effet d’ajouter un délai (cf mon word) LCT : cite des papiers qui l’utilisent mais en vrai observe que y’en a pas tant que ça en bio des pop Distributed delay : jsp pq fait pas le lien avec LCT mais bon en tout cas cite le Blythe 1984}
+      \field{issn}{0890-8575, 1939-7445}
+      \field{journaltitle}{Natural Resource Modeling}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shorttitle}{A matter of maturity}
+      \field{title}{A matter of maturity: {To} delay or not to delay? {Continuous}‐time compartmental models of structured populations in the literature 2000–2016}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{volume}{31}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{e12160}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1111/nrm.12160
+      \endverb
+      \verb{file}
+      \verb Accepted Version:/home/mathisdr/Zotero/storage/LDYLJJXX/Robertson_2018.pdf:application/pdf;Robertson_2018:/home/mathisdr/Zotero/storage/BZK695Q7/Robertson_2018.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/nrm.12160
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/nrm.12160
+      \endverb
+      \keyw{main}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# OS files
+.DS_Store
+
+# Jupyter output
+*.html
+*.pdf
+
+# Large datasets (optional)
+data/processed/*
+
