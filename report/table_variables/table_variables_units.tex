@@ -41,6 +41,9 @@
 \usepackage{booktabs, tabularx}
 \renewcommand\tabularxcolumn[1]{m{#1}}
 
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.2\hsize}X}
+
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
 \def\mathdefault#1{#1}
@@ -66,6 +69,26 @@
 
 \begin{document}
  %% textwidth in cm: \printinunitsof{in}\prntlen{\textwidth}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{} & \textbf{Whole development} & \textbf{Egg/Larva/Pupa} & \textbf{Substage of Larva/Pupa} \\
+Number of fits & 11 & 72 & 55 \\ 
+\midrule
+Median Wasserstein distance & 0.013 & 0.012 & 0.023 \\
+\cmidrule{1-4}
+Mean shape & 120.3 & 115.5 & 33.6 \\
+Median shape & 76.6 & 56.0 & 26.2 \\
+Max shape & 510.7 & 795 & 144.8 \\
+Min shape & 15.1 & 1.02 & 1.6 \\
+Low shape count ($\leq 10$) & 0 (0\%) & 9 (13\%) & 14 (25\%) \\
+\bottomrule
+\end{tabular}
+\caption{Summary statistics of the Weibull-to-Gamma distribution fitting across the 3 aggregation levels.}
+\end{table}
+
 
 \begin{table}[htb]
 \centering
@@ -94,9 +117,6 @@ $a$ & Rate of host discovery by a single parasitoid & $t^{-1}$ & 1 & 0.03  \\
 
 $\theta_H$ & Rate parameter of Erlang maturation time distribution. Set equal to $n \cdot m_{H1}$ (Appendix A.1.3) & $t^{-1}$ & \textit{varies}  & \textit{varies}   \\
 
-
-
-
 \bottomrule
 \end{tabularx}
 \caption{Parameters and values of Model I (Murdoch 1987). Par A : parameter set inspired from those in Murdoch (1987). Par B : parameter set inspired from measurements in Sait et al. (1994) and Harvey et al. (1994) on the \textit{Plodia-Venturia} host-parasitoid system.}
@@ -105,51 +125,69 @@ $\theta_H$ & Rate parameter of Erlang maturation time distribution. Set equal to
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \begin{table}[htb]
 \centering
 \footnotesize
-\begin{tabularx}{\linewidth}{c >{\raggedright\arraybackslash}X c c c}
+\begin{tabularx}{\textwidth}{s >{\raggedright\arraybackslash} b s s s s}
 \toprule
-Parameter & Definition & Unit & Exploratory value \\
+Variable or Parameter & Definition & Unit & Browser  value & Grazer  value \\
 
 \midrule
-$c_S$ & Colonization-Establishment-Growth-through-adulthood rate of shrubs (herbivore-indep). If CC=1, shrubs colonize up to $c_S$ times their initial (low) cover in 1 time step (year). & per shrub occupation, per open space, $t^{-1}$ & 1 \\
-$c_T$ & Colonization-Establishment of tree seedling-sapling (herbivore-indep)  & per adult tree occupation, per open space, $t^{-1}$ & 0.2 \\
-$c_{S,T}$ & Colonization-Establishment-Growth-through-adulthood rate of shrubs in a sapling-occupied locality (herbivore-indep) & per adult tree occupation, per open space, $t^{-1}$ & $c_S$ or 0 (no T1-N link) \\
-$c_{T,S}$ & Colonization-Establishment of tree seedling-sapling in a shrub-occupied locality (herbivore-indep) & per adult tree occupation, per open space, $t^{-1}$ & $c_T$ \\
 
-$g_1$ & Proportion of T1 patch that become invulnerable to herbivory per time step & $t^{-1}$ per T1 occupation & 0.2  \\
-$g_{1,S}$ & Proportion of (sapling co-occuring with shrubs) patch that become invulnerable to herbivory per time step  & $t^{-1}$ per N=(T1,S) occupation & $g_1$ (no competition) \\
-$m_{T2}$ & Extinction (proportion of patch) rate of T2 & $t^{-1}$ per T1 occupation & 0.02  \\
+$G(t)$ & Proportion of all patches occupied by grass at time t. Finite space constrains $G(t) + T_1(t) + T_2(t) = 1$ for any t. & occupation &  \multicolumn{2}{c}{-} \\
+$T_1(t)$ & Proportion of all patches occupied by  tree seedling-saplings (<2m)  at time t.  & occupation &  \multicolumn{2}{c}{-} \\
+$T_2(t)$ & Proportion of all patches occupied by adult trees (>2m) at time t.  & occupation &  \multicolumn{2}{c}{-} \\
 
-$a_S$ & Proportion of shrub patches that are cleared by a herbivory pressure of 1 each time step & per shrub occupation, per herbivore density, $t^{-1}$ & 0.1 \\
-$a_T$ & Proportion of seedling-sapling patches that are cleared by a herbivory pressure of 1 each time step  & per sapling occupation, per herbivore density, $t^{-1}$ & 1 \\
-$a_{S,T}$ & Per capita attack (= perturbation that causes extinction) rate of shrubs co-occurying with tree saplings & per sapling occupation, per herbivore density, $t^{-1}$ & $a_S$ or 0 (no T1-N link) \\
-$a_{T,S}$ & Per capita attack (= perturbation that causes extinction) rate of saplings co-occurying with shrubs & per sapling occupation, per herbivore density, $t^{-1}$ & $a_T$ (no AR) or $a_S$ (AR) \\
+\hline \\ 
 
-$CC$ & Total occupation of all vegetation patches caused by finite space & patch proportion & 1 \\
+$g_1$ & Proportion of $T_1$ patches that become invulnerable to herbivory each time step & yr$^{-1}$ &  \multicolumn{2}{c}{0.2} \\
+
+$m_{T2}$ & Extinction rate of $T_2$ patches caused by natural mortality of adult trees (senescence). & yr$^{-1}$ &  \multicolumn{2}{c}{0.02}  \\
+
+$c_T$ & Colonization-Establishment coefficient of tree seedlings (herbivore-independent). Corresponds to the proportion of its own occupied area that $T_2$ colonizes with seedlings each time step in a fully available space. & occupation$^{-1}$.yr$^{-1}$ &  \multicolumn{2}{c}{1 \textit{or varying}} \\
+
+\hline \\ 
+\hline \\ 
+
+
+
+$H(t)$ & Herbivore density ranging the whole metacommunity at time t (feedback model). H(t) is a variable. & ind.km$^{-2}$ &  \multicolumn{2}{c}{-} \\
+
+\hline \\
+
+$h$ & Fixed herbivore density ranging the whole metacommunity (no feedback model). h is a parameter and not a variable. & ind.km$^{-2}$ &  \multicolumn{2}{c}{\textit{varying}} \\
+
+$r_H$ & Exponential growth rate of herbivore population, such that $\dot{H} = H(r_H - \alpha H)$. Corresponds to the maximal population growth rate when resource is not limiting and no density-dependence occurs. Corresponds to $f(G,T_1) - m_H$. & yr$^{-1}$ &  \multicolumn{2}{c}{\textit{see below}} \\
+
+$m_H$ & Background mortality rate (no stage-structured). Assumes an exponential distribution of lifetime with $m_H = \frac{1}{\text{Life expectancy}}$ &  yr$^{-1}$  & \multicolumn{2}{c}{0.1 \textit{or varying}} \\
+
+$\alpha$ & Density-dependence mortality rate of herbivores & ind$^{-1}$.km$^{2}$.yr$^{-1}$ & \multicolumn{2}{c}{0.005 \textit{or varying}}  \\
+
+$f_H(G,T_1)$ & \textit{Yield} of vegetation to herbivore population. Defined as $e_G\,a_G\,G + e_T\,a_T\,T_1$. & yr$^{-1}$ & \multicolumn{2}{c}{\textit{see below}} \\
+
+$a_T$ & Proportion of seedling-sapling patches that are cleared by a herbivory unit each time step  & occupation.ind$^{-1}$.km$^{-2}$yr$^{-1}$ & 1 & 0.2 \\
+
+$a_G$ & Proportion of seedling-sapling patches that are cleared (**and instantaneously recolonized**) by a herbivory unit each time step & occupation.ind$^{-1}$.km$^{-2}$yr$^{-1}$  & 0 & 1 \\
+
+$e_T$ & Conversion factor for tree seedling-sapling consumption. Translates the area occupation of T1 consumed each time step into a herbivore population growth rate. & ? & 3 & 0.4 \\
+
+$e_G$ &Conversion factor for grass consumption. Translates the area occupation of G consumed each time step into a herbivore population growth rate.  & ? & 0 & 0.4 \\
+
 
 \bottomrule
 \end{tabularx}
-\caption{Parameters, meaning and values of first Vera model}
+\caption{Variable/Parameter definitions and values in the model \ref{system}}
 \end{table}
+
+$$
+\dot{H_2}(t) = Q \, H_2(t-\tau_H) e^{\frac{-H_2(t-\tau_H)}{H_{0} }} - \delta_{H2} H_2(t)
+$$
+
+\pagebreak
+
+
+
+
 
 
 

@@ -439,7 +439,24 @@ Significant shape change ($\tau=0$ vs $\tau \in  [0;1]$) & \multicolumn{2}{c}{20
 
 
 
-
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{} & $\boldsymbol{\textbf{Whole development}}$ & $\boldsymbol{\textbf{Egg/Larva/Pupa}}$ & $\boldsymbol{\tau}$ \textbf{Substage of Larva/Pupa} \\
+Number of fits & 10 & 62 & 43 \\ 
+\midrule
+Median Wasserstein distance & 0.014 & 0.012 & 0.023 \\
+\cmidrule{1-4}
+Mean shape & 115.3 & 114.9 & 33.4 \\
+Median shape & 73.6 & 50.4 & 26.2 \\
+Max shape & 510.7 & 794 & 144.8 \\
+Min shape & 15.1 & 1.02 & 1.6 \\
+Low shape count ($\leq 20$) & 1 (10\%) & 15 (24\%) & 18 (42\%) \\
+\bottomrule
+\end{tabular}
+\caption{Summary statistics of the Weibull-to-Gamma distribution fitting across the three $\tau$ constraints.  62 sets of Weibull parameters were analyzed in total.  The 5 sets of parameters with negative shifts are included in the lines about Wasserstein distances, and excluded otherwise. A significant shape change is counted when the fitted shape differs by at least 1 between the 2 given constraints.}
+\end{table}
 
 
 
